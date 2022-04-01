@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Playball-Regular';
+    src: url(../font/Playball-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'NoticiaText-Regular';
+    src: url(../font/NoticiaText-Regular.ttf);
+}
+@font-face {
+    font-family: 'NoticiaText-Bold';
+    src: url(../font/NoticiaText-Bold.ttf);
+}
+
+
+@font-face {
+    font-family: 'Asap-Regular';
+    src: url(../font/Asap-Regular.ttf);
+}@font-face {
+    font-family: 'Asap-Italic';
+    src: url(../font/Asap-Italic.ttf);
+}
+@font-face {
+    font-family: 'Asap-SemiBold';
+    src: url(../font/Asap-SemiBold.ttf);
+}
