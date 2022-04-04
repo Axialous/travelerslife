@@ -1,7 +1,203 @@
 @import "font.css";
 
 * {
+    box-sizing: border-box;
+
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+body>header, footer {
+    padding: 30px 5%;
+}
+
+body>section {
+    padding: 70px 5%;
+}
+
+p {
+    color: rgb(77, 61, 53);
+    font-family: 'Asap-Regular', sans-serif;
+    font-size: 22px;
+
+    margin: 13px 0;
+}
+
+header {
+    position: absolute;
+    top: 0;
+
+    color: rgb(255, 255, 255);
+    font-family: arial, sans-serif;
+    font-size: 20px;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    position: relative;
+
+    width: 280px;
+}
+
+#logo h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Playball-Regular';
+    font-size: 50px;
+}
+
+#logo img {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+}
+
+#recherche {
+    display: flex;
+    align-items: center;
+
+    padding: 7px;
+}
+
+#recherche .barre {
+    background: url(../img/decorations/loupe.svg) center no-repeat;
+    background-size: contain;
+
+    border: none;
+
+    height: 34px;
+    width: 34px;
+
+    cursor: pointer;
+
+    transition: 125ms transform;
+}
+
+#recherche .barre:hover {
+    transform: scale(120%);
+}
+
+#recherche .barre:focus {
+    background: none;
+
+    border-bottom: solid 1px rgb(255, 255, 255);
+
+    height: 20px;
+    width: 200px;
+
+    transform: scale(100%);
+
+    animation: elargissement_recherche 500ms;
+}
+
+#recherche .envoi {
+    display: none;
+
+    background: url(../img/decorations/loupe.svg) center no-repeat;
+    background-size: contain;
+
+    border: none;
+
+    height: 34px;
+    width: 34px;
+
+    cursor: pointer;
+}
+
+#recherche .barre:focus + .envoi {
+    display: block;
+}
+
+@keyframes elargissement_recherche {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 200px;
+    }
+}
+
+header nav {
+    width: 280px;
+}
+
+header a, input {
+    color: rgb(255, 255, 255);
+    font-family: arial, sans-serif;
+    font-size: 20px;
+
+    margin: 5px;
+}
+
+header a {
+    text-decoration: underline transparent;
+
+    transition: 250ms;
+}
+
+header a:hover {
+    text-decoration: underline rgb(255, 255, 255);
+}
+
+header #offres {
+    text-decoration: none;
+
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 5px;
+
+    margin: 20px;
+    padding: 5px;
+}
+
+header #offres:hover {
+    text-decoration: none;
+
+    background-color: rgb(192, 25, 25);
+}
+
+
+
+#section_1 {
+    background: url(../img/pexels-pixabay-258154.jpg) center no-repeat;
+    background-size: cover;
+    height: 45vw;
+}
+
+#section_2 {
+    text-align: center;
+}
+
+blockquote {
+    width: min-content;
+
+    margin: auto;
+}
+
+blockquote p {
+    white-space: nowrap;
+    font-size: 26px;
+}
+
+blockquote cite {
+    color: rgb(77, 61, 53);
+    font-family: 'Asap-Italic', sans-serif;
+    font-size: 18px;
+
+    margin: 12px 0;
+}
+
+blockquote img {
+    width: 35%;
+
+    margin: 0 5px;
 }
