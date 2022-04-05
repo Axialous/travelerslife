@@ -1,6 +1,6 @@
 function transitionAcceuilDroite(){
     document.getElementById('imageHotel').style.display = "none";
-    document.getElementById('imageCroisiere').style.display = "block";
+    imageCroisiere.style.display = "block";
     } 
 function transitionAcceuilDroite2(){
     document.getElementById('imageCroisiere').style.display = "none";
@@ -22,3 +22,4 @@ function transitionAcceuilDroiteDirectR(){
     document.getElementById('imageHotel').style.display = "block";
     document.getElementById('imageSafari').style.display = "none";
 }
+

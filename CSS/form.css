@@ -16,6 +16,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
+    animation: imageH 19.5s 0s;
 }
 span img{
     height: 8px;
@@ -28,6 +29,7 @@ span img{
     background-size: cover;
     background-position-y: center;
     display: none;
+    animation: imageH 19.5s 0s;
 }
 #imageCroisiere{
     height: 750px;
@@ -36,6 +38,7 @@ span img{
     background-size: cover;
     background-position-y: center;
     display: none;
+    animation: imageH 19.5s 0s;
 }
 .fleche{
     display: flex;
@@ -121,6 +124,7 @@ h1{
     display: flex;
     margin: auto;
     margin-top: -20px;
+    z-index: 2;
 }
 .menu a{
     margin-top: 5px;
@@ -140,6 +144,14 @@ h1{
 }
 .menu :nth-child(5):hover{
     color: rgb(117, 80, 37);
+}
+.menu .categorie{
+    display: none;
+}
+.menu .sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
 }
 .barreV{
     border-style: solid;
@@ -163,7 +175,17 @@ h1{
 .grandMenu{
     display: flex;
 }
-
+/*******************************************************Keyframes********************************************************************************************************/
+@keyframes imageH{
+    0%{
+        opacity:0;
+        transform: translateX(50%);
+    }
+    5%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 /***************************************************Responsive Design****************************************************************************************************/
 /********************************************************Section1********************************************************************************************************/
 @media screen and (max-width:899px){
@@ -290,5 +312,61 @@ h1{
     }
     .flecheGauche button{
         height: 400px;
+    }
+}
+@media screen and (max-width:599px){
+    #imageSafari{
+    background-position-x: 20%;
+    }
+}
+@media screen and (max-width:349px){
+    .menu{
+        width: 280px;
+        display: block;
+    }
+    .menu a{
+        display:none
+    }
+    .barreV{
+        display: none;
+    }
+    .menu span .categorie{
+        display: flex;
+    }
+    .menu span{
+        display: flex;
+    }
+    #categorie{
+        margin-top: 11px;
+        margin-right: 20px;
+        height: 20px;
+    }
+    .menu:hover .sous{
+        display: block;
+    }
+    .menu .categorie:hover{
+        color: black;
+    }
+    .menu ul a{
+        display: block;
+    }
+    .menu ul li{
+        color: black;
+        font-size: 30px;
+        list-style-type: none;
+    }
+    .sous:nth-child(2):hover{
+        color: rgb(45, 37, 117);
+    }
+    .sous:nth-child(4):hover{
+        color: rgb(117, 37, 86);
+    }
+    .sous:nth-child(6):hover{
+        color: rgb(117, 80, 37);
+    }
+}
+@media screen and (max-width:310px){
+    span img{
+        height: 7px;
     }
 }
