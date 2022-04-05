@@ -16,7 +16,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
-    display: flex;
 }
 span img{
     height: 8px;
@@ -101,12 +100,15 @@ h1{
 }
 .rondBlanc1{
     border-style: solid;
+    border-color: rgb(45, 37, 117);
 }
 .rondBlanc5{
     border-style: solid;
+    border-color: rgb(117, 37, 86);
 }
 .rondBlanc9{
     border-style: solid;
+    border-color: rgb(117, 80, 37);
 }
 .menu{
     text-align: center;
@@ -130,8 +132,14 @@ h1{
     position: relative;
     flex-wrap: wrap;
 }
-.menu a:hover{
-    color: rgb(134, 121, 60);
+.menu :nth-child(1):hover{
+    color: rgb(45, 37, 117);
+}
+.menu :nth-child(3):hover{
+    color: rgb(117, 37, 86);
+}
+.menu :nth-child(5):hover{
+    color: rgb(117, 80, 37);
 }
 .barreV{
     border-style: solid;
@@ -158,7 +166,129 @@ h1{
 
 /***************************************************Responsive Design****************************************************************************************************/
 /********************************************************Section1********************************************************************************************************/
+@media screen and (max-width:899px){
+    #imageCroisiere h1{
+        width:min-content;
+        position: relative;
+        margin: auto;
+        padding-top: 300px;
+    }
+    #imageCroisiere #rondBlanc{
+        margin-top: 250px;
+    }
+    #imageCroisiere .flecheDroite button{
+        height: 250px;
+        width: 90%;
+    }
+    #imageCroisiere .flecheGauche button{
+        height: 250px;
+        width: 90%;
+    }
+    #imageCroisiere .flecheGauche{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+    }
+    #imageCroisiere .flecheDroite{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width:818px){
+    #imageSafari h1{
+        width:min-content;
+        position: relative;
+        margin: auto;
+        padding-top: 300px;
+    }
+    #imageSafari #rondBlanc{
+        margin-top: 250px;
+    }
+    #imageSafari .flecheDroite button{
+        height: 250px;
+        width: 90%;
+        margin-left: 10%;
+        background-color: transparent;
+        border-style: none;
+        cursor: url(/img/flecheDroite.svg),pointer;
+    }
+    #imageSafari .flecheGauche button{
+        height: 250px;
+        width: 90%;
+        background-color: transparent;
+        border-style: none;
+        cursor: url(/img/flecheGauche.svg),pointer;
+    }
+    #imageSafari .flecheGauche{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+    }
+    #imageSafari .flecheDroite{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+        margin-left: 20%;
+    }
+}
 @media screen and (max-width:799px){
     #imageHotel h1{
+        width:min-content;
+        position: relative;
+        margin: auto;
+        padding-top: 300px;
+    }
+    #imageHotel #rondBlanc{
+        margin-top: 250px;
+    }
+    #imageHotel .flecheGauche{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+    }
+    #imageHotel .flecheDroite{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+        margin-left: 20%;
+    }
+    .flecheDroite button{
+        height: 250px;
+        width: 90%;
+    }
+    .flecheGauche button{
+        height: 250px;
+        width: 90%;
+    }
+}
+@media screen and (max-height:770px){
+    #imageHotel{
+        height: 650px;
+    }
+    h1{
+        padding-top: 300px;
+    }
+    #rondBlanc{
+        margin-top: 550px;
+    }
+    #imageCroisiere{
+        height:650px;
+    }
+    #imageSafari{
+        height: 650px;
+    }
+    .flecheDroite button{
+        height: 400px;
+    }
+    .flecheGauche button{
+        height: 400px;
     }
 }
