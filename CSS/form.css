@@ -153,8 +153,6 @@ header>input, header>img {
     height: 34px;
     width: 34px;
 
-    transform: rotate(45deg);
-
     cursor: pointer;
 
     transition: 125ms transform;
