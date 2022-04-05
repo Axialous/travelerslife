@@ -14,3 +14,11 @@ function transitionAcceuilGauche3(){
     document.getElementById('imageSafari').style.display = "block";
     document.getElementById('imageCroisiere').style.display = "none";
 }
+function transitionAcceuilDroiteDirect(){
+    document.getElementById('imageHotel').style.display = "none";
+    document.getElementById('imageCroisiere').style.display = "block";
+}
+function transitionAcceuilDroiteDirectR(){
+    document.getElementById('imageHotel').style.display = "block";
+    document.getElementById('imageCroisiere').style.display = "none";
+}
