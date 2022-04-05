@@ -7,6 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/form.css"/>
+        <script src="JavaScript/JavaScript.js"></script>
         <title>Document</title>
     </head>
 
@@ -16,9 +17,44 @@
         </header>
 
         <section id="section_1">
-            <p>Texte</p>
-            <p>texte</p>
-
+                <div id="imageHotel">
+                    <h1 class="titre"><span><img src="/img/ligneTitre.PNG" alt="Ligne blanche"></span>Hôtels<span><img src="/img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+                    <div class="ronds">
+                        <div class="rondBlanc1" id="rondBlanc"></div>
+                        <div class="rondBlanc2" id="rondBlanc"></div>
+                        <div class="rondBlanc3" id="rondBlanc"></div>
+                    </div>
+                    <div class="fleche">
+                        <div class="flecheGauche">
+                            <button class="gauche"></button>
+                        </div>
+                        <div class="flecheDroite">
+                            <button onclick="transitionAcceuilDroite()" class="droite"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="imageSafari">
+                    <h1 class="titre"><span><img src="/img/ligneTitre.PNG" alt="Ligne blanche"></span>Safaris<span><img src="/img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+                    <div class="fleche">
+                        <div class="flecheGauche">
+                            <button onclick="transitionAcceuilGauche2()" class="gauche"></button>
+                        </div>
+                        <div class="flecheDroite">
+                            <button onclick="transitionAcceuilDroite2()" class="droite"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="imageCroisiere">
+                    <h1 class="titre"><span><img src="/img/ligneTitre.PNG" alt="Ligne blanche"></span>Croisières<span><img src="/img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+                    <div class="fleche">
+                        <div class="flecheGauche">
+                            <button onclick="transitionAcceuilGauche3()" class="gauche"></button>
+                        </div>
+                        <div class="flecheDroite">
+                            <button class="droite"></button>
+                        </div>
+                    </div>
+                </div>
         </section>
 
         <section id="section_2">
