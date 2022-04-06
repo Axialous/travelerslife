@@ -45,6 +45,16 @@ h1 {
 }
 
 h2 {
+    color: rgb(77, 61, 53);
+    font-family: 'NoticiaText-Regular', serif;
+    font-size: 55px;
+
+    margin: 50px 0;
+
+    transition: 250ms;
+}
+
+h3 {
     color: rgb(255, 255, 255);
     font-family: 'NoticiaText-Regular', serif;
     font-size: 35px;
@@ -52,6 +62,14 @@ h2 {
     margin: 50px 0;
 
     transition: 250ms;
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+    font-family: 'Asap-SemiBold', sans-serif;
+    font-size: 33px;
+
+    margin: 15px 0;
 }
 
 p {
@@ -62,7 +80,13 @@ p {
     margin: 13px 0;
 }
 
-a {
+strong {
+    color: rgb(192, 25, 25);
+    font-family: 'Asap-SemiBold', sans-serif;
+    font-size: inherit;
+}
+
+nav a {
     color: rgb(255, 255, 255);
     font-family: arial, sans-serif;
     font-size: 20px;
@@ -74,7 +98,7 @@ a {
     transition: 250ms;
 }
 
-a:hover {
+nav a:hover {
     text-decoration: underline rgb(255, 255, 255);
 }
 
@@ -630,6 +654,98 @@ blockquote img {
     transition: 500ms;
 }
 
+/* Section 4 */
+
+#section_4 {
+    text-align: center;
+}
+
+#section_4 article {
+    text-align: left;
+
+    width: 1200px;
+    margin: auto;
+}
+
+#section_4 a {
+    position: relative;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(77, 61, 53, 15%);
+
+    height: 418px;
+    width: 350px;
+    margin: 20px;
+
+    cursor: pointer;
+
+    transition: 250ms, transform 1000ms;
+}
+
+#section_4 a:hover {
+    transform: scale(1.01);
+}
+
+#section_4 a img {
+    color: rgb(77, 61, 53);
+
+    border-radius: 10px 10px 0 0;
+
+    width: 350px;
+    height: 233px;
+
+    transition: 250ms;
+}
+
+#section_4 a h4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: flex-end;
+
+    transform: translateX(30px) translateY(-15px);
+    opacity: 0;
+
+    width: 320px;
+    height: 233px;
+
+    margin: 0;
+    padding: 20px;
+
+    transition: opacity 500ms, transform 0ms 1000ms;
+}
+
+#section_4 a:hover h4 {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+
+    transition: 1000ms;
+}
+
+#section_4 li {
+    color: rgb(77, 61, 53);
+    font-family: 'Asap-Italic', sans-serif;
+    font-size: 20px;
+
+    list-style-type: none;
+
+    margin: 20px;
+}
+
+#section_4 a>p {
+    margin: 20px;
+}
+
+#section_4 .offre-speciale {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
 footer {
     background-color: rgb(77, 61, 53);
 
@@ -688,21 +804,42 @@ footer a:hover {
 
 footer p, footer a {
     color: rgb(161, 138, 126);
+    font-family: arial, sans-serif;
     font-size: 16px;
+
+    margin: 5px;
+
+    text-decoration: underline transparent;
+
+    transition: 250ms;
+}
+
+@media screen and (max-width: 1412px) {
+
+    #section_4 article {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1264px) {
+
 
     .separateur-vertical {
         background-color: transparent;
     }
 }
 
+@media screen and (max-width: 1376px) {
+
+    #section_4 article {
+        justify-content: space-around;
+    }
+}
+
 @media screen and (max-width: 1064px) {
 
     body>* {
-        padding-left: 3.5%;
-        padding-right: 3.5%;
+        padding: 70px 3.5%;
     }
 
     .separateur-vertical {
@@ -789,6 +926,15 @@ footer p, footer a {
 
 @media screen and (max-width: 740px) {
 
+    body>* {
+        padding: 40px 3.5%;
+    }
+
+    h2 {
+        font-size: 45px;
+        margin: 43px 0;
+    }
+
     blockquote {
         width: auto;
         max-width: 450px;
@@ -801,6 +947,21 @@ footer p, footer a {
     blockquote img {
         width: 25%;
     }
+
+    #section_4 a {
+        height: 374px;
+        width: 305px;
+    }
+
+    #section_4 a img {
+        height: 202px;
+        width: 305px;
+    }
+
+    #section_4 a h4 {
+        height: 202px;
+        width: 285px;
+    }
 }
 
 @media screen and (max-width: 464px) {
@@ -810,6 +971,11 @@ footer p, footer a {
     }
 
     h2 {
+        font-size: 30px;
+        margin: 16px 0;
+    }
+
+    h3 {
         font-size: 30px;
         margin: 35px 0;
     }
@@ -835,6 +1001,22 @@ footer p, footer a {
         height: 26px;
 
         left: 3.5%;
+    }
+
+    #section_4 a {
+        height: 336px;
+        width: 260px;
+        margin: 20px 0;
+    }
+
+    #section_4 a img {
+        height: 173px;
+        width: 260px;
+    }
+
+    #section_4 a h4 {
+        height: 173px;
+        width: 240px;
     }
 
     footer>div>div {
