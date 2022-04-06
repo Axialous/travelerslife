@@ -48,7 +48,6 @@ span img{
     height: 500px;
     width: 40%;
     z-index: 1;
-    border-style: none;
 }
 .flecheDroite{
     margin-top: 145px;
@@ -64,7 +63,6 @@ span img{
     background-color: transparent;
     border-style: none;
     cursor: url(/img/flecheDroite.svg),pointer;
-    border-style: none;
 }
 .flecheGauche button{
     height: 500px;
@@ -72,7 +70,6 @@ span img{
     background-color: transparent;
     border-style: none;
     cursor: url(/img/flecheGauche.svg),pointer;
-    border-style: none;
 }
 h1{
     text-align: center;
@@ -101,7 +98,6 @@ h1{
     z-index: 1;
     position: absolute;
     width: 100%;
-    z-index: 2;
 }
 .rondBlanc1{
     border-style: solid;
@@ -321,6 +317,15 @@ h1{
     background-position-x: 20%;
     }
 }
+@media screen and (max-width:450px){
+    .flecheGauche{
+        width: 150px !important;
+    }
+    .flecheDroite{
+        width: 150px !important;
+        margin-left: 35% !important;
+    }
+}
 @media screen and (max-width:349px){
     .menu{
         width: 280px;
@@ -357,14 +362,14 @@ h1{
         font-size: 30px;
         list-style-type: none;
     }
-    .sous:nth-child(2):hover{
+    .sous li:nth-child(1):hover a{
         color: rgb(45, 37, 117);
     }
-    .sous:nth-child(4):hover{
-        color: rgb(117, 37, 86);
+    .sous li:nth-child(2):hover a{
+        color: rgb(117, 37, 86) !important;
     }
-    .sous:nth-child(6):hover{
-        color: rgb(117, 80, 37);
+    .sous li:nth-child(3):hover a{
+        color: rgb(117, 80, 37) !important;
     }
 }
 @media screen and (max-width:310px){
