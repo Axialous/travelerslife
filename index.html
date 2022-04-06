@@ -3,17 +3,32 @@
 <html lang="fr">
 
     <head>
+        <title>Traveler's life</title>
+        <link rel="icon" href="img/decorations/valise.png">
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/form.css"/>
         <script src="JavaScript/JavaScript.js"></script>
-        <title>Document</title>
     </head>
 
     <body>
         <header>
-            
+            <input type="checkbox">
+            <img src="img/decorations/burger.svg" alt="menu">
+
+            <h1 class="logo">Traveler's life<img src="img/decorations/valise.png" alt="valise"></h1>
+
+            <form id="recherche">
+                <input class="barre" type="text" name="text">
+                <input class="envoi" type="submit" name="submit" class="submit" value="">
+            </form>
+
+            <nav>
+                <a href="#" id="offres">Offres spéciales</a>
+                <a href="#">Contact</a>
+            </nav>
         </header>
 
         <section id="section_1">
@@ -83,7 +98,10 @@
         </section>
 
         <section id="section_2">
-
+            <blockquote>
+                <p>« Le plus beau voyage, c'est celui qu'on n'a pas encore fait. »</p>
+                <img src="img/decorations/ligne_citation.svg" alt="Ligne décorative"><cite>Loïck Peyron</cite><img src="img/decorations/ligne_citation.svg" alt="Ligne décorative">
+            </blockquote>
         </section>
 
         <section id="section_3">
@@ -95,7 +113,36 @@
         </section>
 
         <footer>
+            <div class="ligne">
+                <div>
+                    <h1 class="logo">Traveler's life<img src="img/decorations/valise.png" alt="valise"></h1>
+                    <a href="#">Mentions légales – CGV</a>
+                </div>
 
+                <div class="separateur-vertical"></div>
+
+                <div id="reseaux">
+                    <h2>Rejoignez-nous</h2>
+                    <div class="ligne">
+                        <button><img src="img/decorations/facebook.png" alt="Facebook"></button>
+                        <button><img src="img/decorations/instagram.png" alt="Instagram"></button>
+                        <button><img src="img/decorations/twitter.png" alt="Twitter"></button>
+                    </div>
+                </div>
+
+                <div class="separateur-vertical"></div>
+
+                <div id="contacts">
+                    <h2>Contact</h2>
+                    <div>
+                        <p>Adresse : 20 rue de la République,<br>58000 Nevers</p>
+                        <p>Téléphone : 03.67.48.59.20</p>
+                        <p>E-Mail : contact@travelerslife.com</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p>Tous droits réservés @Traveler's life</p>
         </footer>
     </body>
 
