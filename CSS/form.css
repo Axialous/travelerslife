@@ -93,6 +93,7 @@ hr {
 header {
     position: absolute;
     top: 0;
+    z-index: 10;
 
     width: 100%;
     padding: 0 7.5%;
@@ -223,13 +224,12 @@ header #offres:hover {
 }
 
 /*****************************************************section1********************************************************************************/
-.section1{
-    height: 750px;
-    border-style: none;
+#section_1{
+    padding: 0;
 }
 #imageHotel{
     height: 750px;
-    background: url(/img/acceuilHotel.jpg);
+    background: url(../img/acceuilHotel.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -241,7 +241,7 @@ span img{
 }
 #imageSafari{
     height: 750px;
-    background: url(/img/acceuilSafari.jpg);
+    background: url(../img/acceuilSafari.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -250,7 +250,7 @@ span img{
 }
 #imageCroisiere{
     height: 750px;
-    background: url(/img/acceuilCroisiere.jpg);
+    background: url(../img/acceuilCroisiere.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -279,16 +279,16 @@ span img{
     margin-left: 10%;
     background-color: transparent;
     border-style: none;
-    cursor: url(/img/flecheDroite.svg),pointer;
+    cursor: url(../img/flecheDroite.svg),pointer;
 }
 .flecheGauche button{
     height: 500px;
     width: 90%;
     background-color: transparent;
     border-style: none;
-    cursor: url(/img/flecheGauche.svg),pointer;
+    cursor: url(../img/flecheGauche.svg),pointer;
 }
-h1{
+#section_1 h1{
     text-align: center;
     color: white;
     font-family: 'NoticiaText-Bold';
@@ -451,14 +451,14 @@ h1{
         margin-left: 10%;
         background-color: transparent;
         border-style: none;
-        cursor: url(/img/flecheDroite.svg),pointer;
+        cursor: url(../img/flecheDroite.svg),pointer;
     }
     #imageSafari .flecheGauche button{
         height: 250px;
         width: 90%;
         background-color: transparent;
         border-style: none;
-        cursor: url(/img/flecheGauche.svg),pointer;
+        cursor: url(../img/flecheGauche.svg),pointer;
     }
     #imageSafari .flecheGauche{
         margin-top: 50px;
@@ -510,7 +510,7 @@ h1{
     #imageHotel{
         height: 650px;
     }
-    h1{
+    #section_1 h1{
         padding-top: 300px;
     }
     #rondBlanc{
@@ -592,6 +592,10 @@ h1{
 @media screen and (max-width:310px){
     span img{
         height: 7px;
+    }
+
+    #section_1 h1 {
+        font-size: 50px;
     }
 }
 
@@ -810,6 +814,14 @@ footer p, footer a {
         margin: 35px 0;
     }
 
+    header {
+        justify-content: right;
+    }
+
+    header .logo {
+        margin: 39px 0;
+    }
+
     header .logo img {
         bottom: -26px;
         right: 16px;
@@ -821,6 +833,8 @@ footer p, footer a {
     header>input, header>img {
         width: 26px;
         height: 26px;
+
+        left: 3.5%;
     }
 
     footer>div>div {
@@ -828,11 +842,13 @@ footer p, footer a {
     }
 
     #recherche {
-        top: 100px;
+        top: 110px;
+        width: 90%;
     }
 
     header nav {
-        top: 140px;
+        top: 150px;
+        width: 90%;
     }
 
     footer .logo img {
