@@ -390,7 +390,7 @@ span img{
 .grandMenu{
     display: flex;
 }
-/*******************************************************Keyframes********************************************************************************************************/
+/*******************************************************Keyframes section1********************************************************************************************************/
 @keyframes imageH{
     0%{
         opacity:0;
@@ -401,8 +401,7 @@ span img{
         transform: translateX(0);
     }
 }
-/***************************************************Responsive Design****************************************************************************************************/
-/********************************************************Section1********************************************************************************************************/
+/***************************************************Responsive Design section1****************************************************************************************************/
 @media screen and (max-width:899px){
     #imageCroisiere h1{
         width:min-content;
@@ -862,5 +861,102 @@ footer p, footer a {
     #reseaux img {
         width: 60px;
         height: 60px;
+    }
+}
+/****************************************************Section3**********************************************************************/
+#section_3{
+    position: relative;
+}
+.presentation{
+    background-color: whitesmoke;
+    width: 1200px;
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 0 rgb(77, 61, 53);
+}
+.imagesPresentation{
+    width: 50%;
+    height: 100%;
+}
+.textPresentation{
+    width: 50%;
+    height: 100%;
+}
+.imagePresentation1{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.imagePresentation2{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.textPresentation h2{
+    text-align: center;
+    color: black;
+}
+.imagesPresentation .section3ronds{
+    position: absolute !important;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 10px 0 0 10px;
+}
+.section3rondBlanc1{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 5px;
+    border-style: solid;
+    margin-top: 50vh;
+}
+.section3rondBlanc2{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 50vh;
+}
+.section3rondBlanc4{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 5px;
+    border-style: solid;
+    margin-top: 50vh;
+}
+.section3rondBlanc3{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 50vh;
+}
+.imageEquipe{
+    position: relative;
+    height: 60vh;
+}
+.imageEquipe2{
+    display: none;
+    position: relative;
+    height: 60vh;
+}
+/*************************************************Media Queries section 3**************************************************/
+@media screen and (max-width:1412px){
+    #section_3 .presentation{
+        width:100%
     }
 }
