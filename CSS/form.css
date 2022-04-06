@@ -870,7 +870,7 @@ footer p, footer a {
 .presentation{
     background-color: whitesmoke;
     width: 1200px;
-    height: 60vh;
+    height: 600px;
     margin: auto;
     display: flex;
     border-radius: 10px;
@@ -883,6 +883,7 @@ footer p, footer a {
 .textPresentation{
     width: 50%;
     height: 100%;
+    position: relative;
 }
 .imagePresentation1{
     width: 100%;
@@ -898,13 +899,12 @@ footer p, footer a {
     text-align: center;
     color: black;
 }
-.imagesPresentation .section3ronds{
-    position: absolute !important;
+.section3ronds{
+    position: absolute;
     width: 100%;
-    height: 60vh;
+    height: 600px;
     display: flex;
     justify-content: center;
-    border-style: solid;
     border-radius: 10px 0 0 10px;
 }
 .section3rondBlanc1{
@@ -915,7 +915,7 @@ footer p, footer a {
     cursor: pointer;
     margin-right: 5px;
     border-style: solid;
-    margin-top: 50vh;
+    margin-top: 500px;
 }
 .section3rondBlanc2{
     background-color: white;
@@ -924,7 +924,7 @@ footer p, footer a {
     border-radius: 50%;
     cursor: pointer;
     margin-right: 5px;
-    margin-top: 50vh;
+    margin-top: 500px;
 }
 .section3rondBlanc4{
     background-color: white;
@@ -934,7 +934,7 @@ footer p, footer a {
     cursor: pointer;
     margin-right: 5px;
     border-style: solid;
-    margin-top: 50vh;
+    margin-top: 500px;
 }
 .section3rondBlanc3{
     background-color: white;
@@ -943,16 +943,48 @@ footer p, footer a {
     border-radius: 50%;
     cursor: pointer;
     margin-right: 5px;
-    margin-top: 50vh;
+    margin-top: 500px;
 }
 .imageEquipe{
     position: relative;
-    height: 60vh;
+    height: 600px;
 }
 .imageEquipe2{
     display: none;
     position: relative;
-    height: 60vh;
+    height: 600px;
+}
+.textPresentation p{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.section3fleche{
+    border-style: solid;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    display: flex;
+}
+.section3flecheGauche{
+    border-style: solid;
+    width:20%;
+    height: 50%;
+    margin: auto;
+}
+.section3flecheDroite{
+    border-style: solid;
+    width:20%;
+    height: 50%;
+    margin: auto;
+}
+.section3flecheGauche img{
+
+}
+.section3flecheDroite img{
+
 }
 /*************************************************Media Queries section 3**************************************************/
 @media screen and (max-width:1412px){
