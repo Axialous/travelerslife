@@ -961,34 +961,153 @@ footer p, footer a {
     line-height: 1.5;
 }
 .section3fleche{
-    border-style: solid;
     position: absolute;
     width: 100%;
-    height: 25%;
+    height: 15%;
     bottom: 0;
     display: flex;
 }
 .section3flecheGauche{
-    border-style: solid;
-    width:20%;
+    width:100%;
     height: 50%;
     margin: auto;
+    margin-left: 15px;
 }
 .section3flecheDroite{
-    border-style: solid;
-    width:20%;
+    width:100%;
     height: 50%;
     margin: auto;
+    margin-right: 15px;
+    text-align: right;
 }
-.section3flecheGauche img{
-
-}
-.section3flecheDroite img{
-
+#section3Text2{
+    display: none;
 }
 /*************************************************Media Queries section 3**************************************************/
 @media screen and (max-width:1412px){
     #section_3 .presentation{
         width:100%
+    }
+}
+@media screen and (max-width:1262px){
+    .textPresentation p{
+        line-height: 1.3;
+    }
+}
+@media screen and (max-width:1118px){
+    .textPresentation p{
+        line-height: 1.1;
+    }
+}
+@media screen and (max-width:939px){
+    .presentation{
+        background-color: whitesmoke;
+        width: 1200px;
+        height: 600px;
+        margin: auto;
+        display: flex;
+        border-radius: 10px;
+        box-shadow: 20px 20px 20px 0 rgb(77, 61, 53);
+    }
+    .imagesPresentation{
+        width: 100%;
+        height: 100%;
+    }
+    .textPresentation{
+        width: 93%;
+        height: 100%;
+        position: absolute;
+    }
+    .imagePresentation1{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .imagePresentation2{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .textPresentation h2{
+        text-align: center;
+        color: white;
+    }
+    .imageEquipe{
+        position: relative;
+        height: 600px;
+    }
+    .imageEquipe2{
+        display: none;
+        position: relative;
+        height: 600px;
+    }
+    .textPresentation p{
+        width: 80%;
+        height: 390px;
+        text-align: justify;
+        line-height: 1.5;
+        color: white;
+        margin: auto;
+        font-size: 2.5vh;
+    }
+    .section3fleche{
+        position: absolute;
+        width: 100%;
+        height: 15%;
+        bottom: 0;
+        display: flex;
+        text-align: center;
+    }
+    .section3flecheGauche{
+        width:100%;
+        height: 50%;
+        margin: auto;
+        margin-left: 15px;
+    }
+    .section3flecheDroite{
+        width:100%;
+        height: 50%;
+        margin: auto;
+        margin-right: 15px;
+        text-align: right;
+        text-align: center;
+    }
+    #section3Text2{
+        display: none;
+    }
+}
+@media screen and (max-width:665px){
+    .textPresentation p{
+        font-size: 2.3vh;
+    }
+}
+@media screen and (max-width:560px){
+    .textPresentation p{
+        font-size: 2.1vh;
+    }
+}
+@media screen and (max-width:501px){
+    .textPresentation p{
+        font-size: 2vh;
+    }
+}
+@media screen and (max-width:398px){
+    .textPresentation p{
+        font-size: 1.9vh;
+    }
+}
+@media screen and (max-width:362px){
+    .textPresentation p{
+        font-size: 1.8vh;
+    }
+}
+@media screen and (max-width:335px){
+    .textPresentation p{
+        font-size: 1.7vh;
+    }
+}
+@media screen and (max-width:300px){
+    .textPresentation p{
+        font-size: 1.6vh;
     }
 }
