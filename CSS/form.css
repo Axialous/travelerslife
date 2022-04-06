@@ -222,7 +222,378 @@ header #offres:hover {
     background-color: rgb(192, 25, 25);
 }
 
+/*****************************************************section1********************************************************************************/
+.section1{
+    height: 750px;
+    border-style: none;
+}
+#imageHotel{
+    height: 750px;
+    background: url(/img/acceuilHotel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    animation: imageH 19.5s 0s;
+}
+span img{
+    height: 8px;
+    vertical-align: middle;
+}
+#imageSafari{
+    height: 750px;
+    background: url(/img/acceuilSafari.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    display: none;
+    animation: imageH 19.5s 0s;
+}
+#imageCroisiere{
+    height: 750px;
+    background: url(/img/acceuilCroisiere.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    display: none;
+    animation: imageH 19.5s 0s;
+}
+.fleche{
+    display: flex;
+}
+.flecheGauche{
+    margin-top: 145px;
+    height: 500px;
+    width: 40%;
+    z-index: 1;
+}
+.flecheDroite{
+    margin-top: 145px;
+    height: 500px;
+    width: 40%;
+    z-index: 1;
+    margin-left: 20%;
+}
+.flecheDroite button{
+    height: 500px;
+    width: 90%;
+    margin-left: 10%;
+    background-color: transparent;
+    border-style: none;
+    cursor: url(/img/flecheDroite.svg),pointer;
+}
+.flecheGauche button{
+    height: 500px;
+    width: 90%;
+    background-color: transparent;
+    border-style: none;
+    cursor: url(/img/flecheGauche.svg),pointer;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'NoticiaText-Bold';
+    font-size: 60px;
+    border-style: solid;
+    height:45vw;
+    padding-top: 400px;
+    width: 100%;
+    position: absolute;
+    border-style: none;
+}
+#rondBlanc{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: 650px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.ronds{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+.rondBlanc1{
+    border-style: solid;
+    border-color: rgb(45, 37, 117);
+}
+.rondBlanc5{
+    border-style: solid;
+    border-color: rgb(117, 37, 86);
+}
+.rondBlanc9{
+    border-style: solid;
+    border-color: rgb(117, 80, 37);
+}
+.menu{
+    text-align: center;
+    font-family: 'Asap-Regular';
+    background-color: whitesmoke;
+    border-radius: 20px;
+    width: 900px;
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    margin-top: -20px;
+    z-index: 2;
+}
+.menu a{
+    margin-top: 5px;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    flex-wrap: wrap;
+}
+.menu :nth-child(1):hover{
+    color: rgb(45, 37, 117);
+}
+.menu :nth-child(3):hover{
+    color: rgb(117, 37, 86);
+}
+.menu :nth-child(5):hover{
+    color: rgb(117, 80, 37);
+}
+.menu .categorie{
+    display: none;
+}
+.menu .sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+}
+.barreV{
+    border-style: solid;
+    border-width: 1px;
+    height: 30px;
+    margin-top: 5px;
+}
+.ligneBlanche1{
+    background-color: whitesmoke;
+    width: 100%;
+    margin-top: -5px;
+    height: 10px;
 
+}
+.ligneBlanche2{
+    background-color: whitesmoke;
+    width: 100%;
+    margin-top: -5px;
+    height: 10px;
+}
+.grandMenu{
+    display: flex;
+}
+/*******************************************************Keyframes********************************************************************************************************/
+@keyframes imageH{
+    0%{
+        opacity:0;
+        transform: translateX(50%);
+    }
+    5%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/***************************************************Responsive Design****************************************************************************************************/
+/********************************************************Section1********************************************************************************************************/
+@media screen and (max-width:899px){
+    #imageCroisiere h1{
+        width:min-content;
+        position: relative;
+        margin: auto;
+        padding-top: 300px;
+    }
+    #imageCroisiere #rondBlanc{
+        margin-top: 250px;
+    }
+    #imageCroisiere .flecheDroite button{
+        height: 250px;
+        width: 90%;
+    }
+    #imageCroisiere .flecheGauche button{
+        height: 250px;
+        width: 90%;
+    }
+    #imageCroisiere .flecheGauche{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+    }
+    #imageCroisiere .flecheDroite{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width:818px){
+    #imageSafari h1{
+        width:min-content;
+        position: relative;
+        margin: auto;
+        padding-top: 300px;
+    }
+    #imageSafari #rondBlanc{
+        margin-top: 250px;
+    }
+    #imageSafari .flecheDroite button{
+        height: 250px;
+        width: 90%;
+        margin-left: 10%;
+        background-color: transparent;
+        border-style: none;
+        cursor: url(/img/flecheDroite.svg),pointer;
+    }
+    #imageSafari .flecheGauche button{
+        height: 250px;
+        width: 90%;
+        background-color: transparent;
+        border-style: none;
+        cursor: url(/img/flecheGauche.svg),pointer;
+    }
+    #imageSafari .flecheGauche{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+    }
+    #imageSafari .flecheDroite{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width:799px){
+    #imageHotel h1{
+        width:min-content;
+        position: relative;
+        margin: auto;
+        padding-top: 300px;
+    }
+    #imageHotel #rondBlanc{
+        margin-top: 250px;
+    }
+    #imageHotel .flecheGauche{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+    }
+    #imageHotel .flecheDroite{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+        margin-left: 20%;
+    }
+    .flecheDroite button{
+        height: 250px;
+        width: 90%;
+    }
+    .flecheGauche button{
+        height: 250px;
+        width: 90%;
+    }
+}
+@media screen and (max-height:770px){
+    #imageHotel{
+        height: 650px;
+    }
+    h1{
+        padding-top: 300px;
+    }
+    #rondBlanc{
+        margin-top: 550px;
+    }
+    #imageCroisiere{
+        height:650px;
+    }
+    #imageSafari{
+        height: 650px;
+    }
+    .flecheDroite button{
+        height: 400px;
+    }
+    .flecheGauche button{
+        height: 400px;
+    }
+}
+@media screen and (max-width:599px){
+    #imageSafari{
+    background-position-x: 20%;
+    }
+}
+@media screen and (max-width:450px){
+    .flecheGauche{
+        width: 150px !important;
+    }
+    .flecheDroite{
+        width: 150px !important;
+        margin-left: 35% !important;
+    }
+}
+@media screen and (max-width:349px){
+    .menu{
+        width: 280px;
+        display: block;
+    }
+    .menu a{
+        display:none
+    }
+    .barreV{
+        display: none;
+    }
+    .menu span .categorie{
+        display: flex;
+    }
+    .menu span{
+        display: flex;
+    }
+    #categorie{
+        margin-top: 11px;
+        margin-right: 20px;
+        height: 20px;
+    }
+    .menu:hover .sous{
+        display: block;
+    }
+    .menu .categorie:hover{
+        color: black;
+    }
+    .menu ul a{
+        display: block;
+    }
+    .menu ul li{
+        color: black;
+        font-size: 30px;
+        list-style-type: none;
+    }
+    .sous li:nth-child(1):hover a{
+        color: rgb(45, 37, 117);
+    }
+    .sous li:nth-child(2):hover a{
+        color: rgb(117, 37, 86) !important;
+    }
+    .sous li:nth-child(3):hover a{
+        color: rgb(117, 80, 37) !important;
+    }
+}
+@media screen and (max-width:310px){
+    span img{
+        height: 7px;
+    }
+}
 
 #section_2 {
     text-align: center;

@@ -10,6 +10,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/form.css"/>
+        <script src="JavaScript/JavaScript.js"></script>
     </head>
 
     <body>
@@ -31,7 +32,69 @@
         </header>
 
         <section id="section_1">
-
+                <div id="imageHotel">
+                    <h1 class="titre"><span><img src="/img/ligneTitre.PNG" alt="Ligne blanche"></span>Hôtels<span><img src="/img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+                    <div class="ronds">
+                        <div class="rondBlanc1" id="rondBlanc"></div>
+                        <div onclick="transitionAcceuilDroite()" class="rondBlanc2" id="rondBlanc"></div>
+                        <div onclick="transitionAcceuilDroiteDirect()" class="rondBlanc3" id="rondBlanc"></div>
+                    </div>
+                    <div class="fleche">
+                        <div class="flecheGauche">
+                            <button class="gauche"></button>
+                        </div>
+                        <div class="flecheDroite">
+                            <button onclick="transitionAcceuilDroite()" class="droite"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="imageCroisiere">
+                    <h1 class="titre"><span><img src="/img/ligneTitre.PNG" alt="Ligne blanche"></span>Croisières<span><img src="/img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+                    <div class="ronds">
+                        <div onclick="transitionAcceuilGauche2()" class="rondBlanc4" id="rondBlanc"></div>
+                        <div class="rondBlanc5" id="rondBlanc"></div>
+                        <div onclick="transitionAcceuilDroite2()" class="rondBlanc6" id="rondBlanc"></div>
+                    </div>
+                    <div class="fleche">
+                        <div class="flecheGauche">
+                            <button onclick="transitionAcceuilGauche2()" class="gauche"></button>
+                        </div>
+                        <div class="flecheDroite">
+                            <button onclick="transitionAcceuilDroite2()" class="droite"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="imageSafari">
+                    <h1 class="titre"><span><img src="/img/ligneTitre.PNG" alt="Ligne blanche"></span>Safaris<span><img src="/img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+                    <div class="ronds">
+                        <div onclick="transitionAcceuilDroiteDirectR()" class="rondBlanc7" id="rondBlanc"></div>
+                        <div onclick="transitionAcceuilGauche3()" class="rondBlanc8" id="rondBlanc"></div>
+                        <div class="rondBlanc9" id="rondBlanc"></div>
+                    </div>
+                    <div class="fleche">
+                        <div class="flecheGauche">
+                            <button onclick="transitionAcceuilGauche3()" class="gauche"></button>
+                        </div>
+                        <div class="flecheDroite">
+                            <button class="droite"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grandMenu">
+                    <div class="ligneBlanche1"></div>
+                    <div class="menu">
+                        <a href="">Hôtels</a><div class="barreV"></div>
+                        <a href="">Croisières</a><div class="barreV"></div>
+                        <a href="">Safaris</a>
+                        <span><a class="categorie">Catégorie</a><img class="categorie" id="categorie" src="/img/flecheBas.png"></span>
+                        <ul class="sous">
+                            <li><a href="#">Hôtels</a></li>
+                            <li><a href="#">Croisières</a></li>
+                            <li><a href="#">Safaris</a></li>
+                        </ul>
+                    </div>
+                    <div class="ligneBlanche2"></div>
+                </div>
         </section>
 
         <section id="section_2">
