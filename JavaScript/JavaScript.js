@@ -22,4 +22,16 @@ function transitionAcceuilDroiteDirectR(){
     document.getElementById('imageHotel').style.display = "block";
     document.getElementById('imageSafari').style.display = "none";
 }
+function transitionSection3Droite(){
+    document.getElementById('imageEquipe').style.display = "none";
+    document.getElementById('imageEquipe2').style.display = "block";
+    document.getElementById('section3Text').style.display = "none";
+    document.getElementById('section3Text2').style.display = "block";
+}
+function transitionSection3Gauche(){
+    document.getElementById('imageEquipe2').style.display = "none";
+    document.getElementById('imageEquipe').style.display = "block";
+    document.getElementById('section3Text').style.display = "block";
+    document.getElementById('section3Text2').style.display = "none";
+}
 

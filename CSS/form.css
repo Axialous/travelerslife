@@ -418,7 +418,7 @@ span img{
 .grandMenu{
     display: flex;
 }
-/*******************************************************Keyframes********************************************************************************************************/
+/*******************************************************Keyframes section1********************************************************************************************************/
 @keyframes imageH{
     0%{
         opacity:0;
@@ -429,8 +429,7 @@ span img{
         transform: translateX(0);
     }
 }
-/***************************************************Responsive Design****************************************************************************************************/
-/********************************************************Section1********************************************************************************************************/
+/***************************************************Responsive Design section1****************************************************************************************************/
 @media screen and (max-width:899px){
     #imageCroisiere h1{
         width:min-content;
@@ -1067,5 +1066,281 @@ footer p, footer a {
     #reseaux img {
         width: 60px;
         height: 60px;
+    }
+}
+/****************************************************Section3**********************************************************************/
+#section_3{
+    position: relative;
+}
+.presentation{
+    background-color: whitesmoke;
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 0 rgb(77, 61, 53);
+}
+.imagesPresentation{
+    width: 50%;
+    height: 100%;
+}
+.textPresentation{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.imagePresentation1{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.imagePresentation2{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.textPresentation h2{
+    text-align: center;
+    color: black;
+}
+.section3ronds{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+}
+.section3rondBlanc1{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 5px;
+    border-style: solid;
+    margin-top: 500px;
+}
+.section3rondBlanc2{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 500px;
+}
+.section3rondBlanc4{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 5px;
+    border-style: solid;
+    margin-top: 500px;
+}
+.section3rondBlanc3{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 500px;
+}
+.imageEquipe{
+    position: relative;
+    height: 600px;
+}
+.imageEquipe2{
+    display: none;
+    position: relative;
+    height: 600px;
+}
+.textPresentation p{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.section3fleche{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    bottom: 0;
+    display: flex;
+}
+.section3flecheGauche{
+    width:100%;
+    height: 50%;
+    margin: auto;
+    margin-left: 15px;
+}
+.section3flecheDroite{
+    width:100%;
+    height: 50%;
+    margin: auto;
+    margin-right: 15px;
+    text-align: right;
+}
+#section3Text2{
+    display: none;
+}
+/*************************************************Media Queries section 3**************************************************/
+@media screen and (max-width:1412px){
+    #section_3 .presentation{
+        width:100%
+    }
+}
+@media screen and (max-width:1262px){
+    .textPresentation p{
+        line-height: 1.3;
+    }
+}
+@media screen and (max-width:1118px){
+    .textPresentation p{
+        line-height: 1.1;
+    }
+}
+@media screen and (max-width:939px){
+    .section3ronds{
+        z-index: 3;
+    }
+    .presentation{
+        background-color: whitesmoke;
+        width: 1200px;
+        height: 600px;
+        margin: auto;
+        display: flex;
+        border-radius: 10px;
+        box-shadow: 20px 20px 20px 0 rgb(77, 61, 53);
+    }
+    .imagesPresentation{
+        width: 100%;
+        height: 100%;
+    }
+    .textPresentation{
+        width: 93%;
+        height: 100%;
+        position: absolute;
+    }
+    .imagePresentation1{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .imagePresentation2{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .textPresentation h2{
+        text-align: center;
+        color: white;
+    }
+    .imageEquipe{
+        position: relative;
+        height: 600px;
+    }
+    .imageEquipe2{
+        display: none;
+        position: relative;
+        height: 600px;
+    }
+    .textPresentation p{
+        width: 80%;
+        height: 350px;
+        text-align: justify;
+        line-height: 1.5;
+        color: white;
+        margin: auto;
+        font-size: 2.5vh;
+    }
+    .section3fleche{
+        position: absolute;
+        width: 100%;
+        height: 15%;
+        bottom: 0;
+        display: flex;
+        text-align: center;
+    }
+    .section3flecheGauche{
+        width:100%;
+        height: 50%;
+        margin: auto;
+        margin-left: 15px;
+    }
+    .section3flecheDroite{
+        width:100%;
+        height: 50%;
+        margin: auto;
+        margin-right: 15px;
+        text-align: right;
+        text-align: center;
+    }
+    #section3Text2{
+        display: none;
+    }
+}
+@media screen and (max-width:665px){
+    .textPresentation p{
+        font-size: 2.3vh;
+    }
+}
+@media screen and (max-width:560px){
+    .textPresentation p{
+        font-size: 2.1vh;
+    }
+}
+@media screen and (max-width:501px){
+    .textPresentation p{
+        font-size: 2vh;
+    }
+}
+@media screen and (max-width:398px){
+    .textPresentation p{
+        font-size: 1.9vh;
+    }
+}
+@media screen and (max-width:362px){
+    .textPresentation p{
+        font-size: 1.8vh;
+    }
+}
+@media screen and (max-width:335px){
+    .textPresentation p{
+        font-size: 1.7vh;
+    }
+}
+@media screen and (max-width:300px){
+    .textPresentation p{
+        font-size: 1.6vh;
+    }
+}
+@media screen and (min-height:900px){
+    .textPresentation p{
+        line-height: 1.3;
+    }
+}
+@media screen and (min-height:980px){
+    .textPresentation p{
+        line-height: 1.1;
+    }
+}
+@media screen and (min-height:1040px){
+    .textPresentation p{
+        font-size: 2.5vh;
+    }
+}
+@media screen and (min-height:1200px){
+    .textPresentation p{
+        font-size: 2.3vh;
+    }
+}
+@media screen and (min-height:1300px){
+    .textPresentation p{
+        font-size: 2.1vh;
     }
 }
