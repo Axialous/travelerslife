@@ -1000,6 +1000,9 @@ footer p, footer a {
     }
 }
 @media screen and (max-width:939px){
+    .section3ronds{
+        z-index: 3;
+    }
     .presentation{
         background-color: whitesmoke;
         width: 1200px;
@@ -1043,7 +1046,7 @@ footer p, footer a {
     }
     .textPresentation p{
         width: 80%;
-        height: 390px;
+        height: 350px;
         text-align: justify;
         line-height: 1.5;
         color: white;
@@ -1109,5 +1112,30 @@ footer p, footer a {
 @media screen and (max-width:300px){
     .textPresentation p{
         font-size: 1.6vh;
+    }
+}
+@media screen and (min-height:900px){
+    .textPresentation p{
+        line-height: 1.3;
+    }
+}
+@media screen and (min-height:980px){
+    .textPresentation p{
+        line-height: 1.1;
+    }
+}
+@media screen and (min-height:1040px){
+    .textPresentation p{
+        font-size: 2.5vh;
+    }
+}
+@media screen and (min-height:1200px){
+    .textPresentation p{
+        font-size: 2.3vh;
+    }
+}
+@media screen and (min-height:1300px){
+    .textPresentation p{
+        font-size: 2.1vh;
     }
 }
