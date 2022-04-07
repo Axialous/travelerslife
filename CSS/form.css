@@ -1574,6 +1574,7 @@ footer p, footer a {
 }
 .redirection1:hover{
     cursor: pointer;
+    transform: scale(1.01);
 }
 .redirection2{
     width: 50%;
@@ -1586,6 +1587,7 @@ footer p, footer a {
 }
 .redirection2:hover{
     cursor: pointer;
+    transform: scale(1.01);
 }
 @media screen and (max-width: 750px){
     .redirection{
@@ -1621,5 +1623,10 @@ footer p, footer a {
     }
     .redirection .titre{
         padding-top: 100px;
+    }
+}
+@media screen and (max-width:1226px){
+    .textAPropos{
+        line-height: 1.1 !important;
     }
 }
