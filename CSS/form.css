@@ -712,6 +712,8 @@ blockquote img {
 
     transition: 500ms;
 }
+/* A propos de nos hôtels*/
+
 
 /* Section 4 */
 
@@ -1384,8 +1386,7 @@ footer p, footer a {
     margin-right: 50px;
     text-align: justify;
     line-height: 1.5;
-    font-size: 115%;
-    height: 30vh;
+    font-size: 120%;
 }
 .section3fleche{
     position: absolute;
@@ -1495,26 +1496,37 @@ footer p, footer a {
         display: none;
     }
 }
+@media screen and (max-width:679px){
+    .textPresentation p{
+        line-height: 1.3;
+    }
+}
+@media screen and (max-width:390px){
+    .textPresentation p{
+        line-height: 1.1;
+    }
+}
+@media screen and (max-width:335px){
+    .textPresentation p{
+        font-size: 115%;
+    }
+}
+@media screen and (max-width:307px){
+    .textPresentation p{
+        font-size: 110%;
+    }
+}
+@media screen and (max-width:279px){
+    .textPresentation p{
+        font-size: 100%;
+    }
+}
+
 @media screen and (max-width:740px){
     .section3flecheGauche{
         margin-top: 50px;
     }
     .section3flecheDroite{
         margin-top: 50px;
-    }
-}
-@media screen and (max-width:405px){
-    .textPresentation p{
-        line-height: 1.3;
-    }
-}
-@media screen and (max-width:352px){
-    .textPresentation p{
-        line-height: 1.1;
-    }
-}
-@media screen and (max-width:305px){
-    .textPresentation p{
-        font-size: 100%;
     }
 }
