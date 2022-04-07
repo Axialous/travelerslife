@@ -252,7 +252,7 @@ header #offres:hover {
 }
 
 /*****************************************************section1********************************************************************************/
-#section_1{
+#accueil{
     padding: 0;
 }
 #imageHotel{
@@ -316,7 +316,7 @@ span img{
     border-style: none;
     cursor: url(../img/flecheGauche.svg),pointer;
 }
-#section_1 h1{
+#accueil h1{
     text-align: center;
     color: white;
     font-family: 'NoticiaText-Bold';
@@ -537,7 +537,7 @@ span img{
     #imageHotel{
         height: 650px;
     }
-    #section_1 h1{
+    #accueil h1{
         padding-top: 300px;
     }
     #rondBlanc{
@@ -615,10 +615,10 @@ span img{
     }
 }
 @media screen and (max-width:349px){
-    #section_1 h1 {
+    #accueil h1 {
         width: 100%;
     }
-    #section_1 h1 span, #section_1 h1 img {
+    #accueil h1 span, #accueil h1 img {
         width: 93%;
     }
 }
@@ -627,12 +627,12 @@ span img{
         height: 7px;
     }
 
-    #section_1 h1 {
+    #accueil h1 {
         font-size: 50px;
     }
 }
 
-#section_2 {
+#citation {
     text-align: center;
 }
 
@@ -665,18 +665,18 @@ blockquote img {
 
 /* Section 4 */
 
-#section_4 {
+#voyages {
     text-align: center;
 }
 
-#section_4 article {
+#voyages article {
     text-align: left;
 
     width: 1200px;
     margin: auto;
 }
 
-#section_4 a {
+#voyages a {
     position: relative;
 
     background-color: rgb(255, 255, 255);
@@ -692,11 +692,11 @@ blockquote img {
     transition: 250ms, transform 1000ms;
 }
 
-#section_4 a:hover {
+#voyages a:hover {
     transform: scale(1.01);
 }
 
-#section_4 a img {
+#voyages a img {
     color: rgb(77, 61, 53);
 
     border-radius: 10px 10px 0 0;
@@ -707,7 +707,7 @@ blockquote img {
     transition: 250ms;
 }
 
-#section_4 a h4 {
+#voyages a h4 {
     position: absolute;
     top: 0;
     left: 0;
@@ -727,14 +727,14 @@ blockquote img {
     transition: opacity 500ms, transform 0ms 1000ms;
 }
 
-#section_4 a:hover h4 {
+#voyages a:hover h4 {
     opacity: 1;
     transform: translateX(0) translateY(0);
 
     transition: 1000ms;
 }
 
-#section_4 li {
+#voyages li {
     color: rgb(77, 61, 53);
     font-family: 'Asap-Italic', sans-serif;
     font-size: 20px;
@@ -744,11 +744,11 @@ blockquote img {
     margin: 20px;
 }
 
-#section_4 a>p {
+#voyages a>p {
     margin: 20px;
 }
 
-#section_4 .offre-speciale {
+#voyages .offre-speciale {
     position: absolute;
     bottom: 0;
 }
@@ -825,14 +825,14 @@ footer p, footer a {
 
 @media screen and (max-width: 1412px) {
 
-    #section_4 article {
+    #voyages article {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 1376px) {
 
-    #section_4 article {
+    #voyages article {
         justify-content: space-around;
     }
 }
@@ -851,7 +851,7 @@ footer p, footer a {
         padding: 70px 3.5%;
     }
 
-    #section_4 a h4 {
+    #voyages a h4 {
         opacity: 1;
         transform: translateX(0) translateY(0);
 
@@ -968,17 +968,17 @@ footer p, footer a {
         width: 25%;
     }
 
-    #section_4 a {
+    #voyages a {
         height: 374px;
         width: 305px;
     }
 
-    #section_4 a img {
+    #voyages a img {
         height: 202px;
         width: 305px;
     }
 
-    #section_4 a h4 {
+    #voyages a h4 {
         height: 202px;
         width: 285px;
     }
@@ -1023,18 +1023,18 @@ footer p, footer a {
         left: 3.5%;
     }
 
-    #section_4 a {
+    #voyages a {
         height: 336px;
         width: 240px;
         margin: 20px 0;
     }
 
-    #section_4 a img {
+    #voyages a img {
         height: 160px;
         width: 240px;
     }
 
-    #section_4 a h4 {
+    #voyages a h4 {
         height: 160px;
         width: 240px;
     }
@@ -1069,7 +1069,7 @@ footer p, footer a {
     }
 }
 /****************************************************Section3**********************************************************************/
-#section_3{
+#presentation{
     position: relative;
 }
 .presentation{
@@ -1190,7 +1190,7 @@ footer p, footer a {
 }
 /*************************************************Media Queries section 3**************************************************/
 @media screen and (max-width:1412px){
-    #section_3 .presentation{
+    #presentation .presentation{
         width:100%
     }
 }
