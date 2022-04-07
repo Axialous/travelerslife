@@ -1195,6 +1195,7 @@ footer p, footer a {
     margin-right: 50px;
     text-align: justify;
     line-height: 1.5;
+    font-size: 120%;
 }
 .section3fleche{
     position: absolute;
@@ -1287,7 +1288,6 @@ footer p, footer a {
         line-height: 1.5;
         color: white;
         margin: auto;
-        font-size: 2.5vh;
     }
     .section3fleche{
         position: absolute;
@@ -1315,63 +1315,36 @@ footer p, footer a {
         display: none;
     }
 }
-@media screen and (max-width:665px){
-    .textPresentation p{
-        font-size: 2.3vh;
-    }
-}
-@media screen and (max-width:560px){
-    .textPresentation p{
-        font-size: 2.1vh;
-    }
-}
-@media screen and (max-width:501px){
-    .textPresentation p{
-        font-size: 2vh;
-    }
-}
-@media screen and (max-width:398px){
-    .textPresentation p{
-        font-size: 1.9vh;
-    }
-}
-@media screen and (max-width:362px){
-    .textPresentation p{
-        font-size: 1.8vh;
-    }
-}
-@media screen and (max-width:335px){
-    .textPresentation p{
-        font-size: 1.7vh;
-    }
-}
-@media screen and (max-width:300px){
-    .textPresentation p{
-        font-size: 1.6vh;
-    }
-}
-@media screen and (min-height:900px){
+@media screen and (max-width:679px){
     .textPresentation p{
         line-height: 1.3;
     }
 }
-@media screen and (min-height:980px){
+@media screen and (max-width:390px){
     .textPresentation p{
         line-height: 1.1;
     }
 }
-@media screen and (min-height:1040px){
+@media screen and (max-width:335px){
     .textPresentation p{
-        font-size: 2.5vh;
+        font-size: 115%;
     }
 }
-@media screen and (min-height:1200px){
+@media screen and (max-width:307px){
     .textPresentation p{
-        font-size: 2.3vh;
+        font-size: 110%;
     }
 }
-@media screen and (min-height:1300px){
+@media screen and (max-width:279px){
     .textPresentation p{
-        font-size: 2.1vh;
+        font-size: 100%;
+    }
+}
+@media screen and (max-width:740px){
+    .section3flecheGauche{
+        margin-top: 50px;
+    }
+    .section3flecheDroite{
+        margin-top: 50px;
     }
 }
