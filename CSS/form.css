@@ -987,33 +987,43 @@ footer p, footer a {
 @keyframes defilement-accueil-1 {
     0% {
         transform: translateX(0) scale(1.01);
+        z-index: 1;
     }
     20% {
         transform: translateX(0) scale(1.01);
+        z-index: 1;
     }
     25% {
         transform: translateX(-100%) scale(1.01);
+        z-index: 0;
     }
-    25.001% {
-        transform: translateX(300%) scale(1.01);
+    44.999% {
+        transform: translateX(-100%) scale(1.01);
+        z-index: 0;
     }
     45% {
         transform: translateX(300%) scale(1.01);
+        z-index: 1;
     }
     50% {
         transform: translateX(200%) scale(1.01);
+        z-index: 1;
     }
     70% {
         transform: translateX(200%) scale(1.01);
+        z-index: 1;
     }
     75% {
         transform: translateX(100%) scale(1.01);
+        z-index: 1;
     }
     95% {
         transform: translateX(100%) scale(1.01);
+        z-index: 1;
     }
     100% {
         transform: translateX(0) scale(1.01);
+        z-index: 1;
     }
 }
 
@@ -1033,8 +1043,8 @@ footer p, footer a {
     50% {
         transform: translateX(-200%) scale(1.01);
     }
-    50.001% {
-        transform: translateX(200%) scale(1.01);
+    69.999% {
+        transform: translateX(-200%) scale(1.01);
     }
     70% {
         transform: translateX(200%) scale(1.01);
@@ -1072,8 +1082,8 @@ footer p, footer a {
     75% {
         transform: translateX(-300%) scale(1.01);
     }
-    75.001% {
-        transform: translateX(100%) scale(1.01);
+    94.999% {
+        transform: translateX(-300%) scale(1.01);
     }
     95% {
         transform: translateX(100%) scale(1.01);
@@ -1087,8 +1097,8 @@ footer p, footer a {
     0% {
         transform: translateX(-400%) scale(1.01);
     }
-    0.001% {
-        transform: translateX(0%) scale(1.01);
+    19.999% {
+        transform: translateX(-400%) scale(1.01);
     }
     20% {
         transform: translateX(0) scale(1.01);
