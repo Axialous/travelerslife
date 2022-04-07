@@ -632,6 +632,35 @@ span img{
     }
 }
 
+/* Accueil des pages de categories */
+
+#accueil-categorie {
+    display: flex;
+
+    height: 48vw;
+    padding: 0;
+}
+
+#accueil-categorie figure {
+    flex-shrink: 3;
+
+    background-position: center;
+    background-size: cover;
+    background-color: chocolate;
+    height: 100%;
+    width: 25%;
+
+    transition: 500ms;
+}
+
+#accueil-categorie figure:hover {
+    width: 38%;
+}
+
+#accueil-categorie figure:nth-child(2), #accueil-categorie figure:nth-child(4) {
+    background-color: chartreuse;
+}
+
 #citation {
     text-align: center;
 }

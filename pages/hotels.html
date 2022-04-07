@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <title>Hotels</title>
+        <link rel="icon" href="../img/decorations/valise.png">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/form.css"/>
+        <script src="../JavaScript/JavaScript.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <input type="checkbox">
+            <img src="../img/decorations/burger.svg" alt="menu">
+
+            <a href="#"><h1 class="logo">Traveler's life<img src="../img/decorations/valise.png" alt="valise"></h1></a>
+
+            <form id="recherche">
+                <input class="barre" type="text" name="text">
+                <input class="envoi" type="submit" name="submit" class="submit" value="">
+            </form>
+
+            <nav>
+                <a href="#section_4" id="offres">Offres spéciales</a>
+                <a href="#contacts">Contact</a>
+            </nav>
+        </header>
+
+        <section id="accueil-categorie">
+            <figure style="background-image: url(../img/acceuilHotel1.jpg)"></figure>
+            <figure style="background-image: url(../img/acceuilHotel2.jpg)"></figure>
+            <figure style="background-image: url(../img/acceuilHotel3.jpg)"></figure>
+            <figure style="background-image: url(../img/acceuilHotel4.jpg)"></figure>
+        </section>
+
+        <section id="citation">
+            <blockquote>
+                <p>« Le plus beau voyage, c'est celui qu'on n'a pas encore fait. »</p>
+                <img src="../img/decorations/ligne_citation.svg" alt="Ligne décorative"><cite>Loïck Peyron</cite><img src="../img/decorations/ligne_citation.svg" alt="Ligne décorative">
+            </blockquote>
+        </section>
+
+        <section id="presentation">
+                <div class="presentation">
+                    <div class="imagesPresentation">
+                        <div class="imageEquipe" id="imageEquipe">
+                            <div class="section3ronds">
+                                <div class="section3rondBlanc1"></div>
+                                <div onclick="transitionSection3Droite()" class="section3rondBlanc2"></div>
+                            </div>
+                            <img class="imagePresentation1" src="../img/imagePresentation1.jpg" alt="imageAgence">
+
+                        </div>
+                        <div class="imageEquipe2" id="imageEquipe2">
+                            <div class="section3ronds">
+                                <div onclick="transitionSection3Gauche()" class="section3rondBlanc3"></div>
+                                <div class="section3rondBlanc4"></div>
+                            </div>
+                            <img class="imagePresentation2" src="../img/imagePresentation2.jpg" alt="imageAgence">
+                        </div>
+                    </div>
+                    <div class="textPresentation">
+                        <div id="section3Text">
+                            <h2>Qui sommes-nous ?</h2>
+                            <p> &nbsp;&nbsp; <em>Travelers Life</em> est une agence de voyages sur-mesure et personnalisables. Notre agence, située en plein cœur de Nevers, est spécialisée dans la co-conception de voyages qui vous ressemblent. Nos conseillers experts, originaires de la destination qu’ils représentent, sont à votre écoute pour réaliser vos envies de voyages aux quatre coins du monde.</p>
+                        </div>
+                        <div id="section3Text2">
+                            <h2>Nos valeurs</h2>
+                            <p> &nbsp;&nbsp; Nous vous mettons au centre de notre réflexion. Nous co-concevons nos voyages avec vous et pour vous, sur l’ensemble de nos destinations. Nos conseillers experts explorent, avec vous, les meilleures prestations pour répondre à vos envies et vos attentes. En fonction de votre profil, de votre groupe de voyageurs et de votre budget, nous élaborons ensemble le voyage qui vous ressemble. Nous vous accompagnons avant, pendant et après votre voyage, afin que celui-ci soit à la hauteur de vos attentes.</p>
+                        </div>
+                        <div class="section3fleche">
+                            <div class="section3flecheGauche">
+                                <img onclick="transitionSection3Gauche()" src="../img/section3FlecheGauche.png" height="50px">
+                            </div>
+                            <div class="section3flecheDroite">
+                                <img onclick="transitionSection3Droite()" src="../img/section3FlecheDroite.png" height="50px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="voyages">
+            <h2>Nos hotels</h2>
+            <article class="ligne">
+                <a href="#">
+                    <img src="../img/offresSpecialesHotels.jpg" alt="Hôtel">
+                    <h4>Italie</h4>
+                    <ul>
+                        <li>Voyage en 2 étapes</li>
+                        <li>Durée 13 jours</li>
+                    </ul>
+                    <p class="offre-speciale"><strong>OFFRE SPÉCIALE</strong></p>
+                </a>
+                
+                <a href="#">
+                    <img src="../img/offresSpecialesCroisieres.jpg" alt="Croisière">
+                    <h4>Caraïbes</h4>
+                    <ul>
+                        <li>Voyage en 3 escales</li>
+                        <li>Durée 6 jours.</li>
+                    </ul>
+                    <p class="offre-speciale"><strong>OFFRE SPÉCIALE</strong></p>
+                </a>
+                
+                <a href="#">
+                    <img src="../img/offresSpecialesSafaris.jpg" alt="Safari">
+                    <h4>Botswana</h4>
+                    <ul>
+                        <li>Voyage en 3 étapes</li>
+                        <li>Durée 10 jours</li>
+                    </ul>
+                    <p class="offre-speciale"><strong>OFFRE SPÉCIALE</strong></p>
+                </a>
+            </article>
+        </section>
+
+        <section id="idees">
+        </section>
+
+        <footer>
+            <div class="ligne">
+                <div>
+                    <a href="#"><h1 class="logo">Traveler's life<img src="../img/decorations/valise.png" alt="valise"></h1></a>
+                    <a href="#">Mentions légales – CGV</a>
+                </div>
+
+                <div class="separateur-vertical"></div>
+
+                <div id="reseaux">
+                    <h3>Rejoignez-nous</h3>
+                    <div class="ligne">
+                        <button><img src="../img/decorations/facebook.png" alt="Facebook"></button>
+                        <button><img src="../img/decorations/instagram.png" alt="Instagram"></button>
+                        <button><img src="../img/decorations/twitter.png" alt="Twitter"></button>
+                    </div>
+                </div>
+
+                <div class="separateur-vertical"></div>
+
+                <div id="contacts">
+                    <h3>Contact</h3>
+                    <div>
+                        <p>Adresse : 20 rue de la République,<br>58000 Nevers</p>
+                        <p>Téléphone : 03.67.48.59.20</p>
+                        <p>E-Mail : contact@travelerslife.com</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p>Tous droits réservés @Traveler's life</p>
+        </footer>
+    </body>
+
+</html>
