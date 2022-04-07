@@ -18,7 +18,7 @@
             <input type="checkbox">
             <img src="../img/decorations/burger.svg" alt="menu">
 
-            <a href="#"><h1 class="logo">Traveler's life<img src="../img/decorations/valise.png" alt="valise"></h1></a>
+            <a href="../index.html"><h1 class="logo">Traveler's life<img src="../img/decorations/valise.png" alt="valise"></h1></a>
 
             <form id="recherche">
                 <input class="barre" type="text" name="text">
@@ -26,7 +26,15 @@
             </form>
 
             <nav>
-                <a href="#section_4" id="offres">Offres spéciales</a>
+                <div class="menu_deroulant">
+                    <input type="checkbox">
+                    <p>Catégories</p>
+                    <div>
+                        <a href="#" >Hôtels</a>
+                        <a href="croisieres.html">Croisières</a>
+                        <a href="safaris.html">Safaris</a>
+                    </div>
+                </div>
                 <a href="#contacts">Contact</a>
             </nav>
         </header>
@@ -45,8 +53,8 @@
 
         <section id="citation">
             <blockquote>
-                <p>« Rester, c’est exister. Voyager, c’est vivre »</p>
-                <img src="../img/decorations/ligne_citation.svg" alt="Ligne décorative"><cite>Gustave Nadaud</cite><img src="../img/decorations/ligne_citation.svg" alt="Ligne décorative">
+                <p>« Rester, c’est exister. Voyager, c’est vivre »</p>
+                <cite><img src="../img/decorations/ligne_citation.svg" alt="Ligne décorative">Gustave Nadaud<img src="../img/decorations/ligne_citation.svg" alt="Ligne décorative"></cite>
             </blockquote>
         </section>
 
@@ -99,8 +107,8 @@
         <section id="voyages">
             <h2>Nos hotels</h2>
             <article class="ligne">
-                <a href="#">
-                    <img src="../img/offresSpecialesHotels.jpg" alt="Hôtel">
+                <a href="hotels/italie">
+                    <img src="../img/offresSpecialesHotels.jpg" alt="Hôtel en Italie">
                     <h4>Italie</h4>
                     <ul>
                         <li>Voyage en 2 étapes</li>
@@ -109,8 +117,8 @@
                     <p class="offre-speciale"><strong>OFFRE SPÉCIALE</strong></p>
                 </a>
                 
-                <a href="#">
-                    <img src="../img/offrePortugal.jpg" alt="Croisière">
+                <a href="hotels/portugal">
+                    <img src="../img/offrePortugal.jpg" alt="Hôtel au Portugal">
                     <h4>Portugal</h4>
                     <ul>
                         <li>Voyage en 1 étape</li>
@@ -118,8 +126,8 @@
                     </ul>
                 </a>
                 
-                <a href="#">
-                    <img src="../img/offreCorse.jpg" alt="Safari">
+                <a href="hotels/corse">
+                    <img src="../img/offreCorse.jpg" alt="Hôtel en Corse">
                     <h4>Corse</h4>
                     <ul>
                         <li>Voyage en 2 étapes</li>

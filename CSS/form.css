@@ -90,21 +90,27 @@ strong {
     font-size: inherit;
 }
 
-nav a {
+nav a, nav p {
     color: rgb(255, 255, 255);
     font-family: arial, sans-serif;
     font-size: 20px;
 
-    margin: 5px;
+    margin: 15px;
 
     text-decoration: underline transparent;
 
     transition: 250ms;
 }
 
-nav a:hover {
+nav a:hover, nav input:hover + p {
     text-decoration: underline rgb(255, 255, 255);
 }
+
+nav input:checked + p {
+    text-decoration: underline rgb(255, 255, 255);
+}
+
+
 
 img {
     color: rgb(255, 255, 255);
@@ -170,7 +176,7 @@ header>input, header>img {
     display: flex;
     align-items: center;
 
-    padding: 7px;
+    padding: 15px;
 }
 
 #recherche .barre {
@@ -196,7 +202,7 @@ header>input, header>img {
 
     border-bottom: solid 1px rgb(255, 255, 255);
 
-    height: 20px;
+    height: 21px;
     width: 200px;
 
     transform: scale(100%);
@@ -232,8 +238,59 @@ header>input, header>img {
 }
 
 header nav {
+    position: relative;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
     width: 280px;
 }
+
+.menu_deroulant {
+    position: relative;
+    height: 53px;
+}
+
+.menu_deroulant input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    opacity: 0;
+
+    width: 100%;
+    height: 100%;
+
+    cursor: s-resize;
+}
+
+.menu_deroulant input:checked {
+    cursor: n-resize;
+}
+
+.menu_deroulant div {
+
+    display: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_deroulant div * {
+    display: none;
+}
+
+.menu_deroulant input:checked ~ div {
+    display: block;
+}
+
+.menu_deroulant input:checked ~ div * {
+    display: block;
+}
+
+
 
 header #offres {
     text-decoration: none;
@@ -241,7 +298,7 @@ header #offres {
     border: solid 1px rgb(255, 255, 255);
     border-radius: 5px;
 
-    margin: 20px;
+    margin: 10px;
     padding: 5px;
 }
 
@@ -698,19 +755,26 @@ blockquote p {
 }
 
 blockquote cite {
+    display: flex;
+    justify-content: center;
+
     color: rgb(77, 61, 53);
     font-family: 'Asap-Italic', sans-serif;
     font-size: 18px;
 
-    margin: 12px 0;
+    white-space: nowrap;
+
+    padding: 12px 10%;
 }
 
 blockquote img {
-    width: 35%;
+    flex: 1;
 
     margin: 0 5px;
 
     transition: 500ms;
+
+    width: 5%;
 }
 /* A propos de nos hôtels*/
 
@@ -893,6 +957,8 @@ footer p, footer a {
 
     #accueil-categorie figure {
         flex-shrink: 0;
+
+        transform-origin: left bottom;
 
         width: 33.334% !important;
     }
@@ -1113,7 +1179,7 @@ footer p, footer a {
     #recherche {
         position: absolute;
         left: -200px;
-        top: 120px;
+        top: 110px;
         
         width: min-content;
 
@@ -1123,6 +1189,7 @@ footer p, footer a {
     header nav {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
 
         position: absolute;
         left: -200px;
@@ -1138,6 +1205,10 @@ footer p, footer a {
 
         white-space: nowrap;
         width: min-content;
+    }
+
+    .menu_deroulant {
+        height: auto;
     }
 
     header>input:checked ~ #recherche {
@@ -1180,10 +1251,6 @@ footer p, footer a {
 
     blockquote p {
         white-space: normal;
-    }
-
-    blockquote img {
-        width: 25%;
     }
 
     #voyages a {
@@ -1324,7 +1391,6 @@ footer p, footer a {
 }
 .textPresentation h2{
     text-align: center;
-    color: black;
 }
 .section3ronds{
     position: absolute;
