@@ -1164,6 +1164,8 @@ footer p, footer a {
     margin-right: 50px;
     text-align: justify;
     line-height: 1.5;
+    font-size: 115%;
+    height: 30vh;
 }
 .section3fleche{
     position: absolute;
@@ -1192,16 +1194,6 @@ footer p, footer a {
 @media screen and (max-width:1412px){
     #presentation .presentation{
         width:100%
-    }
-}
-@media screen and (max-width:1262px){
-    .textPresentation p{
-        line-height: 1.3;
-    }
-}
-@media screen and (max-width:1118px){
-    .textPresentation p{
-        line-height: 1.1;
     }
 }
 @media screen and (max-width:939px){
@@ -1256,7 +1248,6 @@ footer p, footer a {
         line-height: 1.5;
         color: white;
         margin: auto;
-        font-size: 2.5vh;
     }
     .section3fleche{
         position: absolute;
@@ -1284,63 +1275,26 @@ footer p, footer a {
         display: none;
     }
 }
-@media screen and (max-width:665px){
-    .textPresentation p{
-        font-size: 2.3vh;
+@media screen and (max-width:740px){
+    .section3flecheGauche{
+        margin-top: 50px;
+    }
+    .section3flecheDroite{
+        margin-top: 50px;
     }
 }
-@media screen and (max-width:560px){
-    .textPresentation p{
-        font-size: 2.1vh;
-    }
-}
-@media screen and (max-width:501px){
-    .textPresentation p{
-        font-size: 2vh;
-    }
-}
-@media screen and (max-width:398px){
-    .textPresentation p{
-        font-size: 1.9vh;
-    }
-}
-@media screen and (max-width:362px){
-    .textPresentation p{
-        font-size: 1.8vh;
-    }
-}
-@media screen and (max-width:335px){
-    .textPresentation p{
-        font-size: 1.7vh;
-    }
-}
-@media screen and (max-width:300px){
-    .textPresentation p{
-        font-size: 1.6vh;
-    }
-}
-@media screen and (min-height:900px){
+@media screen and (max-width:388px){
     .textPresentation p{
         line-height: 1.3;
     }
 }
-@media screen and (min-height:980px){
+@media screen and (max-width:335px){
     .textPresentation p{
         line-height: 1.1;
     }
 }
-@media screen and (min-height:1040px){
+@media screen and (max-width:289px){
     .textPresentation p{
-        font-size: 2.5vh;
-    }
-}
-@media screen and (min-height:1200px){
-    .textPresentation p{
-        font-size: 2.3vh;
-    }
-}
-@media screen and (min-height:1300px){
-    .textPresentation p{
-        font-size: 2.1vh;
+        font-size: 100%;
     }
 }
