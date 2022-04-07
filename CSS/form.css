@@ -1541,13 +1541,15 @@ footer p, footer a {
     display: flex;
     width: 100% !important;
     height: 60vh;
+    justify-content: space-between;
 }
 .redirection .titre{
     width: 100%;
-    text-align: center;
     height: 100%;
-    border-color: blue;
-    border-style: solid;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
 }
 .contenerTitre{
     width: 100%;
@@ -1568,6 +1570,7 @@ footer p, footer a {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
+    border-style: solid;
 }
 .redirection1:hover{
     cursor: pointer;
@@ -1579,7 +1582,44 @@ footer p, footer a {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
+    border-style: solid;
 }
 .redirection2:hover{
     cursor: pointer;
+}
+@media screen and (max-width: 750px){
+    .redirection{
+        flex-wrap: wrap;
+    }
+    .redirection{
+        display: flex;
+        width: 100% !important;
+        height: 60vh;
+        justify-content: space-between;
+    }
+    .contenerTitre{
+        width: 100%;
+        height: 100%;
+    }
+    .redirection span img{
+        height: 5px;
+        border-radius: 10px;
+        width: 20%;
+    }
+    .redirection1{
+        width: 100%;
+        border-style: solid;
+        background-position-y: center;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+    .redirection2{
+        width: 100%;
+        border-style: solid;
+        background-position-y: center;
+        margin-right: 5px;
+    }
+    .redirection .titre{
+        padding-top: 100px;
+    }
 }
