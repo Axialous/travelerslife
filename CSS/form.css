@@ -1655,6 +1655,8 @@ footer p, footer a {
     background-repeat: no-repeat;
     border-radius: 10px;
     border-style: solid;
+    border-color: rgb(77, 61, 53);
+    transition: 1000ms;
 }
 .redirection1:hover{
     cursor: pointer;
@@ -1667,6 +1669,8 @@ footer p, footer a {
     background-repeat: no-repeat;
     border-radius: 10px;
     border-style: solid;
+    border-color: rgb(77, 61, 53);
+    transition: 1000ms;
 }
 .redirection2:hover{
     cursor: pointer;
