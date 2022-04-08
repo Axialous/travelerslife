@@ -1717,3 +1717,23 @@ footer p, footer a {
         line-height: 1.1 !important;
     }
 }
+
+/*****************************************************Caractéristiques voyages***************************************************************/
+#caracteristique{
+    border-style: solid;
+    height: 150vh;
+    justify-content: center;
+}
+.imagesDuVoyage{
+    border-style: solid;
+    height: 600px;
+    width: 80%;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:680px){
+    .imagesDuVoyage{
+        width: 100%;
+    }
+}
