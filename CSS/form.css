@@ -270,6 +270,10 @@ header nav {
     cursor: n-resize;
 }
 
+.menu_deroulant input:checked:hover + p {
+    text-decoration: underline transparent;
+}
+
 .menu_deroulant div {
 
     display: none;
