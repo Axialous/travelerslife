@@ -1643,7 +1643,6 @@ footer p, footer a {
 .redirection1{
     width: 50%;
     margin-right: 5px;
-    background-image: url(../img/acceuilSafari.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -1656,7 +1655,6 @@ footer p, footer a {
 .redirection2{
     width: 50%;
     margin-left: 5px;
-    background-image: url(../img/acceuilCroisiere.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
