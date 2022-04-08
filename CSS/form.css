@@ -941,6 +941,15 @@ footer p, footer a {
 
 @media screen and (max-width: 1412px) {
 
+    blockquote {
+        width: auto;
+        max-width: 750px;
+    }
+
+    blockquote p {
+        white-space: normal;
+    }
+
     #voyages article {
         width: 100%;
     }
@@ -1254,15 +1263,6 @@ footer p, footer a {
         flex-direction: column;
     }
 
-    blockquote {
-        width: auto;
-        max-width: 450px;
-    }
-
-    blockquote p {
-        white-space: normal;
-    }
-
     #voyages a {
         height: 374px;
         width: 305px;
@@ -1320,6 +1320,10 @@ footer p, footer a {
 
     #accueil-categorie figure {
         width: 100% !important;
+    }
+
+    #accueil-categorie>div h2 {
+        font-size: 55px;
     }
 
     #voyages a {
@@ -1643,7 +1647,6 @@ footer p, footer a {
 .redirection1{
     width: 50%;
     margin-right: 5px;
-    background-image: url(../img/acceuilSafari.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -1656,7 +1659,6 @@ footer p, footer a {
 .redirection2{
     width: 50%;
     margin-left: 5px;
-    background-image: url(../img/acceuilCroisiere.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
