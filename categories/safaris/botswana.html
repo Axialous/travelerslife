@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <title>Traveler's life | Botswana</title>
+        <link rel="icon" href="../../img/decorations/icone_valise.png">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../CSS/form.css"/>
+        <script src="../../JavaScript/JavaScript.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <input type="checkbox">
+            <img src="../../img/decorations/burger.svg" alt="menu">
+
+            <a href="../../index.html"><h1 class="logo">Traveler's life<img src="../../img/decorations/valise.png" alt="valise"></h1></a>
+
+            <form id="recherche">
+                <input class="barre" type="text" name="text">
+                <input class="envoi" type="submit" name="submit" class="submit" value="">
+            </form>
+
+            <nav>
+                <div class="menu_deroulant">
+                    <input type="checkbox">
+                    <p>Catégories</p>
+                    <div>
+                        <a href="../hotels.html" >Hôtels</a>
+                        <a href="../croisieres.html">Croisières</a>
+                        <a href="../safaris.html">Safaris</a>
+                    </div>
+                </div>
+                <a href="#contacts">Contact</a>
+            </nav>
+        </header>
+
+        <section id="accueil">
+                <div id="imageHotel">
+                    <h1 class="titre"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Hôtels<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+                    <div class="ronds">
+                        <div class="rondBlanc1" id="rondBlanc"></div>
+                        <div onclick="transitionAcceuilDroite()" class="rondBlanc2" id="rondBlanc"></div>
+                        <div onclick="transitionAcceuilDroiteDirect()" class="rondBlanc3" id="rondBlanc"></div>
+                    </div>
+                    <div class="fleche">
+                        <div class="flecheGauche">
+                            <button class="gauche"></button>
+                        </div>
+                        <div class="flecheDroite">
+                            <button onclick="transitionAcceuilDroite()" class="droite"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="imageCroisiere">
+                    <h1 class="titre"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Croisières<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+                    <div class="ronds">
+                        <div onclick="transitionAcceuilGauche2()" class="rondBlanc4" id="rondBlanc"></div>
+                        <div class="rondBlanc5" id="rondBlanc"></div>
+                        <div onclick="transitionAcceuilDroite2()" class="rondBlanc6" id="rondBlanc"></div>
+                    </div>
+                    <div class="fleche">
+                        <div class="flecheGauche">
+                            <button onclick="transitionAcceuilGauche2()" class="gauche"></button>
+                        </div>
+                        <div class="flecheDroite">
+                            <button onclick="transitionAcceuilDroite2()" class="droite"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="imageSafari">
+                    <h1 class="titre"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Safaris<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+                    <div class="ronds">
+                        <div onclick="transitionAcceuilDroiteDirectR()" class="rondBlanc7" id="rondBlanc"></div>
+                        <div onclick="transitionAcceuilGauche3()" class="rondBlanc8" id="rondBlanc"></div>
+                        <div class="rondBlanc9" id="rondBlanc"></div>
+                    </div>
+                    <div class="fleche">
+                        <div class="flecheGauche">
+                            <button onclick="transitionAcceuilGauche3()" class="gauche"></button>
+                        </div>
+                        <div class="flecheDroite">
+                            <button class="droite"></button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="citation">
+            <blockquote>
+                <p>« Si vous pensez que l'aventure est dangereuse, je vous propose d'essayer la routine… Elle est mortelle ! »</p>
+                <cite><img src="../../img/decorations/ligne_citation.svg" alt="Ligne décorative"> Paulo Coelho<img src="../../img/decorations/ligne_citation.svg" alt="Ligne décorative"></cite>
+            </blockquote>
+        </section>
+
+        <section id="caracteristique">
+        </section>
+
+        <section id="formulaire">
+        </section>
+
+        <section id="idees">
+            <h2>Besoin d'autres idées ?</h2>
+            <div class="redirection">
+                <div href="zimbabwe.html" class="redirection1" style="background-image: url(../../img/offreZimbabwe.jpg)">
+                    <div class="contenerTitre">
+                    <h4 class="titre"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Zimbabwe<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h4>
+                    </div>
+                </div>
+                <div href="tanzanie.html" class="redirection2" style="background-image: url(../../img/offreTanzanie.jpg)">
+                    <div class="contenerTitre">
+                        <h4 class="titre"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Tanzanie<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h4>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <footer>
+            <div class="ligne">
+                <div>
+                    <a href="#"><h1 class="logo">Traveler's life<img src="../../img/decorations/valise.png" alt="valise"></h1></a>
+                    <a href="#">Mentions légales – CGV</a>
+                </div>
+
+                <div class="separateur-vertical"></div>
+
+                <div id="reseaux">
+                    <h3>Rejoignez-nous</h3>
+                    <div class="ligne">
+                        <button><img src="../../img/decorations/facebook.png" alt="Facebook"></button>
+                        <button><img src="../../img/decorations/instagram.png" alt="Instagram"></button>
+                        <button><img src="../../img/decorations/twitter.png" alt="Twitter"></button>
+                    </div>
+                </div>
+
+                <div class="separateur-vertical"></div>
+
+                <div id="contacts">
+                    <h3>Contact</h3>
+                    <div>
+                        <p>Adresse : 20 rue de la République,<br>58000 Nevers</p>
+                        <p>Téléphone : 03.67.48.59.20</p>
+                        <p>E-Mail : contact@travelerslife.com</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p>Tous droits réservés @Traveler's life</p>
+        </footer>
+    </body>
+
+</html>
