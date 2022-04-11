@@ -452,6 +452,15 @@ span img{
     margin-right: 10px;
     cursor: pointer;
 }
+#rondBlancb{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: 650px;
+    margin-right: 10px;
+    cursor: pointer;
+}
 .ronds{
     display: flex;
     justify-content: center;
@@ -1929,5 +1938,217 @@ footer p, footer a {
 @media screen and (max-width:1226px){
     .textAPropos{
         line-height: 1.1 !important;
+    }
+}
+
+/*****************************************************Caractéristiques voyages***************************************************************/
+.imagesDuVoyage{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.blocCaracteristique{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.menuCaracteristique p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: clamp(19px, 20px, 21px);
+}
+.menuCaracteristique{
+    margin-top: -4px;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+}
+.menuCaracteristique:hover{
+    cursor: pointer;
+}
+.menuPresentation{
+    height: 100px;
+    width: 25%;
+    position: absolute;
+    border-radius: 0 0 0 10px;
+    background-color: white;
+}
+.menuPresentation p:hover{
+    transform: scale(1.03);
+}
+.menuItineraire p:hover{
+    transform: scale(1.03);
+}
+.menuHebergement p:hover{
+    transform: scale(1.03);
+}
+.menuBudget p:hover{
+    transform: scale(1.03);
+}
+.menuItineraire{
+    height: 100px;
+    width: 25%;
+    margin-left: 25%;
+    position: absolute;
+    background-color: whitesmoke;
+}
+.menuHebergement{
+    height: 100px;
+    width: 25%;
+    margin-left: 50%;
+    position: absolute;
+    background-color: whitesmoke;
+}
+.menuBudget{
+    height: 100px;
+    width: 25%;
+    margin-left: 75%;
+    position: absolute;
+    background-color: whitesmoke; 
+    border-radius: 0 0 10px 0;
+}
+.menuTextPresentation{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.menuTextItineraire{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: none;
+}
+.menuTextHebergement{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: none;
+}
+.menuTextBudget{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: none;
+}
+#imagesDuVoyage2{
+    display: none;
+}
+#imagesDuVoyage3{
+    display: none;
+}
+#imagesDuVoyage4{
+    display: none;
+}
+.menuText2{
+    display: none;
+}
+.menuCaracteristique2{
+    display: none;
+}
+@media screen and (max-width:680px){
+    .imagesDuVoyage{
+        width: 100%;
+    }
+}
+@media screen and (max-width:901px){
+    #titreBotswana{
+        width: min-content !important;
+        margin: auto !important;
+        position: relative !important;
+    }
+    #rondBlancb{
+        margin-top: 250px;
+    }
+    .flecheDroite button{
+        height: 250px;
+        width: 90%;
+    }
+    .flecheGauche button{
+        height: 250px;
+        width: 90%;
+    }
+    .flecheGauche{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+    }
+    .flecheDroite{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width:835px){
+    .menuCaracteristique{
+        display: none;
+    }
+    .menuCaracteristique2{
+        margin-top: -4px;
+        width: 100%;
+        position: relative;
+        border-radius: 0 0 10px 10px;
+    }
+    .menuPresentationFleche p{
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .menuCaracteristique2{
+        display: block;
+    }
+    .menuCaracteristique2 p{
+        margin-top: 30px;
+        font-size: clamp(19px, 20px, 21px);
+    }
+    .menuText{
+        display: none;
+    }
+    .menuPresentationFleche{
+        display: flex;
+        justify-content: center;
+    }
+    .menuPresentationFleche img{
+        margin-top: 22px;
+    }
+    .menuTextPresentation2{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .menuPresentation2{
+        background-color: whitesmoke;
+        border-radius: 0 0 10px 10px;
+    }
+    .menuItineraire2{
+        background-color: whitesmoke;
+        border-radius: 0 0 10px 10px;
+    }
+    .menuHebergement2{
+        background-color: whitesmoke;
+        border-radius: 0 0 10px 10px;
+    }
+    .menuBudget2{
+        background-color: whitesmoke;
+        border-radius: 0 0 10px 10px;
+    }
+    .menuTextItineraire2{
+        display: none;
+        margin-bottom: 30px;
+    }
+    .menuTextHebergement2{
+        display: none;
+        margin-bottom: 30px;
+    }
+    .menuTextBudget2{
+        display: none;
+        margin-bottom: 30px;
     }
 }

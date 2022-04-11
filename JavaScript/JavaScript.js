@@ -43,3 +43,116 @@ function transitionAProposHotelGauche(){
     document.getElementById('imageEquipe').style.display = "block";
 }
 
+
+function transitionPresentation(){
+    document.getElementById('menuTextPresentation').style.display = "block";
+    document.getElementById('menuTextHebergement').style.display = "none";
+    document.getElementById('menuTextItineraire').style.display = "none";
+    document.getElementById('menuTextBudget').style.display = "none";
+    document.getElementById('menuPresentation').style.background = "white";
+    document.getElementById('menuHebergement').style.background = "whitesmoke";
+    document.getElementById('menuItineraire').style.background = "whitesmoke";
+    document.getElementById('menuBudget').style.background = "whitesmoke";
+    document.getElementById('imagesDuVoyage1').style.display = "block";
+    document.getElementById('imagesDuVoyage2').style.display = "none";
+    document.getElementById('imagesDuVoyage3').style.display = "none";
+    document.getElementById('imagesDuVoyage4').style.display = "none";
+}
+function transitionItineraire(){
+    document.getElementById('menuTextItineraire').style.display = "block";
+    document.getElementById('menuTextHebergement').style.display = "none";
+    document.getElementById('menuTextPresentation').style.display = "none";
+    document.getElementById('menuTextBudget').style.display = "none";
+    document.getElementById('menuPresentation').style.background = "whitesmoke";
+    document.getElementById('menuHebergement').style.background = "whitesmoke";
+    document.getElementById('menuItineraire').style.background = "white";
+    document.getElementById('menuBudget').style.background = "whitesmoke";
+    document.getElementById('imagesDuVoyage1').style.display = "none";
+    document.getElementById('imagesDuVoyage2').style.display = "block";
+    document.getElementById('imagesDuVoyage3').style.display = "none";
+    document.getElementById('imagesDuVoyage4').style.display = "none";
+}
+function transitionHebergement(){
+    document.getElementById('menuTextHebergement').style.display = "block";
+    document.getElementById('menuTextItineraire').style.display = "none";
+    document.getElementById('menuTextPresentation').style.display = "none";
+    document.getElementById('menuTextBudget').style.display = "none";
+    document.getElementById('menuPresentation').style.background = "whitesmoke";
+    document.getElementById('menuHebergement').style.background = "white";
+    document.getElementById('menuItineraire').style.background = "whitesmoke";
+    document.getElementById('menuBudget').style.background = "whitesmoke";
+    document.getElementById('imagesDuVoyage1').style.display = "none";
+    document.getElementById('imagesDuVoyage2').style.display = "none";
+    document.getElementById('imagesDuVoyage3').style.display = "block";
+    document.getElementById('imagesDuVoyage4').style.display = "none";
+}
+function transitionBudget(){
+    document.getElementById('menuTextBudget').style.display = "block";
+    document.getElementById('menuTextHebergement').style.display = "none";
+    document.getElementById('menuTextPresentation').style.display = "none";
+    document.getElementById('menuTextItineraire').style.display = "none";
+    document.getElementById('menuPresentation').style.background = "whitesmoke";
+    document.getElementById('menuHebergement').style.background = "whitesmoke";
+    document.getElementById('menuItineraire').style.background = "whitesmoke";
+    document.getElementById('menuBudget').style.background = "white";
+    document.getElementById('imagesDuVoyage1').style.display = "none";
+    document.getElementById('imagesDuVoyage2').style.display = "none";
+    document.getElementById('imagesDuVoyage3').style.display = "none";
+    document.getElementById('imagesDuVoyage4').style.display = "block";
+}
+function transitionPresentation2(){
+    if(document.getElementById('menuTextPresentation2').style.display == "none"){
+        document.getElementById('menuTextPresentation2').style.display = "block";
+        document.getElementById('menuPresentation2').style.background = "white";
+    }else{
+        document.getElementById('menuTextPresentation2').style.display = "none";
+        document.getElementById('menuPresentation2').style.background = "whitesmoke";
+    }
+}
+function transitionItineraire2(){
+    if(document.getElementById('menuTextItineraire2').style.display == "none"){
+    document.getElementById('menuTextItineraire2').style.display = "block";
+    document.getElementById('menuItineraire2').style.background = "white";
+    document.getElementById('imagesDuVoyage2').style.display = "block";
+    document.getElementById('imagesDuVoyage1').style.display = "none";
+    document.getElementById('imagesDuVoyage3').style.display = "none";
+    document.getElementById('imagesDuVoyage4').style.display = "none";
+    }else{
+    document.getElementById('menuTextItineraire2').style.display = "none";
+    document.getElementById('menuItineraire2').style.background = "whitesmoke";
+    document.getElementById('imagesDuVoyage2').style.display = "none";
+    document.getElementById('imagesDuVoyage1').style.display = "block";
+    }
+}
+function transitionHebergement2(){   
+    if(document.getElementById('menuTextHebergement2').style.display == "none"){
+    document.getElementById('menuTextHebergement2').style.display = "block";
+    document.getElementById('menuHebergement2').style.background = "white";
+    document.getElementById('imagesDuVoyage3').style.display = "block";
+    document.getElementById('imagesDuVoyage1').style.display = "none";    
+    document.getElementById('imagesDuVoyage2').style.display = "none";
+    document.getElementById('imagesDuVoyage4').style.display = "none";
+    }else{
+    document.getElementById('menuTextHebergement2').style.display = "none";
+    document.getElementById('menuHebergement2').style.background = "whitesmoke";
+    document.getElementById('imagesDuVoyage3').style.display = "none";
+    document.getElementById('imagesDuVoyage1').style.display = "block";    
+    }
+}
+function transitionBudget2(){
+    if(document.getElementById('menuTextBudget2').style.display == "none"){
+    document.getElementById('menuTextBudget2').style.display = "block";
+    document.getElementById('menuBudget2').style.background = "white";
+    document.getElementById('imagesDuVoyage4').style.display = "block"; 
+    document.getElementById('imagesDuVoyage1').style.display = "none";  
+    document.getElementById('imagesDuVoyage2').style.display = "none";
+    document.getElementById('imagesDuVoyage3').style.display = "none"; 
+    }else{
+    document.getElementById('menuTextBudget2').style.display = "none";
+    document.getElementById('menuBudget2').style.background = "whitesmoke";
+    document.getElementById('imagesDuVoyage4').style.display = "none";
+    document.getElementById('imagesDuVoyage1').style.display = "block";        
+    }
+}
+
+
