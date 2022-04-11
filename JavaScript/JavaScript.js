@@ -100,8 +100,6 @@ function transitionBudget(){
     document.getElementById('imagesDuVoyage3').style.display = "none";
     document.getElementById('imagesDuVoyage4').style.display = "block";
 }
-
-
 function transitionPresentation2(){
     if(document.getElementById('menuTextPresentation2').style.display == "none"){
         document.getElementById('menuTextPresentation2').style.display = "block";
@@ -140,7 +138,6 @@ function transitionHebergement2(){
     document.getElementById('imagesDuVoyage3').style.display = "none";
     document.getElementById('imagesDuVoyage1').style.display = "block";    
     }
-
 }
 function transitionBudget2(){
     if(document.getElementById('menuTextBudget2').style.display == "none"){
