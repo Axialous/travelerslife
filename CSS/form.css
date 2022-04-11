@@ -1312,6 +1312,10 @@ footer p, footer a {
         padding: 0 3.5% !important;
     }
 
+    footer {
+        padding: 30px 3.5% !important;
+    }
+
     #voyages a h4 {
         opacity: 1;
         transform: translateX(0) translateY(0);
