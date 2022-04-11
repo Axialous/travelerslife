@@ -1749,12 +1749,27 @@ footer p, footer a {
     text-transform: uppercase;
     font-weight: bold;
 }
+.menuCaracteristique:hover{
+    cursor: pointer;
+}
 .menuPresentation{
     border-style: solid;
     border-color: brown;
     height: 100px;
     width: 25%;
     position: absolute;
+}
+.menuPresentation p:hover{
+    transform: scale(1.01);
+}
+.menuItineraire p:hover{
+    transform: scale(1.01);
+}
+.menuHebergement p:hover{
+    transform: scale(1.01);
+}
+.menuBudget p:hover{
+    transform: scale(1.01);
 }
 .menuItineraire{
     border-style: solid;

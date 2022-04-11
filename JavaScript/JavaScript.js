@@ -43,3 +43,46 @@ function transitionAProposHotelGauche(){
     document.getElementById('imageEquipe').style.display = "block";
 }
 
+
+function transitionPresentation(){
+    document.getElementById('menuTextPresentation').style.display = "block";
+    document.getElementById('menuTextHebergement').style.display = "none";
+    document.getElementById('menuTextItineraire').style.display = "none";
+    document.getElementById('menuTextBudget').style.display = "none";
+    document.getElementById('menuPresentation').style.background = "white";
+    document.getElementById('menuHebergement').style.background = "whitesmoke";
+    document.getElementById('menuItineraire').style.background = "whitesmoke";
+    document.getElementById('menuBudget').style.background = "whitesmoke";
+}
+function transitionItineraire(){
+    document.getElementById('menuTextItineraire').style.display = "block";
+    document.getElementById('menuTextHebergement').style.display = "none";
+    document.getElementById('menuTextPresentation').style.display = "none";
+    document.getElementById('menuTextBudget').style.display = "none";
+    document.getElementById('menuPresentation').style.background = "whitesmoke";
+    document.getElementById('menuHebergement').style.background = "whitesmoke";
+    document.getElementById('menuItineraire').style.background = "white";
+    document.getElementById('menuBudget').style.background = "whitesmoke";
+}
+function transitionHebergement(){
+    document.getElementById('menuTextHebergement').style.display = "block";
+    document.getElementById('menuTextItineraire').style.display = "none";
+    document.getElementById('menuTextPresentation').style.display = "none";
+    document.getElementById('menuTextBudget').style.display = "none";
+    document.getElementById('menuPresentation').style.background = "whitesmoke";
+    document.getElementById('menuHebergement').style.background = "white";
+    document.getElementById('menuItineraire').style.background = "whitesmoke";
+    document.getElementById('menuBudget').style.background = "whitesmoke";
+}
+function transitionBudget(){
+    document.getElementById('menuTextBudget').style.display = "block";
+    document.getElementById('menuTextHebergement').style.display = "none";
+    document.getElementById('menuTextPresentation').style.display = "none";
+    document.getElementById('menuTextItineraire').style.display = "none";
+    document.getElementById('menuPresentation').style.background = "whitesmoke";
+    document.getElementById('menuHebergement').style.background = "whitesmoke";
+    document.getElementById('menuItineraire').style.background = "whitesmoke";
+    document.getElementById('menuBudget').style.background = "white";
+}
+
+
