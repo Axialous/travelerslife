@@ -53,6 +53,10 @@ function transitionPresentation(){
     document.getElementById('menuHebergement').style.background = "whitesmoke";
     document.getElementById('menuItineraire').style.background = "whitesmoke";
     document.getElementById('menuBudget').style.background = "whitesmoke";
+    document.getElementById('imagesDuVoyage1').style.display = "block";
+    document.getElementById('imagesDuVoyage2').style.display = "none";
+    document.getElementById('imagesDuVoyage3').style.display = "none";
+    document.getElementById('imagesDuVoyage4').style.display = "none";
 }
 function transitionItineraire(){
     document.getElementById('menuTextItineraire').style.display = "block";
@@ -63,6 +67,10 @@ function transitionItineraire(){
     document.getElementById('menuHebergement').style.background = "whitesmoke";
     document.getElementById('menuItineraire').style.background = "white";
     document.getElementById('menuBudget').style.background = "whitesmoke";
+    document.getElementById('imagesDuVoyage1').style.display = "none";
+    document.getElementById('imagesDuVoyage2').style.display = "block";
+    document.getElementById('imagesDuVoyage3').style.display = "none";
+    document.getElementById('imagesDuVoyage4').style.display = "none";
 }
 function transitionHebergement(){
     document.getElementById('menuTextHebergement').style.display = "block";
@@ -73,6 +81,10 @@ function transitionHebergement(){
     document.getElementById('menuHebergement').style.background = "white";
     document.getElementById('menuItineraire').style.background = "whitesmoke";
     document.getElementById('menuBudget').style.background = "whitesmoke";
+    document.getElementById('imagesDuVoyage1').style.display = "none";
+    document.getElementById('imagesDuVoyage2').style.display = "none";
+    document.getElementById('imagesDuVoyage3').style.display = "block";
+    document.getElementById('imagesDuVoyage4').style.display = "none";
 }
 function transitionBudget(){
     document.getElementById('menuTextBudget').style.display = "block";
@@ -83,6 +95,10 @@ function transitionBudget(){
     document.getElementById('menuHebergement').style.background = "whitesmoke";
     document.getElementById('menuItineraire').style.background = "whitesmoke";
     document.getElementById('menuBudget').style.background = "white";
+    document.getElementById('imagesDuVoyage1').style.display = "none";
+    document.getElementById('imagesDuVoyage2').style.display = "none";
+    document.getElementById('imagesDuVoyage3').style.display = "none";
+    document.getElementById('imagesDuVoyage4').style.display = "block";
 }
 
 

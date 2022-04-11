@@ -1719,17 +1719,11 @@ footer p, footer a {
 }
 
 /*****************************************************Caractéristiques voyages***************************************************************/
-#caracteristique{
-    border-style: solid;
-}
 .imagesDuVoyage{
-    border-style: solid;
-    border-color: aqua;
     width: 100%;
+    border-radius: 10px 10px 0 0;
 }
 .blocCaracteristique{
-    border-style: solid;
-    border-color: aqua;
     width: 80%;
     height: 100%;
     margin: auto;
@@ -1741,39 +1735,35 @@ footer p, footer a {
 }
 .menuCaracteristique{
     margin-top: -4px;
-    border-style: solid;
-    border-color: blue;
     width: 100%;
     height: 100px;
     position: relative;
     text-transform: uppercase;
     font-weight: bold;
+    border-radius: 0 0 10px 10px;
 }
 .menuCaracteristique:hover{
     cursor: pointer;
 }
 .menuPresentation{
-    border-style: solid;
-    border-color: brown;
     height: 100px;
     width: 25%;
     position: absolute;
+    border-radius: 0 0 0 10px;
 }
 .menuPresentation p:hover{
-    transform: scale(1.01);
+    transform: scale(1.03);
 }
 .menuItineraire p:hover{
-    transform: scale(1.01);
+    transform: scale(1.03);
 }
 .menuHebergement p:hover{
-    transform: scale(1.01);
+    transform: scale(1.03);
 }
 .menuBudget p:hover{
-    transform: scale(1.01);
+    transform: scale(1.03);
 }
 .menuItineraire{
-    border-style: solid;
-    border-color: brown;
     height: 100px;
     width: 25%;
     margin-left: 25%;
@@ -1781,8 +1771,6 @@ footer p, footer a {
     background-color: whitesmoke;
 }
 .menuHebergement{
-    border-style: solid;
-    border-color: brown;
     height: 100px;
     width: 25%;
     margin-left: 50%;
@@ -1790,20 +1778,14 @@ footer p, footer a {
     background-color: whitesmoke;
 }
 .menuBudget{
-    border-style: solid;
-    border-color: brown;
     height: 100px;
     width: 25%;
     margin-left: 75%;
     position: absolute;
-    background-color: whitesmoke;
-}
-.menuText{
-    border-style: solid;
+    background-color: whitesmoke; 
+    border-radius: 0 0 10px 0;
 }
 .menuTextPresentation{
-    border-style: solid;
-    border-color: violet;
     width: 80%;
     margin: auto;
     margin-top: 50px;
@@ -1811,8 +1793,6 @@ footer p, footer a {
     text-align: center;
 }
 .menuTextItineraire{
-    border-style: solid;
-    border-color: violet;
     width: 80%;
     margin: auto;
     margin-top: 50px;
@@ -1820,8 +1800,6 @@ footer p, footer a {
     display: none;
 }
 .menuTextHebergement{
-    border-style: solid;
-    border-color: violet;
     width: 80%;
     margin: auto;
     margin-top: 50px;
@@ -1829,12 +1807,19 @@ footer p, footer a {
     display: none;
 }
 .menuTextBudget{
-    border-style: solid;
-    border-color: violet;
     width: 80%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 100px;
+    display: none;
+}
+#imagesDuVoyage2{
+    display: none;
+}
+#imagesDuVoyage3{
+    display: none;
+}
+#imagesDuVoyage4{
     display: none;
 }
 @media screen and (max-width:680px){
