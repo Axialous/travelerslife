@@ -398,6 +398,15 @@ span img{
     margin-right: 10px;
     cursor: pointer;
 }
+#rondBlancb{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: 650px;
+    margin-right: 10px;
+    cursor: pointer;
+}
 .ronds{
     display: flex;
     justify-content: center;
@@ -1834,6 +1843,37 @@ footer p, footer a {
         width: 100%;
     }
 }
+@media screen and (max-width:901px){
+    #titreBotswana{
+        width: min-content !important;
+        margin: auto !important;
+        position: relative !important;
+    }
+    #rondBlancb{
+        margin-top: 250px;
+    }
+    .flecheDroite button{
+        height: 250px;
+        width: 90%;
+    }
+    .flecheGauche button{
+        height: 250px;
+        width: 90%;
+    }
+    .flecheGauche{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+    }
+    .flecheDroite{
+        margin-top: 50px;
+        height: 250px;
+        width: 40%;
+        z-index: 1;
+        margin-left: 20%;
+    }
+}
 @media screen and (max-width:835px){
     .menuCaracteristique{
         display: none;
@@ -1841,7 +1881,6 @@ footer p, footer a {
     .menuCaracteristique2{
         margin-top: -4px;
         width: 100%;
-        height: 100px;
         position: relative;
         border-radius: 0 0 10px 10px;
     }
