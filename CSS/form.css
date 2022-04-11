@@ -1731,7 +1731,7 @@ footer p, footer a {
 .menuCaracteristique p{
     margin-top: 30px;
     text-align: center;
-    font-size: clamp(15px, 20px, 20px);
+    font-size: clamp(19px, 20px, 21px);
 }
 .menuCaracteristique{
     margin-top: -4px;
@@ -1750,6 +1750,7 @@ footer p, footer a {
     width: 25%;
     position: absolute;
     border-radius: 0 0 0 10px;
+    background-color: white;
 }
 .menuPresentation p:hover{
     transform: scale(1.03);
@@ -1825,5 +1826,50 @@ footer p, footer a {
 @media screen and (max-width:680px){
     .imagesDuVoyage{
         width: 100%;
+    }
+}
+@media screen and (max-width:835px){
+    .menuCaracteristique{
+        display: none;
+    }
+    .menuCaracteristique2{
+        margin-top: -4px;
+        width: 100%;
+        height: 100px;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 0 0 10px 10px;
+    }
+    .menuCaracteristique2 p{
+        margin-top: 30px;
+        text-align: center;
+        font-size: clamp(19px, 20px, 21px);
+    }
+    .menuText{
+        display: none;
+    }
+    .menuPresentationFleche{
+        display: flex;
+        justify-content: center;
+    }
+    .menuPresentationFleche img{
+        margin-top: 20px;
+    }
+    .menuPresentation2{
+        background-color: whitesmoke;
+        border-radius: 0 0 10px 10px;
+    }
+    .menuItineraire2{
+        background-color: whitesmoke;
+        border-radius: 0 0 10px 10px;
+    }
+    .menuHebergement2{
+        background-color: whitesmoke;
+        border-radius: 0 0 10px 10px;
+    }
+    .menuBudget2{
+        background-color: whitesmoke;
+        border-radius: 0 0 10px 10px;
     }
 }
