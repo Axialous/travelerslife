@@ -101,10 +101,40 @@
         </section>
 
         <section id="formulaire">
+            <h2>Je suis intéressé par ce voyage !</h2>
+            <article class="ligne">
+                <form method="post" action="traitement.php" class="colonne">
+                    <h5>Demandez des informations ou un devis</h5>
+                    <div class="ligne">
+                        <p class="colonne">
+                            <label for="nom">Nom :</label>
+                            <input type="text" name="nom" required>
+                        </p>
+                        <p class="colonne">
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" name="prenom" required>
+                        </p>
+                    </div>
+                    <p class="colonne">
+                        <label for="mail">Adresse mail :</label>
+                        <input type="email" name="mail" required>
+                    </p>
+                    <p class="colonne">
+                        <label for="telephone">Téléphone :</label>
+                        <input type="tel" name="telephone">
+                    </p>
+                    <p class="colonne">
+                        <label for="demande">Votre demande :</label>
+                        <textarea name="demande" rows="4" required></textarea>
+                    </p>
+                    <input type="submit" value="Envoyer">
+                </form>
+                <div class="img"></div>
+                </article>
         </section>
 
         <section id="idees">
-            <h2>Besoin d'autres idées ?</h2>
+            <h2>Besoin d'autres idées ?</h2>
             <div class="redirection">
                 <div href="zimbabwe.html" class="redirection1" style="background-image: url(../../img/offreZimbabwe.jpg)">
                     <div class="contenerTitre">
