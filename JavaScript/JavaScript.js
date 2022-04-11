@@ -106,7 +106,6 @@ function transitionPresentation2(){
     if(document.getElementById('menuTextPresentation2').style.display == "none"){
         document.getElementById('menuTextPresentation2').style.display = "block";
         document.getElementById('menuPresentation2').style.background = "white";
-        document.getElementById('imagesDuVoyage1').style.display = "block";
     }else{
         document.getElementById('menuTextPresentation2').style.display = "none";
         document.getElementById('menuPresentation2').style.background = "whitesmoke";
