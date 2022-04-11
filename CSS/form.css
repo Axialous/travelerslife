@@ -972,9 +972,14 @@ blockquote img {
 
     padding: 5px;
 
-    resize: none;
+    resize: vertical;
 
-    transition: 500ms;
+    transition: background-color 500ms;
+}
+
+::-webkit-resizer {
+    background-image: url(../img/decorations/redimensionneur.svg);
+    background-size: contain;
 }
 
 #formulaire label + input:hover, #formulaire label + input:focus, #formulaire label + textarea:hover, #formulaire label + textarea:focus {
