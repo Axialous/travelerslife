@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <title>Traveler's life | Italie</title>
+        <link rel="icon" href="../../img/decorations/icone_valise.png">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../CSS/form.css"/>
+        <script src="../../JavaScript/JavaScript.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <input type="checkbox">
+            <img src="../../img/decorations/burger.svg" alt="menu">
+
+            <a href="../../index.html"><h1 class="logo">Traveler's life<img src="../../img/decorations/valise.png" alt="valise"></h1></a>
+
+            <form id="recherche">
+                <input class="barre" type="text" name="text">
+                <input class="envoi" type="submit" name="submit" class="submit" value="">
+            </form>
+
+            <nav>
+                <div class="menu_deroulant">
+                    <input type="checkbox">
+                    <p>Catégories</p>
+                    <div>
+                        <a href="../hotels.html" >Hôtels</a>
+                        <a href="../croisieres.html">Croisières</a>
+                        <a href="../safaris.html">Safaris</a>
+                    </div>
+                </div>
+                <a href="#contacts">Contact</a>
+            </nav>
+        </header>
+
+        <section id="accueil">
+                <div id="imageHotel" style="background-image: url(../../img/botswana1.jpg)">
+                    <h1 class="titre" id="titreBotswana"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Botswana<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+                    <div class="ronds">
+                        <div class="rondBlanc1" id="rondBlancb"></div>
+                        <div onclick="transitionAcceuilDroite()" class="rondBlanc2" id="rondBlancb"></div>
+                        <div onclick="transitionAcceuilDroiteDirect()" class="rondBlanc3" id="rondBlancb"></div>
+                    </div>
+                    <div class="fleche">
+                        <div class="flecheGauche">
+                            <button class="gauche"></button>
+                        </div>
+                        <div class="flecheDroite">
+                            <button onclick="transitionAcceuilDroite()" class="droite"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="imageCroisiere" style="background-image: url(../../img/botswana2.jpg)">
+                    <h1 class="titre" id="titreBotswana"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Botswana<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+                    <div class="ronds">
+                        <div onclick="transitionAcceuilGauche2()" class="rondBlanc4" id="rondBlancb"></div>
+                        <div class="rondBlanc5" id="rondBlancb"></div>
+                        <div onclick="transitionAcceuilDroite2()" class="rondBlanc6" id="rondBlancb"></div>
+                    </div>
+                    <div class="fleche">
+                        <div class="flecheGauche">
+                            <button onclick="transitionAcceuilGauche2()" class="gauche"></button>
+                        </div>
+                        <div class="flecheDroite">
+                            <button onclick="transitionAcceuilDroite2()" class="droite"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="imageSafari" style="background-image: url(../../img/botswana3.jpg)">
+                    <h1 class="titre" id="titreBotswana"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Botswana<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+                    <div class="ronds">
+                        <div onclick="transitionAcceuilDroiteDirectR()" class="rondBlanc7" id="rondBlancb"></div>
+                        <div onclick="transitionAcceuilGauche3()" class="rondBlanc8" id="rondBlancb"></div>
+                        <div class="rondBlanc9" id="rondBlancb"></div>
+                    </div>
+                    <div class="fleche">
+                        <div class="flecheGauche">
+                            <button onclick="transitionAcceuilGauche3()" class="gauche"></button>
+                        </div>
+                        <div class="flecheDroite">
+                            <button class="droite"></button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="citation">
+            <blockquote>
+                <p>« Voyager vous laisse d’abord sans voix, avant de vous transformer en conteur »</p>
+                <cite><img src="../../img/decorations/ligne_citation.svg" alt="Ligne décorative">Ibn Battuta<img src="../../img/decorations/ligne_citation.svg" alt="Ligne décorative"></cite>
+            </blockquote>
+        </section>
+
+        <section id="caracteristique">
+            <div class="blocCaracteristique">
+                <img class="imagesDuVoyage" id="imagesDuVoyage1" src="../../img/caracteristiquebotswana1.jpg">
+                <img class="imagesDuVoyage" id="imagesDuVoyage2" src="../../img/caracteristiquebotswana2.jpg">
+                <img class="imagesDuVoyage" id="imagesDuVoyage3" src="../../img/caracteristiquebotswana3.jpg">
+                <img class="imagesDuVoyage" id="imagesDuVoyage4" src="../../img/caracteristiquebotswana4.jpg">
+                <div class="menuCaracteristique">
+                    <div onclick="transitionPresentation()" class="menuPresentation" id="menuPresentation">
+                        <p>Présentation</p>
+                    </div>
+                    <div onclick="transitionItineraire()" class="menuItineraire" id="menuItineraire">
+                        <p>Itinéraire</p>
+                    </div>
+                    <div onclick="transitionHebergement()" class="menuHebergement" id="menuHebergement">
+                        <p>Hébergement</p>
+                    </div>
+                    <div onclick="transitionBudget()" class="menuBudget" id="menuBudget">
+                        <p>Budget</p>
+                    </div>
+                </div>
+                <div class="menuText">
+                    <p class="menuTextPresentation" id="menuTextPresentation">Laissez-vous tenter par cette expérience safaris inoubliable au Botswana. Cette aventure vous conduira le long du gigantesque delta de l'Okavango pour d'incroyables safaris à pied. Vous poursuivrez votre voyage jusqu'à l'incontournable réserve du Moremi pour de merveilleux safaris 4x4 à la découverte de la vie sauvage. Vous aurez également l'occasion de naviguer à bord d'embarcations traditionnelles et de rencontrer la population locale pour des souvenirs mémorables...</p>
+                    <p class="menuTextItineraire" id="menuTextItineraire">Jour 1 : FRANCE / MAUN<br>
+                        Envol à destination de Maun.  Prestations et nuit à bord.<br><br>
+                        
+                        Jour 2 : MAUN / ILE DE XAXABA<br>
+                        Arrivée à Maun le matin, accueil et transfert vers l'embarcadère de la rivière Thamalakane qui traverse la ville de Maun et se jette dans les eaux du Delta de l'Okavango. Rencontre avec votre guide anglophone et le chef cuisinier qui vous accompagneront tout au long de votre expérience safari. Embarquement pour une croisière d'environ 3-4 heures pour rejoindre votre premier campement sur l'île de Xaxaba. Installation et dîner au camp en début de soirée.
+                        <br><br>
+                        Jour 3 : ILE DE XAXABA<br>
+                        Le matin, embarquez à bord d'un mokoro, pirogue traditionnelle caractéristique du Delta. Le delta de l’Okavango, le plus grand delta intérieur au monde, véritable oasis au milieu de l'une des régions les plus désertiques au monde, déroule ses paysages de toute beauté entre îles boisées, méandres à l’eau cristalline, îlots de palmiers et terres arides. Vous naviguerez jusqu'à l'île de Chiefs Island, point de départ de votre premier safari à pied en pleine nature, accompagné de votre guide (+/- 4 heures de marche). Retour au camp à bord d'un mokoro pour le déjeuner. Possibilité de faire une balade en mokoro en milieu d'après-midi. Retour au camp pour un apéritif au coucher du soleil et un dîner autour du feu.
+                        <br><br>
+                        Jour 4 : ILE DE XAXABA<br>
+                        Le matin, départ en mokoro pour une nouvelle randonnée guidée sur Chief's Island (+/- 4 heures de marche). L'endroit est un véritable paradis pour les oiseaux, les antilopes, girafes, rhinocéros, buffles, éléphants... Retour au camp pour le déjeuner. L'après-midi, embarquez à bord d'un mokoro pour rejoindre le village de Xaxaba. Tour guidé du village où vous aurez l'opportunité d'acheter des objets issus de l'artisanat local. Retour au camp pour le dîner.
+                        <br><br>
+                        Jour 5 : ILE DE XAXABA / MAUN / RESERVE DU MOREMI<br>
+                        Ce matin, retour à Maun à bord d'un bateau de croisière (+/- 4 heures de bateau). Arrivée à Maun à l'heure du déjeuner. Vous pourrez en profiter pour déjeuner au restaurant et faire vos achats avant votre départ pour la réserve du Moremi. Arrivée dans votre camp privé. Départ pour un safari 4x4 jusqu'au coucher du soleil, le moment où les animaux retournent chasser. Retour au camp pour le dîner.
+                        <br><br>
+                        Jour 6 : RESERVE DU MOREMI<br>
+                        Réveil matinal pour un safari 4x4 à l'aube dans la réserve du Moremi. Au nord du Botswana, la réserve de Moremi est un véritable coin de paradis inaltéré, pour des expériences safari incomparables ! C'est l'une des plus célèbres d’Afrique australe en raison de l’abondance de sa faune, dûe en particulier à l’extrême diversité des habitats. Retour au camp pour le déjeuner, avant de repartir pour un nouveau safari en milieu d'après-midi jusqu'au coucher du soleil.
+                        <br><br>
+                        Jour 7 : RESERVE DU MOREMI<br>
+                        Journée entièrement consacrée aux safaris dans la réserve du Moremi. Elle abrite aujourd'hui encore les espèces de grands mammifères les plus menacées : guépard, rhinocéros blanc, rhinocéros noir, chien sauvage d'Afrique et lion. Plus de 500 espèces d'oiseaux et plus de 1 000 espèces de plantes sont également recensées. Déjeuner pique-nique préparé avec soin par votre chef cuisinier. Retour au camp en milieu d'après-midi. Dîner sous les étoiles pour partager les temps fort de votre journée.
+                        <br><br>
+                        Jour 8 : RESERVE DU MOREMI / MAUN<br>
+                        Retour à Maun et transfert à l'aéroport international pour votre vol retour à destination de la France. Prestations et nuit à bord.
+                        <br><br>
+                        Jour 9 : FRANCE<br>
+                        Arrivée en France dans la matinée.</p>
+                    <p class="menuTextHebergement" id="menuTextHebergement">Vos hébergements ou similaire :
+                        <br><br>
+                        DELTA DE L'OKAVANGO : Xaxaba Campsite
+                        RÉSERVE DU MOREMI : BOGA Private Camp à Xinii</p>
+                    <p class="menuTextBudget" id="menuTextBudget">Le prix comprend<br><br>
+                        Les vols internationaux, les taxes et surcharges carburant, l'hébergement comme mentionné au programme (ou similaire), les repas mentionnés au programme, tous les safaris mentionnés au programme en véhicule 4x4, en bateau et à pied, tous les transferts par la route ou en bateau, les droits d'entrée dans les sites et parcs visités, les services de guides locaux anglophones, d'un chef de camp et d'un chef cuisinier.
+                        <br><br>
+                        Le prix ne comprend pas<br><br>
+                        Les boissons, les repas non mentionnés au programme, les excursions non mentionnées au programme ou en option, les pourboires usuels, les dépenses personnelles, les assurances voyage (nous consulter pour plus d'informations).
+                        <br><br>
+                        Conditions particulières<br><br>
+                        - Prix du voyage étudié en basse saison, sur la base de 2 participants minimum.
+                        <br>
+                        - Les enfants de moins de 12 ans ne sont pas acceptés.Tarif adulte appliqué aux enfants de plus de 12 ans.</p>
+                </div>
+                <div class="menuCaracteristique2">
+                    <div onclick="transitionPresentation2()" class="menuPresentation2" id="menuPresentation2">
+                        <div class="menuPresentationFleche"><p>Présentation</p><img id="flecheBasCaracteristique" src="../../img/flecheBasCaracteristique.png" height="40px" width="40px"></div>
+                    </div>
+                    <p class="menuTextPresentation2" id="menuTextPresentation2">Laissez-vous tenter par cette expérience safaris inoubliable au Botswana. Cette aventure vous conduira le long du gigantesque delta de l'Okavango pour d'incroyables safaris à pied. Vous poursuivrez votre voyage jusqu'à l'incontournable réserve du Moremi pour de merveilleux safaris 4x4 à la découverte de la vie sauvage. Vous aurez également l'occasion de naviguer à bord d'embarcations traditionnelles et de rencontrer la population locale pour des souvenirs mémorables...</p>
+                    <div onclick="transitionItineraire2()" class="menuItineraire2" id="menuItineraire2">
+                        <div class="menuPresentationFleche"><p>Itinéraire</p><img id="flecheBasCaracteristique2" src="../../img/flecheBasCaracteristique.png" height="40px" width="40px"></div>
+                    </div>
+                    <p class="menuTextItineraire2" id="menuTextItineraire2">Jour 1 : FRANCE / MAUN<br>
+                        Envol à destination de Maun.  Prestations et nuit à bord.<br><br>
+                        
+                        Jour 2 : MAUN / ILE DE XAXABA<br>
+                        Arrivée à Maun le matin, accueil et transfert vers l'embarcadère de la rivière Thamalakane qui traverse la ville de Maun et se jette dans les eaux du Delta de l'Okavango. Rencontre avec votre guide anglophone et le chef cuisinier qui vous accompagneront tout au long de votre expérience safari. Embarquement pour une croisière d'environ 3-4 heures pour rejoindre votre premier campement sur l'île de Xaxaba. Installation et dîner au camp en début de soirée.
+                        <br><br>
+                        Jour 3 : ILE DE XAXABA<br>
+                        Le matin, embarquez à bord d'un mokoro, pirogue traditionnelle caractéristique du Delta. Le delta de l’Okavango, le plus grand delta intérieur au monde, véritable oasis au milieu de l'une des régions les plus désertiques au monde, déroule ses paysages de toute beauté entre îles boisées, méandres à l’eau cristalline, îlots de palmiers et terres arides. Vous naviguerez jusqu'à l'île de Chiefs Island, point de départ de votre premier safari à pied en pleine nature, accompagné de votre guide (+/- 4 heures de marche). Retour au camp à bord d'un mokoro pour le déjeuner. Possibilité de faire une balade en mokoro en milieu d'après-midi. Retour au camp pour un apéritif au coucher du soleil et un dîner autour du feu.
+                        <br><br>
+                        Jour 4 : ILE DE XAXABA<br>
+                        Le matin, départ en mokoro pour une nouvelle randonnée guidée sur Chief's Island (+/- 4 heures de marche). L'endroit est un véritable paradis pour les oiseaux, les antilopes, girafes, rhinocéros, buffles, éléphants... Retour au camp pour le déjeuner. L'après-midi, embarquez à bord d'un mokoro pour rejoindre le village de Xaxaba. Tour guidé du village où vous aurez l'opportunité d'acheter des objets issus de l'artisanat local. Retour au camp pour le dîner.
+                        <br><br>
+                        Jour 5 : ILE DE XAXABA / MAUN / RESERVE DU MOREMI<br>
+                        Ce matin, retour à Maun à bord d'un bateau de croisière (+/- 4 heures de bateau). Arrivée à Maun à l'heure du déjeuner. Vous pourrez en profiter pour déjeuner au restaurant et faire vos achats avant votre départ pour la réserve du Moremi. Arrivée dans votre camp privé. Départ pour un safari 4x4 jusqu'au coucher du soleil, le moment où les animaux retournent chasser. Retour au camp pour le dîner.
+                        <br><br>
+                        Jour 6 : RESERVE DU MOREMI<br>
+                        Réveil matinal pour un safari 4x4 à l'aube dans la réserve du Moremi. Au nord du Botswana, la réserve de Moremi est un véritable coin de paradis inaltéré, pour des expériences safari incomparables ! C'est l'une des plus célèbres d’Afrique australe en raison de l’abondance de sa faune, dûe en particulier à l’extrême diversité des habitats. Retour au camp pour le déjeuner, avant de repartir pour un nouveau safari en milieu d'après-midi jusqu'au coucher du soleil.
+                        <br><br>
+                        Jour 7 : RESERVE DU MOREMI<br>
+                        Journée entièrement consacrée aux safaris dans la réserve du Moremi. Elle abrite aujourd'hui encore les espèces de grands mammifères les plus menacées : guépard, rhinocéros blanc, rhinocéros noir, chien sauvage d'Afrique et lion. Plus de 500 espèces d'oiseaux et plus de 1 000 espèces de plantes sont également recensées. Déjeuner pique-nique préparé avec soin par votre chef cuisinier. Retour au camp en milieu d'après-midi. Dîner sous les étoiles pour partager les temps fort de votre journée.
+                        <br><br>
+                        Jour 8 : RESERVE DU MOREMI / MAUN<br>
+                        Retour à Maun et transfert à l'aéroport international pour votre vol retour à destination de la France. Prestations et nuit à bord.
+                        <br><br>
+                        Jour 9 : FRANCE<br>
+                        Arrivée en France dans la matinée.</p>   
+                    <div onclick="transitionHebergement2()" class="menuHebergement2" id="menuHebergement2">
+                        <div class="menuPresentationFleche"><p>Hébergement</p><img src="../../img/flecheBasCaracteristique.png" height="40px" width="40px"></div>
+                    </div>
+                    <p class="menuTextHebergement2" id="menuTextHebergement2">Vos hébergements ou similaire :
+                        <br><br>
+                        DELTA DE L'OKAVANGO : Xaxaba Campsite
+                        RÉSERVE DU MOREMI : BOGA Private Camp à Xinii</p>
+                    <div onclick="transitionBudget2()" class="menuBudget2" id="menuBudget2">
+                        <div class="menuPresentationFleche"><p>Budget</p><img src="../../img/flecheBasCaracteristique.png" height="40px" width="40px"></div>
+                    </div>
+                    <p class="menuTextBudget2" id="menuTextBudget2">Le prix comprend<br><br>
+                        Les vols internationaux, les taxes et surcharges carburant, l'hébergement comme mentionné au programme (ou similaire), les repas mentionnés au programme, tous les safaris mentionnés au programme en véhicule 4x4, en bateau et à pied, tous les transferts par la route ou en bateau, les droits d'entrée dans les sites et parcs visités, les services de guides locaux anglophones, d'un chef de camp et d'un chef cuisinier.
+                        <br><br>
+                        Le prix ne comprend pas<br><br>
+                        Les boissons, les repas non mentionnés au programme, les excursions non mentionnées au programme ou en option, les pourboires usuels, les dépenses personnelles, les assurances voyage (nous consulter pour plus d'informations).
+                        <br><br>
+                        Conditions particulières<br><br>
+                        - Prix du voyage étudié en basse saison, sur la base de 2 participants minimum.
+                        <br>
+                        - Les enfants de moins de 12 ans ne sont pas acceptés.Tarif adulte appliqué aux enfants de plus de 12 ans.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="formulaire">
+            <h2>Je suis intéressé par ce voyage !</h2>
+            <article class="ligne">
+                <form method="post" action="traitement.php" class="colonne">
+                    <h5>Demandez des informations ou un devis</h5>
+                    <div class="ligne">
+                        <p class="colonne">
+                            <label for="nom">Nom :</label>
+                            <input type="text" name="nom" required>
+                        </p>
+                        <p class="colonne">
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" name="prenom" required>
+                        </p>
+                    </div>
+                    <p class="colonne">
+                        <label for="mail">Adresse mail :</label>
+                        <input type="email" name="mail" required>
+                    </p>
+                    <p class="colonne">
+                        <label for="telephone">Téléphone :</label>
+                        <input type="tel" name="telephone">
+                    </p>
+                    <p class="colonne">
+                        <label for="demande">Votre demande :</label>
+                        <textarea name="demande" rows="4" required></textarea>
+                    </p>
+                    <input type="submit" value="Envoyer">
+                </form>
+                <div class="img"></div>
+                </article>
+        </section>
+
+        <section id="idees">
+            <h2>Besoin d'autres idées ?</h2>
+            <div class="redirection">
+                <div href="zimbabwe.html" class="redirection1" style="background-image: url(../../img/offreZimbabwe.jpg)">
+                    <div class="contenerTitre">
+                    <h4 class="titre"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Zimbabwe<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h4>
+                    </div>
+                </div>
+                <div href="tanzanie.html" class="redirection2" style="background-image: url(../../img/offreTanzanie.jpg)">
+                    <div class="contenerTitre">
+                        <h4 class="titre"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Tanzanie<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h4>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <footer>
+            <div class="ligne">
+                <div>
+                    <a href="#"><h1 class="logo">Traveler's life<img src="../../img/decorations/valise.png" alt="valise"></h1></a>
+                    <a href="#">Mentions légales – CGV</a>
+                </div>
+
+                <div class="separateur-vertical"></div>
+
+                <div id="reseaux">
+                    <h3>Rejoignez-nous</h3>
+                    <div class="ligne">
+                        <button><img src="../../img/decorations/facebook.png" alt="Facebook"></button>
+                        <button><img src="../../img/decorations/instagram.png" alt="Instagram"></button>
+                        <button><img src="../../img/decorations/twitter.png" alt="Twitter"></button>
+                    </div>
+                </div>
+
+                <div class="separateur-vertical"></div>
+
+                <div id="contacts">
+                    <h3>Contact</h3>
+                    <div>
+                        <p>Adresse : 20 rue de la République,<br>58000 Nevers</p>
+                        <p>Téléphone : 03.67.48.59.20</p>
+                        <p>E-Mail : contact@travelerslife.com</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p>Tous droits réservés @Traveler's life</p>
+        </footer>
+    </body>
+
+</html>
