@@ -102,3 +102,25 @@ function transitionBudget(){
 }
 
 
+function transitionPresentation2(){
+    document.getElementById('menuTextPresentation2').style.display = "block";
+    document.getElementById('menuPresentation2').style.background = "white";
+    document.getElementById('imagesDuVoyage1').style.display = "block";
+}
+function transitionItineraire2(){
+    document.getElementById('menuTextItineraire2').style.display = "block";
+    document.getElementById('menuItineraire2').style.background = "white";
+    document.getElementById('imagesDuVoyage2').style.display = "block";
+}
+function transitionHebergement2(){    
+document.getElementById('menuTextHebergement2').style.display = "block";
+document.getElementById('menuHebergement2').style.background = "white";
+document.getElementById('imagesDuVoyage3').style.display = "block";
+}
+function transitionBudget2(){
+    document.getElementById('menuTextBudget2').style.display = "block";
+    document.getElementById('menuBudget2').style.background = "white";
+    document.getElementById('imagesDuVoyage2').style.display = "block";
+}
+
+

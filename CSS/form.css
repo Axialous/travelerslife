@@ -1823,6 +1823,12 @@ footer p, footer a {
 #imagesDuVoyage4{
     display: none;
 }
+.menuText2{
+    display: none;
+}
+.menuCaracteristique2{
+    display: none;
+}
 @media screen and (max-width:680px){
     .imagesDuVoyage{
         width: 100%;
@@ -1837,13 +1843,17 @@ footer p, footer a {
         width: 100%;
         height: 100px;
         position: relative;
-        text-transform: uppercase;
-        font-weight: bold;
         border-radius: 0 0 10px 10px;
+    }
+    .menuPresentationFleche p{
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .menuCaracteristique2{
+        display: block;
     }
     .menuCaracteristique2 p{
         margin-top: 30px;
-        text-align: center;
         font-size: clamp(19px, 20px, 21px);
     }
     .menuText{
@@ -1855,6 +1865,9 @@ footer p, footer a {
     }
     .menuPresentationFleche img{
         margin-top: 20px;
+    }
+    .menuTextPresentation2{
+        text-align: center;
     }
     .menuPresentation2{
         background-color: whitesmoke;
