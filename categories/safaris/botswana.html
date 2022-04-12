@@ -40,54 +40,28 @@
         </header>
 
         <section id="accueil">
-                <div id="imageHotel" style="background-image: url(../../img/botswana1.jpg)">
-                    <h1 class="titre" id="titreBotswana"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Botswana<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
-                    <div class="ronds">
-                        <div class="rondBlanc1" id="rondBlancb"></div>
-                        <div onclick="transitionAcceuilDroite()" class="rondBlanc2" id="rondBlancb"></div>
-                        <div onclick="transitionAcceuilDroiteDirect()" class="rondBlanc3" id="rondBlancb"></div>
+            <div id="imageHotel" style="background-image: url(../../img/botswana1.jpg)">
+            </div>
+            <div id="imageCroisiere" style="background-image: url(../../img/botswana2.jpg)">
+            </div>
+            <div id="imageSafari" style="background-image: url(../../img/botswana3.jpg)">
+            </div>
+            <h1 class="titre"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Botswana<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+            <div id="interfaceAccueil">
+                <div class="fleche">
+                    <div class="flecheGauche">
+                        <button onclick="decaler(-1, 2)" id="gauche"></button>
                     </div>
-                    <div class="fleche">
-                        <div class="flecheGauche">
-                            <button class="gauche"></button>
-                        </div>
-                        <div class="flecheDroite">
-                            <button onclick="transitionAcceuilDroite()" class="droite"></button>
-                        </div>
-                    </div>
-                </div>
-                <div id="imageCroisiere" style="background-image: url(../../img/botswana2.jpg)">
-                    <h1 class="titre" id="titreBotswana"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Botswana<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
-                    <div class="ronds">
-                        <div onclick="transitionAcceuilGauche2()" class="rondBlanc4" id="rondBlancb"></div>
-                        <div class="rondBlanc5" id="rondBlancb"></div>
-                        <div onclick="transitionAcceuilDroite2()" class="rondBlanc6" id="rondBlancb"></div>
-                    </div>
-                    <div class="fleche">
-                        <div class="flecheGauche">
-                            <button onclick="transitionAcceuilGauche2()" class="gauche"></button>
-                        </div>
-                        <div class="flecheDroite">
-                            <button onclick="transitionAcceuilDroite2()" class="droite"></button>
-                        </div>
+                    <div class="flecheDroite">
+                        <button onclick="decaler(1, 2)" id="droite"></button>
                     </div>
                 </div>
-                <div id="imageSafari" style="background-image: url(../../img/botswana3.jpg)">
-                    <h1 class="titre" id="titreBotswana"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Botswana<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
-                    <div class="ronds">
-                        <div onclick="transitionAcceuilDroiteDirectR()" class="rondBlanc7" id="rondBlancb"></div>
-                        <div onclick="transitionAcceuilGauche3()" class="rondBlanc8" id="rondBlancb"></div>
-                        <div class="rondBlanc9" id="rondBlancb"></div>
-                    </div>
-                    <div class="fleche">
-                        <div class="flecheGauche">
-                            <button onclick="transitionAcceuilGauche3()" class="gauche"></button>
-                        </div>
-                        <div class="flecheDroite">
-                            <button class="droite"></button>
-                        </div>
-                    </div>
+                <div class="ronds">
+                    <div onclick="sauter(1, 2)" class="rondBlanc" id="rondBlanc1"></div>
+                    <div onclick="sauter(2, 2)" class="rondBlanc" id="rondBlanc2"></div>
+                    <div onclick="sauter(3, 2)" class="rondBlanc" id="rondBlanc3"></div>
                 </div>
+            </div>
         </section>
 
         <section id="citation">

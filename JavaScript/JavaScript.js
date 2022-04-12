@@ -156,22 +156,28 @@ function transitionBudget2(){
 }*/
 positionAccueil = 1;
 
-function sauter(variante) {
+function sauter(variante, remontee) {
     positionAccueil = variante;
-    position(positionAccueil);
+    position(positionAccueil, remontee);
 }
 
-function decaler(decalage) {
+function decaler(decalage, remontee) {
     if (positionAccueil + decalage >= 1 && positionAccueil + decalage <= 3) {
         positionAccueil += decalage;
-        position(positionAccueil);
+        position(positionAccueil, remontee);
     }
 }
 
-function position(variante) {
+function position(variante, remontee) {
 
-    document.getElementById('gauche').style.cursor = "url(img/decorations/flecheGauche.svg), w-resize"
-    document.getElementById('droite').style.cursor = "url(img/decorations/flecheDroite.svg), e-resize"
+    let remonteFichier = ''
+    while (remontee > 0) {
+        remonteFichier += '../';
+        remontee -= 1
+    }
+
+    document.getElementById('gauche').style.cursor = `url(${remonteFichier}img/decorations/flecheGauche.svg), w-resize`
+    document.getElementById('droite').style.cursor = `url(${remonteFichier}img/decorations/flecheDroite.svg), e-resize`
 
     document.getElementById('rondBlanc1').style.backgroundColor = "rgb(255, 255, 255)"
     document.getElementById('rondBlanc2').style.backgroundColor = "rgb(255, 255, 255)"
@@ -182,7 +188,7 @@ function position(variante) {
         document.getElementById('imageCroisiere').style.transform = "translateX(100%)";
         document.getElementById('imageSafari').style.transform = "translateX(200%)";
 
-        document.getElementById('gauche').style.cursor = "url(img/decorations/croix.svg), not-allowed"
+        document.getElementById('gauche').style.cursor = `url(${remonteFichier}img/decorations/croix.svg), not-allowed`
 
         document.getElementById('rondBlanc1').style.backgroundColor = "rgb(45, 37, 117)"
 
@@ -198,7 +204,7 @@ function position(variante) {
         document.getElementById('imageCroisiere').style.transform = "translateX(-100%)";
         document.getElementById('imageSafari').style.transform = "translateX(0%)";
 
-        document.getElementById('droite').style.cursor = "url(img/decorations/croix.svg), not-allowed"
+        document.getElementById('droite').style.cursor = `url(${remonteFichier}img/decorations/croix.svg), not-allowed`
 
         document.getElementById('rondBlanc3').style.backgroundColor = "rgb(117, 80, 37)"
     }
