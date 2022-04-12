@@ -2058,6 +2058,28 @@ footer p, footer a {
 .menuTextBudget2 span img{
     padding-bottom: 5px;
 }
+.caracteristiqueCabine{
+    display: flex;
+    border-style:solid;
+    border-color: blueviolet;
+}
+.caracteristiqueCabineImage{
+    border-style: solid;
+    width: 50%;
+}
+.caracteristiqueCabineImage img{
+    width: 100%;
+}
+.caracteristiqueCabineText{
+    border-style: solid;
+    border-color: aqua;
+    width: 50%;
+}
+.caracteristiqueCabineText h3{
+    color: rgb(69,123,148);
+    border-style: solid;
+}
+
 @media screen and (max-width:680px){
     .imagesDuVoyage{
         width: 100%;
