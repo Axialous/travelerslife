@@ -2052,6 +2052,12 @@ footer p, footer a {
 .menuCaracteristique2{
     display: none;
 }
+.menuTextBudget span .logoPrestation{
+    padding-bottom: 5px;
+}
+.menuTextBudget2 span img{
+    padding-bottom: 5px;
+}
 @media screen and (max-width:680px){
     .imagesDuVoyage{
         width: 100%;
