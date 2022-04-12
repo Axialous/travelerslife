@@ -1027,7 +1027,7 @@ blockquote img {
     transition: 125ms;
 }
 
-#formulaire form>input:hover {
+#formulaire form>input:hover, #formulaire form>input:focus {
     transform: scale(1.1);
     background-color: rgba(69, 123, 148, 90%);
 }
