@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <title>Traveler's life | Caraïbes</title>
+        <link rel="icon" href="../../img/decorations/icone_valise.png">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../CSS/form.css"/>
+        <script src="../../JavaScript/JavaScript.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <input type="checkbox">
+            <img src="../../img/decorations/burger.svg" alt="menu">
+
+            <a href="../../index.html"><h1 class="logo">Traveler's life<img src="../../img/decorations/valise.png" alt="valise"></h1></a>
+
+            <form id="recherche">
+                <input class="barre" type="text" name="text">
+                <input class="envoi" type="submit" name="submit" class="submit" value="">
+            </form>
+
+            <nav>
+                <div class="menu_deroulant">
+                    <input type="checkbox">
+                    <p>Catégories</p>
+                    <div>
+                        <a href="../hotels.html" >Hôtels</a>
+                        <a href="../croisieres.html">Croisières</a>
+                        <a href="../safaris.html">Safaris</a>
+                    </div>
+                </div>
+                <a href="#contacts">Contact</a>
+            </nav>
+        </header>
+
+        <section id="accueil">
+                <div id="imageHotel" style="background-image: url(../../img/caraibes1.jpg)">
+                    <h1 class="titre" id="titreBotswana"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Caraïbes<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+                    <div class="ronds">
+                        <div class="rondBlanc1" id="rondBlancb"></div>
+                        <div onclick="transitionAcceuilDroite()" class="rondBlanc2" id="rondBlancb"></div>
+                        <div onclick="transitionAcceuilDroiteDirect()" class="rondBlanc3" id="rondBlancb"></div>
+                    </div>
+                    <div class="fleche">
+                        <div class="flecheGauche">
+                            <button class="gauche"></button>
+                        </div>
+                        <div class="flecheDroite">
+                            <button onclick="transitionAcceuilDroite()" class="droite"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="imageCroisiere" style="background-image: url(../../img/caraibes2.jpg)">
+                    <h1 class="titre" id="titreBotswana"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Caraïbes<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+                    <div class="ronds">
+                        <div onclick="transitionAcceuilGauche2()" class="rondBlanc4" id="rondBlancb"></div>
+                        <div class="rondBlanc5" id="rondBlancb"></div>
+                        <div onclick="transitionAcceuilDroite2()" class="rondBlanc6" id="rondBlancb"></div>
+                    </div>
+                    <div class="fleche">
+                        <div class="flecheGauche">
+                            <button onclick="transitionAcceuilGauche2()" class="gauche"></button>
+                        </div>
+                        <div class="flecheDroite">
+                            <button onclick="transitionAcceuilDroite2()" class="droite"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="imageSafari" style="background-image: url(../../img/caraibes3.jpg)">
+                    <h1 class="titre" id="titreBotswana"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Caraïbes<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+                    <div class="ronds">
+                        <div onclick="transitionAcceuilDroiteDirectR()" class="rondBlanc7" id="rondBlancb"></div>
+                        <div onclick="transitionAcceuilGauche3()" class="rondBlanc8" id="rondBlancb"></div>
+                        <div class="rondBlanc9" id="rondBlancb"></div>
+                    </div>
+                    <div class="fleche">
+                        <div class="flecheGauche">
+                            <button onclick="transitionAcceuilGauche3()" class="gauche"></button>
+                        </div>
+                        <div class="flecheDroite">
+                            <button class="droite"></button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="citation">
+            <blockquote>
+                <p>« La mer est un espace de rigueur et de liberté. »</p>
+                <cite><img src="../../img/decorations/ligne_citation.svg" alt="Ligne décorative">Victor Hugo<img src="../../img/decorations/ligne_citation.svg" alt="Ligne décorative"></cite>
+            </blockquote>
+        </section>
+
+        <section id="caracteristique">
+            <div class="blocCaracteristique">
+                <img class="imagesDuVoyage" id="imagesDuVoyage1" src="../../img/caracteristiquecroisiere1.jpg">
+                <img class="imagesDuVoyage" id="imagesDuVoyage2" src="../../img/caracteristiquecroisiere2.jpg">
+                <img class="imagesDuVoyage" id="imagesDuVoyage3" src="../../img/caracteristiquecroisiere3.jpg">
+                <img class="imagesDuVoyage" id="imagesDuVoyage4" src="../../img/caracteristiquecroisiere4.jpg">
+                <div class="menuCaracteristique">
+                    <div onclick="transitionPresentation()" class="menuPresentation" id="menuPresentation">
+                        <p>Infos navires</p>
+                    </div>
+                    <div onclick="transitionItineraire()" class="menuItineraire" id="menuItineraire">
+                        <p>Itinéraire</p>
+                    </div>
+                    <div onclick="transitionHebergement()" class="menuHebergement" id="menuHebergement">
+                        <p>Cabines</p>
+                    </div>
+                    <div onclick="transitionBudget()" class="menuBudget" id="menuBudget">
+                        <p>Prestations</p>
+                    </div>
+                </div>
+                <div class="menuText">
+                    <p class="menuTextPresentation" id="menuTextPresentation" style="text-align: left">1-Données techniques<br><br>
+                        Le MSC Seaside est l'un des derniers navires de croisière de la compagnie MSC Croisières. Il est entré en service en novembre 2017 et dessert les Caraïbes. Long de 323 mètres et large de 41 mètres, il dispose de plusieurs nouveautés par rapport aux précédents navires de la flotte, à l'exemple d'un Aquapark, qui serait le plus grand en mer. Il est doté de 13 ponts et dispose d'une capacité d'accueil de 5 179 passagers et 1 413 membres de l'équipage.
+                        <br><br>
+                        2-Divertissements et loisirs adultes<br><br>
+                        Le navire offre de nombreuses commodités à ses passagers dans l'optique d'améliorer leur séjour à bord. On cite notamment la promenade de 360° face à la mer, qui fait le tour du navire et offre un accès à une grande variété de restaurants, bars et boutiques. On cite également la passerelle en verre, qui offre une vue imprenable sur la mer vue d'en haut ; l'atrium vitré, qui s'étend sur deux ponts différents et offre une magnifique vue sur la mer.
+                        <br>
+                        De nombreux équipements et installations ont été soigneusement pensés afin que le séjour des croisiéristes soit le plus agréable possible durant toute la croisière. Ces derniers ont trois piscines à leur disposition, situées sur les ponts 7, 16 et 18.
+                        
+                        Ceux qui apprécient particulièrement les toboggans pourront se rendre sur le pont 11 et jouir des 5 toboggans différents mis à leur disposition.
+                        <br>
+                        On note également la présence de trois centres de Spa, 2 centres de Thalasso, situés tous sur le pont 8. Pour vos repas, vous pourrez vous rendre dans l'un des 9 restaurants du navire, dont 5 offrent des spécialités sophistiquées.
+                        
+                        Le navire compte également de nombreux équipements sportifs pour ses passagers qui désirent garder la forme durant leur séjour à bord. Outre la salle de yoga située sur le pont 8, on cite également la salle de gym à la pointe de la technologie située sur le même pont, et dans laquelle on retrouve des équipements de cardio-training et de musculation, une large gamme de cours de fitness et de programmes d'entraînement innovants.
+                        
+                        Le pont 7 abrite deux pistes de bowling, où vous pourrez partager des moments de détente et de loisirs avec vos amis ou avec votre famille.
+                        <br>
+                        Le navire abrite le <strong>Théâtre Metropolitan</strong> situé sur les ponts 6 et 7. Il s'agit d'un superbe théâtre où vous pourrez profiter de nombreux spectacles comme ceux de Broadway, grâce à son programme varié qui propose des divertissements chaque soir tout au long de votre croisière.
+                        <br>
+                        On y dénombre également de nombreux autres lieux d'intérêts à savoir :<br>
+                        
+                        - une galerie d'Art et une galerie Photo, situées toutes deux sur le pont 5 ;<br>
+                        - des boutiques de parfums, de cosmétiques, de montres et d'accessoires, une bijouterie, situées toutes sur le pont 6 ;<br>
+                        - une boutique de glaces et de crêpes;<br>
+                        - une librairie;<br>
+                        - une salle de jeu virtuelle;<br>
+                        - une salle de simulateur F1;<br>
+                        - une salle de cinéma 5D;<br>
+                        - une boutique de montres et de verres;<br>
+                        - un casino, situés tous sur le pont 7 ;<br>
+                        - une galerie de bijoux;<br>
+                        - un centre de pédicure et de manucure;<br>
+                        - des boutiques de cosmétiques et de produits pour Spa;<br>
+                        - un salon de coiffure, situés tous sur le pont 8 ;<br><br>
+                        3-Divertissements et loisirs enfants<br><br>
+                        Le MSC Seaside propose également de nombreuses activités destinées aux enfants. On peut dire que le pont 18 est celui des enfants, car on y retrouve le Forest Aquaventure and Adventure Park, constitué sur plusieurs niveaux, il est l'un des parcs aquatiques interactifs les plus grands en mer. On y retrouve également le Baby Club, où les enfants âgés de 1 à 3 ans pourront prendre part à des activités, ainsi qu'à des jeux développés avec Chicco®, qui est l'un de ses partenaires ; les Mini Club et Juniors Club, où les enfants âgés de 3 à 11 ans pourront s'amuser tout en donnant vie à leur créativité, grâce à LEGO®, qui est également l'un de ses partenaires et les Clubs Jeunes et Ados, où les jeunes âgés de 12 à 17 ans pourront se divertir grâce à des espaces dédiés qui deviennent à tour de rôle des salles de cinéma, de jeux et discothèques.
+                        <br><br>
+                        4-La restauration sur le MSC Seaside<br><br>
+                        Les principaux restaurants sont situés sur le pont 16, à savoir : le "Pan Asian Market Kitchen", qui offre des spécialités asiatiques ; l'Ocean Cay Restaurant, qui propose des plats sophistiqués de poisson et d'autres recettes et le Butcher's Cut, qui propose des coupes nobles de viande venant du monde entier, avec une variété d'autres plats délicieux. 
+                        <br>
+                        Le MSC Seaside dispose également de cadres très confortables où vous pourrez déguster une boisson, un apéritif ou un rafraîchissement en toute quiétude. On y dénombre près de 20 bars et lounges dont les principaux sont : le Venchi Chocolate Factory, Ice Cream and Coffee Bar, situé sur le pont 6, où vous pourrez admirer les maîtres chocolatiers créer leurs mets succulents dans une cuisine ouverte avant de les savourer ; le News & Comedy Club, situé sur le pont 8, où vous pourrez déguster d'excellents vins entre amis et l'Atrium vitré, qui s'étend sur deux ponts différents (5 et 6 ; 7 et 8), créant ainsi une atmosphère particulière pour les spectacles avec une vue spectaculaire sur la mer.
+                        <br><br>
+                        5-Hébergement<br><br>
+                        Le MSC Seaside offre un large choix d'hébergement incluant des suites luxueuses avec bain à remous privé, ainsi que des cabines pour les groupes allant jusqu'à 10 personnes ou pour les familles. En effet, on note près de 17 catégories de logements différents répartis sur 10 ponts. Toutes les cabines sont équipées d'un lit simple ou double (sur demande), d'une grande penderie, d'une salle de bains avec douche, d'une TV interactive, d'un téléphone, d'une connexion internet via WIFI, d'un minibar, d'une climatisation et d'un coffre-fort. Les suites quant à elles disposent plutôt d'un grand lit matrimonial séparable en deux lits simples (sur demande).</p>
+                    <div class="menuTextItineraire" id="menuTextItineraire">
+                        <div class="caracteristiqueEscale">
+                            <div class="caracteristiqueEscaleImage">
+                                <img src="../../img/CaracteristiqueItineraireEscale.PNG" alt="Itineraire">
+                            </div>
+                            <div class="caracteristiqueEscaleText">
+                                <table>
+                                    <tr>
+                                        <th>jour</th>
+                                        <th>escales</th>
+                                        <th>arrivée</th>
+                                        <th>départ</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Miami</td>
+                                        <td></td>
+                                        <td>17:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Navigation</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Costa Maya</td>
+                                        <td>8:00</td>
+                                        <td>17:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Roatan</td>
+                                        <td>8:00</td>
+                                        <td>16:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Cozumel</td>
+                                        <td>8:00</td>
+                                        <td>19:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Navigation</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Cocacay</td>
+                                        <td>7:00</td>
+                                        <td>17:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: none">8</td>
+                                        <td style="border: none">Miami</td>
+                                        <td style="border: none">6:00</td>
+                                        <td style="border: none"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="menuTextHebergement" id="menuTextHebergement">
+                        <div class="caracteristiqueCabine">
+                            <div class="caracteristiqueCabineImage">
+                                <img src="../../img/cabine1.jpg" alt="cabine1">
+                            </div>
+                            <div class="caracteristiqueCabineText">
+                                <h3>Cabine intérieure</h3>
+                                <p>Lit complet et salle de bain complète. Profitez des vues virtuelles du paysage en temps réel via votre téléviseur à écran plat. Cabine d'occupation simple, pas de supplément individuel requis. Jusqu'à 1 personne. Superficie : 8.9m²</p>
+                            </div>
+                        </div> 
+                        <div class="caracteristiqueCabine">
+                            <div class="caracteristiqueCabineImage">
+                                <img src="../../img/cabine2.jpg" alt="cabine1">
+                            </div>
+                            <div class="caracteristiqueCabineText">
+                                <h3>Cabine extérieure</h3>
+                                <p>Différentes sortes de cabines vue mer sont disponibles : la standard avec vue sur la mer, celle avec vue sur la promenade et enfin celle orientée vers Le parc central.</p>
+                            </div> 
+                        </div>
+                        <div class="caracteristiqueCabine">
+                            <div class="caracteristiqueCabineImage">
+                                <img src="../../img/cabine3.jpg" alt="cabine1">
+                            </div>
+                            <div class="caracteristiqueCabineText">
+                                <h3>Cabine balcon</h3>
+                                <p>Deux lits jumeaux convertibles en très grand lit double, coin salon, salle de bain complète et balcon avec vue sur la promenade ou vue mer selon la catégorie choisie. Jusqu'à 4 personnes. Les cabines comprennent également un sèche-cheveux, une télévision, une radio, un mini réfrigérateur et un coffre-fort. Le service en cabine est disponible 24h/24 (frais supplémentaires pour le service de nuit). Superficie : 16 m²</p>
+                            </div> 
+                        </div>
+                        <div class="caracteristiqueCabine">
+                            <div class="caracteristiqueCabineImage">
+                                <img src="../../img/cabine4.jpg" alt="cabine1">
+                            </div>
+                            <div class="caracteristiqueCabineText">
+                                <h3>Suite</h3>
+                                <p>Zone de chambre avec deux lits jumeaux qui se transforment en Royal King. Salle de bain complète avec baignoire. Espace salon avec canapé. Balcon privé. Jusqu'à 4 personnes. Superficie : 26m²</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <p class="menuTextBudget" id="menuTextBudget"><span><img class="logoPrestation" src="../../img/caracteristiquePrestationProjecteur.PNG" style="height: 30px"></span>LES EXPÉRIENCES <span style=color:rgb(69,123,148)>INCLUSES</span><br><br>
+                        - Boardwalk<br>
+                        - Bibliothèque<br>
+                        - Central Park<br>
+                        - Slide enfants<br>
+                        - The Perfect Storm<br>
+                        - Tyrolienne<br>
+                        - Spectacles à l'AquaTheater<br>
+                        - Piscine avec écran géant<br>
+                        - Ulimate abyss<br>
+                        - Splashaway BaySM<br>
+                        - Zone jeunesse<br>
+                        - Escalade<br>
+                        - Patinoire<br>
+                        - Mini-golf<br>
+                        - Terrain de sports<br>
+                        - Fitness<br>
+                        - FlowRider®<br>
+                        - Piste de jogging<br>
+                        - Table de tennis<br>
+                        - Solarium bistro<br>
+                        - Vintages<br>
+                        - Café Latte-tudes<br>
+                        - une galerie d'Art et une galerie Photo<br>
+                        - des boutiques de parfums, de cosmétiques, de montres et d'accessoires, une bijouterie<br>
+                        - une boutique de glaces et de crêpes<br>
+                        - une salle de jeu virtuelle<br>
+                        - une salle de simulateur F1<br>
+                        - une salle de cinéma 5D<br>
+                        - une boutique de montres et de verres<br>
+                        - un casino<br>
+                        - un centre de pédicure et de manucure<br>
+                        - un salon de coiffure<br><br>
+                        <span><img class="logoPrestation" src="../../img/caracteristiquePrestationPlus.PNG" style="height: 30px"></span> PRESTATIONS <span style=color:rgb(69,123,148)>INCLUSES</span><br><br>
+                        Le logement dans la cabine prealablement choisie pour toute la duree de la croisiere<br>
+                        La pension complete a bord du diner du 1er soir au petit dejeuner du dernier jour hors prestations spécifiques<br>
+                        Les taxes portuaires<br>
+                        Les spectacles inclus dans la croisiere<br>
+                        Le cocktail de bienvenue du commandant<br><br>
+                        <span><img class="logoPrestation" src="../../img/caracteristiquePrestationCroix.PNG" style="height: 30px"></span>LES PRESTATIONS <span style=color:rgb(69,123,148)>NON INCLUSES</span><br><br>
+                        Les assurances de voyages sauf prevu par le contrat<br>
+                        Les boissons au bar ou au restaurant sauf prevu par le contrat<br>
+                        Les excursions facultatives<br>
+                        Les acheminements aeriens jusqu au port d embarquement sauf prevu par le contrat<br>
+                        Le forfait de sejour a bord (pourboires obligatoire et a payer a bord en fin de croisiere) sauf prevu par le contrat
+                        Les services personnels (coiffeur, massages, medecin ...)<br><br>
+                        <span><img class="logoPrestation" src="../../img/caracteristiquePrestationInfos.PNG" style="height: 30px"></span>LES FORMALITÉS <span style=color:rgb(69,123,148)>DE DÉPART</span><br><br>
+                        Passeport ou carte d'identité obligatoire en fonction de la destination (nous contacter pour information).
+                        La validité du document (passeport ou CI) doit être supérieure à 6 mois de la date du retour.</p>
+                </div>
+                <div class="menuCaracteristique2">
+                    <div onclick="transitionPresentation2()" class="menuPresentation2" id="menuPresentation2">
+                        <div class="menuPresentationFleche"><p>Présentation</p><img id="flecheBasCaracteristique" src="../../img/flecheBasCaracteristique.png" height="40px" width="40px"></div>
+                    </div>
+                    <p class="menuTextPresentation2" id="menuTextPresentation2" style="text-align: left">1-Données techniques<br><br>
+                        Le MSC Seaside est l'un des derniers navires de croisière de la compagnie MSC Croisières. Il est entré en service en novembre 2017 et dessert les Caraïbes. Long de 323 mètres et large de 41 mètres, il dispose de plusieurs nouveautés par rapport aux précédents navires de la flotte, à l'exemple d'un Aquapark, qui serait le plus grand en mer. Il est doté de 13 ponts et dispose d'une capacité d'accueil de 5 179 passagers et 1 413 membres de l'équipage.
+                        <br><br>
+                        2-Divertissements et loisirs adultes<br><br>
+                        Le navire offre de nombreuses commodités à ses passagers dans l'optique d'améliorer leur séjour à bord. On cite notamment la promenade de 360° face à la mer, qui fait le tour du navire et offre un accès à une grande variété de restaurants, bars et boutiques. On cite également la passerelle en verre, qui offre une vue imprenable sur la mer vue d'en haut ; l'atrium vitré, qui s'étend sur deux ponts différents et offre une magnifique vue sur la mer.
+                        <br>
+                        De nombreux équipements et installations ont été soigneusement pensés afin que le séjour des croisiéristes soit le plus agréable possible durant toute la croisière. Ces derniers ont trois piscines à leur disposition, situées sur les ponts 7, 16 et 18.
+                        
+                        Ceux qui apprécient particulièrement les toboggans pourront se rendre sur le pont 11 et jouir des 5 toboggans différents mis à leur disposition.
+                        <br>
+                        On note également la présence de trois centres de Spa, 2 centres de Thalasso, situés tous sur le pont 8. Pour vos repas, vous pourrez vous rendre dans l'un des 9 restaurants du navire, dont 5 offrent des spécialités sophistiquées.
+                        
+                        Le navire compte également de nombreux équipements sportifs pour ses passagers qui désirent garder la forme durant leur séjour à bord. Outre la salle de yoga située sur le pont 8, on cite également la salle de gym à la pointe de la technologie située sur le même pont, et dans laquelle on retrouve des équipements de cardio-training et de musculation, une large gamme de cours de fitness et de programmes d'entraînement innovants.
+                        
+                        Le pont 7 abrite deux pistes de bowling, où vous pourrez partager des moments de détente et de loisirs avec vos amis ou avec votre famille.
+                        <br>
+                        Le navire abrite le <strong>Théâtre Metropolitan</strong> situé sur les ponts 6 et 7. Il s'agit d'un superbe théâtre où vous pourrez profiter de nombreux spectacles comme ceux de Broadway, grâce à son programme varié qui propose des divertissements chaque soir tout au long de votre croisière.
+                        <br>
+                        On y dénombre également de nombreux autres lieux d'intérêts à savoir :<br>
+                        
+                        - une galerie d'Art et une galerie Photo, situées toutes deux sur le pont 5 ;<br>
+                        - des boutiques de parfums, de cosmétiques, de montres et d'accessoires, une bijouterie, situées toutes sur le pont 6 ;<br>
+                        - une boutique de glaces et de crêpes;<br>
+                        - une librairie;<br>
+                        - une salle de jeu virtuelle;<br>
+                        - une salle de simulateur F1;<br>
+                        - une salle de cinéma 5D;<br>
+                        - une boutique de montres et de verres;<br>
+                        - un casino, situés tous sur le pont 7 ;<br>
+                        - une galerie de bijoux;<br>
+                        - un centre de pédicure et de manucure;<br>
+                        - des boutiques de cosmétiques et de produits pour Spa;<br>
+                        - un salon de coiffure, situés tous sur le pont 8 ;<br><br>
+                        3-Divertissements et loisirs enfants<br><br>
+                        Le MSC Seaside propose également de nombreuses activités destinées aux enfants. On peut dire que le pont 18 est celui des enfants, car on y retrouve le Forest Aquaventure and Adventure Park, constitué sur plusieurs niveaux, il est l'un des parcs aquatiques interactifs les plus grands en mer. On y retrouve également le Baby Club, où les enfants âgés de 1 à 3 ans pourront prendre part à des activités, ainsi qu'à des jeux développés avec Chicco®, qui est l'un de ses partenaires ; les Mini Club et Juniors Club, où les enfants âgés de 3 à 11 ans pourront s'amuser tout en donnant vie à leur créativité, grâce à LEGO®, qui est également l'un de ses partenaires et les Clubs Jeunes et Ados, où les jeunes âgés de 12 à 17 ans pourront se divertir grâce à des espaces dédiés qui deviennent à tour de rôle des salles de cinéma, de jeux et discothèques.
+                        <br><br>
+                        4-La restauration sur le MSC Seaside<br><br>
+                        Les principaux restaurants sont situés sur le pont 16, à savoir : le "Pan Asian Market Kitchen", qui offre des spécialités asiatiques ; l'Ocean Cay Restaurant, qui propose des plats sophistiqués de poisson et d'autres recettes et le Butcher's Cut, qui propose des coupes nobles de viande venant du monde entier, avec une variété d'autres plats délicieux. 
+                        <br>
+                        Le MSC Seaside dispose également de cadres très confortables où vous pourrez déguster une boisson, un apéritif ou un rafraîchissement en toute quiétude. On y dénombre près de 20 bars et lounges dont les principaux sont : le Venchi Chocolate Factory, Ice Cream and Coffee Bar, situé sur le pont 6, où vous pourrez admirer les maîtres chocolatiers créer leurs mets succulents dans une cuisine ouverte avant de les savourer ; le News & Comedy Club, situé sur le pont 8, où vous pourrez déguster d'excellents vins entre amis et l'Atrium vitré, qui s'étend sur deux ponts différents (5 et 6 ; 7 et 8), créant ainsi une atmosphère particulière pour les spectacles avec une vue spectaculaire sur la mer.
+                        <br><br>
+                        5-Hébergement<br><br>
+                        Le MSC Seaside offre un large choix d'hébergement incluant des suites luxueuses avec bain à remous privé, ainsi que des cabines pour les groupes allant jusqu'à 10 personnes ou pour les familles. En effet, on note près de 17 catégories de logements différents répartis sur 10 ponts. Toutes les cabines sont équipées d'un lit simple ou double (sur demande), d'une grande penderie, d'une salle de bains avec douche, d'une TV interactive, d'un téléphone, d'une connexion internet via WIFI, d'un minibar, d'une climatisation et d'un coffre-fort. Les suites quant à elles disposent plutôt d'un grand lit matrimonial séparable en deux lits simples (sur demande).</p>
+                    <div onclick="transitionItineraire2()" class="menuItineraire2" id="menuItineraire2">
+                        <div class="menuPresentationFleche"><p>Itinéraire</p><img id="flecheBasCaracteristique2" src="../../img/flecheBasCaracteristique.png" height="40px" width="40px"></div>
+                    </div>
+                    <div class="menuTextItineraire2" id="menuTextItineraire2">
+                        <div class="caracteristiqueEscale">
+                            <div class="caracteristiqueEscaleImage">
+                                <img src="../../img/CaracteristiqueItineraireEscale.PNG" alt="Itineraire">
+                            </div>
+                            <div class="caracteristiqueEscaleText">
+                                <table>
+                                    <tr>
+                                        <th>jour</th>
+                                        <th>escales</th>
+                                        <th class="tabEscale">arrivée</th>
+                                        <th class="tabEscale">départ</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Miami</td>
+                                        <td class="tabEscale"></td>
+                                        <td class="tabEscale">17:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Navigation</td>
+                                        <td class="tabEscale"></td>
+                                        <td class="tabEscale"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Costa Maya</td>
+                                        <td class="tabEscale">8:00</td>
+                                        <td class="tabEscale">17:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Roatan</td>
+                                        <td class="tabEscale">8:00</td>
+                                        <td class="tabEscale">16:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Cozumel</td>
+                                        <td class="tabEscale">8:00</td>
+                                        <td class="tabEscale">19:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Navigation</td>
+                                        <td class="tabEscale"></td>
+                                        <td class="tabEscale"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Cocacay</td>
+                                        <td class="tabEscale">7:00</td>
+                                        <td class="tabEscale">17:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: none">8</td>
+                                        <td style="border: none">Miami</td>
+                                        <td  class="tabEscale" style="border: none">6:00</td>
+                                        <td  class="tabEscale" style="border: none"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div> 
+                    </div>  
+                    <div onclick="transitionHebergement2()" class="menuHebergement2" id="menuHebergement2">
+                        <div class="menuPresentationFleche"><p>Cabines</p><img src="../../img/flecheBasCaracteristique.png" height="40px" width="40px"></div>
+                    </div>
+                    <div class="menuTextHebergement2" id="menuTextHebergement2">
+                        <div class="caracteristiqueCabine">
+                            <div class="caracteristiqueCabineImage">
+                                <img src="../../img/cabine1.jpg" alt="cabine1">
+                            </div>
+                            <div class="caracteristiqueCabineText">
+                                <h3>Cabine intérieure</h3>
+                                <p>Lit complet et salle de bain complète. Profitez des vues virtuelles du paysage en temps réel via votre téléviseur à écran plat. Cabine d'occupation simple, pas de supplément individuel requis. Jusqu'à 1 personne. Superficie : 8.9m²</p>
+                            </div>
+                        </div> 
+                        <div class="caracteristiqueCabine">
+                            <div class="caracteristiqueCabineImage">
+                                <img src="../../img/cabine2.jpg" alt="cabine1">
+                            </div>
+                            <div class="caracteristiqueCabineText">
+                                <h3>Cabine extérieure</h3>
+                                <p>Différentes sortes de cabines vue mer sont disponibles : la standard avec vue sur la mer, celle avec vue sur la promenade et enfin celle orientée vers Le parc central.</p>
+                            </div> 
+                        </div>
+                        <div class="caracteristiqueCabine">
+                            <div class="caracteristiqueCabineImage">
+                                <img src="../../img/cabine3.jpg" alt="cabine1">
+                            </div>
+                            <div class="caracteristiqueCabineText">
+                                <h3>Cabine balcon</h3>
+                                <p>Deux lits jumeaux convertibles en très grand lit double, coin salon, salle de bain complète et balcon avec vue sur la promenade ou vue mer selon la catégorie choisie. Jusqu'à 4 personnes. Les cabines comprennent également un sèche-cheveux, une télévision, une radio, un mini réfrigérateur et un coffre-fort. Le service en cabine est disponible 24h/24 (frais supplémentaires pour le service de nuit). Superficie : 16 m²</p>
+                            </div> 
+                        </div>
+                        <div class="caracteristiqueCabine">
+                            <div class="caracteristiqueCabineImage">
+                                <img src="../../img/cabine4.jpg" alt="cabine1">
+                            </div>
+                            <div class="caracteristiqueCabineText">
+                                <h3>Suite</h3>
+                                <p>Zone de chambre avec deux lits jumeaux qui se transforment en Royal King. Salle de bain complète avec baignoire. Espace salon avec canapé. Balcon privé. Jusqu'à 4 personnes. Superficie : 26m²</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div onclick="transitionBudget2()" class="menuBudget2" id="menuBudget2">
+                        <div class="menuPresentationFleche"><p>prestations</p><img src="../../img/flecheBasCaracteristique.png" height="40px" width="40px"></div>
+                    </div>
+                    <p class="menuTextBudget2" id="menuTextBudget2"><span><img class="logoPrestation" src="../../img/caracteristiquePrestationProjecteur.PNG" style="height: 30px"></span>LES EXPÉRIENCES <span style=color:rgb(69,123,148)>INCLUSES</span><br><br>
+                        - Boardwalk<br>
+                        - Bibliothèque<br>
+                        - Central Park<br>
+                        - Slide enfants<br>
+                        - The Perfect Storm<br>
+                        - Tyrolienne<br>
+                        - Spectacles à l'AquaTheater<br>
+                        - Piscine avec écran géant<br>
+                        - Ulimate abyss<br>
+                        - Splashaway BaySM<br>
+                        - Zone jeunesse<br>
+                        - Escalade<br>
+                        - Patinoire<br>
+                        - Mini-golf<br>
+                        - Terrain de sports<br>
+                        - Fitness<br>
+                        - FlowRider®<br>
+                        - Piste de jogging<br>
+                        - Table de tennis<br>
+                        - Solarium bistro<br>
+                        - Vintages<br>
+                        - Café Latte-tudes<br>
+                        - une galerie d'Art et une galerie Photo<br>
+                        - des boutiques de parfums, de cosmétiques, de montres et d'accessoires, une bijouterie<br>
+                        - une boutique de glaces et de crêpes<br>
+                        - une salle de jeu virtuelle<br>
+                        - une salle de simulateur F1<br>
+                        - une salle de cinéma 5D<br>
+                        - une boutique de montres et de verres<br>
+                        - un casino<br>
+                        - un centre de pédicure et de manucure<br>
+                        - un salon de coiffure<br><br>
+                        <span><img class="logoPrestation" src="../../img/caracteristiquePrestationPlus.PNG" style="height: 30px"></span>LES PRESTATIONS <span style=color:rgb(69,123,148)>INCLUSES</span><br><br>
+                        Le logement dans la cabine prealablement choisie pour toute la duree de la croisiere<br>
+                        La pension complete a bord du diner du 1er soir au petit dejeuner du dernier jour hors prestations spécifiques<br>
+                        Les taxes portuaires<br>
+                        Les spectacles inclus dans la croisiere<br>
+                        Le cocktail de bienvenue du commandant<br><br>
+                        <span><img class="logoPrestation" src="../../img/caracteristiquePrestationCroix.PNG" style="height: 30px"></span>LES PRESTATIONS <span style=color:rgb(69,123,148)>NON INCLUSES</span><br><br>
+                        Les assurances de voyages sauf prevu par le contrat<br>
+                        Les boissons au bar ou au restaurant sauf prevu par le contrat<br>
+                        Les excursions facultatives<br>
+                        Les acheminements aeriens jusqu au port d embarquement sauf prevu par le contrat<br>
+                        Le forfait de sejour a bord (pourboires obligatoire et a payer a bord en fin de croisiere) sauf prevu par le contrat
+                        Les services personnels (coiffeur, massages, medecin ...)<br><br>
+                        <span><img class="logoPrestation" src="../../img/caracteristiquePrestationInfos.PNG" style="height: 30px"></span>LES FORMALITÉS <span style=color:rgb(69,123,148)>DE DÉPART</span><br><br>
+                        Passeport ou carte d'identité obligatoire en fonction de la destination (nous contacter pour information).
+                        La validité du document (passeport ou CI) doit être supérieure à 6 mois de la date du retour.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="formulaire">
+            <h2>Je suis intéressé par ce voyage !</h2>
+            <article class="ligne">
+                <form method="post" action="traitement.php" class="colonne">
+                    <h5>Demandez des informations ou un devis</h5>
+                    <div class="ligne">
+                        <p class="colonne">
+                            <label for="nom">Nom :</label>
+                            <input type="text" name="nom" required>
+                        </p>
+                        <p class="colonne">
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" name="prenom" required>
+                        </p>
+                    </div>
+                    <p class="colonne">
+                        <label for="mail">Adresse mail :</label>
+                        <input type="email" name="mail" required>
+                    </p>
+                    <p class="colonne">
+                        <label for="telephone">Téléphone :</label>
+                        <input type="tel" name="telephone">
+                    </p>
+                    <p class="colonne">
+                        <label for="demande">Votre demande :</label>
+                        <textarea name="demande" rows="4" required></textarea>
+                    </p>
+                    <input type="submit" value="Envoyer">
+                </form>
+                <div class="img"></div>
+                </article>
+        </section>
+
+        <section id="idees">
+            <h2>Besoin d'autres idées ?</h2>
+            <div class="redirection">
+                <div href="zimbabwe.html" class="redirection1" style="background-image: url(../../img/offreNorvege.jpg)">
+                    <div class="contenerTitre">
+                    <h4 class="titre"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Norvège<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h4>
+                    </div>
+                </div>
+                <div href="tanzanie.html" class="redirection2" style="background-image: url(../../img/offreGrece.jpg)">
+                    <div class="contenerTitre">
+                        <h4 class="titre"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Grèce<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h4>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <footer>
+            <div class="ligne">
+                <div>
+                    <a href="#"><h1 class="logo">Traveler's life<img src="../../img/decorations/valise.png" alt="valise"></h1></a>
+                    <a href="#">Mentions légales – CGV</a>
+                </div>
+
+                <div class="separateur-vertical"></div>
+
+                <div id="reseaux">
+                    <h3>Rejoignez-nous</h3>
+                    <div class="ligne">
+                        <button><img src="../../img/decorations/facebook.png" alt="Facebook"></button>
+                        <button><img src="../../img/decorations/instagram.png" alt="Instagram"></button>
+                        <button><img src="../../img/decorations/twitter.png" alt="Twitter"></button>
+                    </div>
+                </div>
+
+                <div class="separateur-vertical"></div>
+
+                <div id="contacts">
+                    <h3>Contact</h3>
+                    <div>
+                        <p>Adresse : 20 rue de la République,<br>58000 Nevers</p>
+                        <p>Téléphone : 03.67.48.59.20</p>
+                        <p>E-Mail : contact@travelerslife.com</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p>Tous droits réservés @Traveler's life</p>
+        </footer>
+    </body>
+
+</html>

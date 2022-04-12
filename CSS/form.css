@@ -2052,6 +2052,65 @@ footer p, footer a {
 .menuCaracteristique2{
     display: none;
 }
+.menuTextBudget span .logoPrestation{
+    padding-bottom: 5px;
+}
+.menuTextBudget2 span img{
+    padding-bottom: 5px;
+}
+.caracteristiqueCabine{
+    display: flex;
+    margin-bottom: 10px;
+}
+.caracteristiqueCabineImage{
+    width: 50%;
+    margin-right: 10px;
+}
+.caracteristiqueCabineImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.caracteristiqueCabineText{
+    width: 50%;
+}
+.caracteristiqueCabineText h3{
+    color: rgb(69,123,148);
+    border-style: none none solid none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.caracteristiqueCabineText p{
+    font-size: 15px;
+}
+.caracteristiqueEscale{
+    display: flex;
+}
+.caracteristiqueEscaleText th{
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    font-size: 15px;
+}
+.caracteristiqueEscaleText td{
+    border-style: none none solid none;
+    border-color: rgb(69,123,148);
+    text-align: center;
+}
+.caracteristiqueEscaleText table{
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+.caracteristiqueEscaleText{
+    width: 100%;
+}
+.caracteristiqueEscaleImage{
+    width: 100%;
+}
+.caracteristiqueEscaleImage img{
+    width: 100%;
+    height: 100%;
+}
 @media screen and (max-width:680px){
     .imagesDuVoyage{
         width: 100%;
@@ -2089,6 +2148,51 @@ footer p, footer a {
     }
 }
 @media screen and (max-width:835px){
+    .caracteristiqueEscale{
+        display: block;
+        margin-top: 20px;
+    }
+    .caracteristiqueEscaleText th{
+        text-transform: uppercase;
+        background-color: whitesmoke;
+    }
+    .caracteristiqueEscaleText td{
+        border-style: none none solid none;
+        border-color: rgb(69,123,148);
+        text-align: center;
+    }
+    .caracteristiqueEscaleText table{
+        border-collapse: collapse;
+        width: 100%;
+        height: 100%;
+    }
+    .caracteristiqueEscaleText{
+        width: 100%;
+    }
+    .caracteristiqueEscaleImage{
+        width: 100%;
+    }
+    .caracteristiqueEscaleImage img{
+        width: 100%;
+        height: 100%;
+    }
+    .caracteristiqueCabine{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .caracteristiqueCabineImage{
+        width: 100%;
+        margin-right: 10px;
+        margin-top: 50px;
+    }
+    .caracteristiqueCabineImage img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .caracteristiqueCabineText{
+        width: 100%;
+    }
     .menuCaracteristique{
         display: none;
     }
@@ -2150,5 +2254,10 @@ footer p, footer a {
     .menuTextBudget2{
         display: none;
         margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:360px){
+    .tabEscale{
+        display: none;
     }
 }
