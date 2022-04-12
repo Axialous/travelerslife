@@ -34,50 +34,26 @@
         <section id="accueil">
                 <div id="imageHotel">
                     <h1 class="titre"><span><img src="img/ligneTitre.PNG" alt="Ligne blanche"></span>Hôtels<span><img src="img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
-                    <div class="ronds">
-                        <div class="rondBlanc1" id="rondBlanc"></div>
-                        <div onclick="transitionAcceuilDroite()" class="rondBlanc2" id="rondBlanc"></div>
-                        <div onclick="transitionAcceuilDroiteDirect()" class="rondBlanc3" id="rondBlanc"></div>
-                    </div>
-                    <div class="fleche">
-                        <div class="flecheGauche">
-                            <button class="gauche"></button>
-                        </div>
-                        <div class="flecheDroite">
-                            <button onclick="transitionAcceuilDroite()" class="droite"></button>
-                        </div>
-                    </div>
                 </div>
                 <div id="imageCroisiere">
                     <h1 class="titre"><span><img src="img/ligneTitre.PNG" alt="Ligne blanche"></span>Croisières<span><img src="img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
-                    <div class="ronds">
-                        <div onclick="transitionAcceuilGauche2()" class="rondBlanc4" id="rondBlanc"></div>
-                        <div class="rondBlanc5" id="rondBlanc"></div>
-                        <div onclick="transitionAcceuilDroite2()" class="rondBlanc6" id="rondBlanc"></div>
-                    </div>
-                    <div class="fleche">
-                        <div class="flecheGauche">
-                            <button onclick="transitionAcceuilGauche2()" class="gauche"></button>
-                        </div>
-                        <div class="flecheDroite">
-                            <button onclick="transitionAcceuilDroite2()" class="droite"></button>
-                        </div>
-                    </div>
                 </div>
                 <div id="imageSafari">
                     <h1 class="titre"><span><img src="img/ligneTitre.PNG" alt="Ligne blanche"></span>Safaris<span><img src="img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
-                    <div class="ronds">
-                        <div onclick="transitionAcceuilDroiteDirectR()" class="rondBlanc7" id="rondBlanc"></div>
-                        <div onclick="transitionAcceuilGauche3()" class="rondBlanc8" id="rondBlanc"></div>
-                        <div class="rondBlanc9" id="rondBlanc"></div>
-                    </div>
+                </div>
+                <div id="interfaceAccueil">
                     <div class="fleche">
                         <div class="flecheGauche">
-                            <button onclick="transitionAcceuilGauche3()" class="gauche"></button>
+                            <button onclick="decaler(-1)" id="gauche"></button>
                         </div>
                         <div class="flecheDroite">
-                            <button class="droite"></button>
+                            <button onclick="decaler(1)" id="droite"></button>
                         </div>
+                    </div>
+                    <div class="ronds">
+                        <div onclick="sauter(1)" class="rondBlanc" id="rondBlanc1"></div>
+                        <div onclick="sauter(2)" class="rondBlanc" id="rondBlanc2"></div>
+                        <div onclick="sauter(3)" class="rondBlanc" id="rondBlanc3"></div>
                     </div>
                 </div>
                 <div class="grandMenu">
@@ -175,6 +151,60 @@
                         <li>Durée 9 jours</li>
                     </ul>
                     <p class="offre-speciale"><strong>OFFRE SPÉCIALE</strong></p>
+                </a>
+                
+                <a href="categories/croisieres/norvege.html">
+                    <img src="img/offreNorvege.jpg" alt="Croisière en Norvège">
+                    <h4>Norvège</h4>
+                    <ul>
+                        <li>Voyage en 4 escales</li>
+                        <li>Durée 12 jours</li>
+                    </ul>
+                </a>
+                
+                <a href="categories/safaris/zimbabwe.html">
+                    <img src="img/offreZimbabwe.jpg" alt="Hôtel au Portugal">
+                    <h4>Zimbabwe</h4>
+                    <ul>
+                        <li>Voyage en 1 étape</li>
+                        <li>Durée 7 jours</li>
+                    </ul>
+                </a>
+                
+                <a href="categories/hotels/portugal.html">
+                    <img src="img/offrePortugal.jpg" alt="Hôtel au Portugal">
+                    <h4>Portugal</h4>
+                    <ul>
+                        <li>Voyage en 1 étape</li>
+                        <li>Durée 7 jours</li>
+                    </ul>
+                </a>
+                
+                <a href="categories/safaris/tanzanie.html">
+                    <img src="img/offreTanzanie.jpg" alt="Hôtel en Corse">
+                    <h4>Tanzanie</h4>
+                    <ul>
+                        <li>Voyage en 2 étapes</li>
+                        <li>Durée 10 jours</li>
+                    </ul>
+                </a>
+                
+                <a href="categories/hotels/corse.html">
+                    <img src="img/offreCorse.jpg" alt="Hôtel en Corse">
+                    <h4>Corse</h4>
+                    <ul>
+                        <li>Voyage en 2 étapes</li>
+                        <li>Durée 10 jours</li>
+                    </ul>
+                </a>
+                
+                <a href="categories/croisieres/grece.html">
+                    <img src="img/offreGrece.jpg" alt="Croisière en Grèce">
+                    <h4>Grèce</h4>
+                    <ul>
+                        <li>Voyage en 3 escales</li>
+                        <li>Durée 7 jours</li>
+                    </ul>
                 </a>
             </article>
         </section>

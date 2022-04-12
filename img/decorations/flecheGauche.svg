@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
-   sodipodi:docname="flecheDroite.svg"
+   sodipodi:docname="flecheGauche.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@
      units="px"
      inkscape:zoom="9.2791246"
      inkscape:cx="20.961029"
-     inkscape:cy="24.03244"
+     inkscape:cy="24.032439"
      inkscape:window-width="1600"
      inkscape:window-height="837"
      inkscape:window-x="-8"
@@ -41,8 +41,12 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#ffffff;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.98780489"
-       d="M 2.5890767e-7,0 13.229166,6.6145835 0,13.229167 V 9.9218749 L 6.614583,6.6145835 2.5890767e-7,3.3072916 V 0"
-       id="path1828" />
+       style="fill:none;stroke:none;stroke-width:0.188987px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M -1.1920937e-6,0 V 1.1811755 L 3.5435239,4.7247016 -1.3623926e-6,8.2682275 V 9.4494032 H 1.1811739 L 4.7246989,5.9058773 8.2682245,9.4494032 H 9.4494013 V 8.2682282 L 5.9058753,4.724702 9.4494013,1.1811758 V 1.7029898e-7 H 8.2682245 L 4.7246997,3.543527 1.181174,3.4059796e-7 Z"
+       id="path4045" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 11.906243,13.229167 -3.9168768e-6,6.614584 11.906246,0 13.229162,1.322917 3.9687468,6.6145835 13.229159,11.90625 11.906243,13.229167"
+       id="path1930" />
   </g>
 </svg>

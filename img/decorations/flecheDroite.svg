@@ -4,11 +4,11 @@
 <svg
    width="50"
    height="50"
-   viewBox="0 0 13.229166 13.229167"
+   viewBox="0 0 13.229166 13.229166"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
-   sodipodi:docname="flecheGauche.svg"
+   sodipodi:docname="flecheDroite.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,10 +23,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
+     scale-x="1"
      units="px"
      inkscape:zoom="9.2791246"
-     inkscape:cx="37.557422"
-     inkscape:cy="26.187815"
+     inkscape:cx="20.961029"
+     inkscape:cy="24.032439"
      inkscape:window-width="1600"
      inkscape:window-height="837"
      inkscape:window-x="-8"
@@ -40,8 +41,12 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
+       style="fill:none;stroke:none;stroke-width:0.188987px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M -1.1920937e-6,0 V 1.1811755 L 3.5435239,4.7247016 -1.3623926e-6,8.2682275 V 9.4494032 H 1.1811739 L 4.7246989,5.9058773 8.2682245,9.4494032 H 9.4494013 V 8.2682282 L 5.9058753,4.724702 9.4494013,1.1811758 V 1.7029898e-7 H 8.2682245 L 4.7246997,3.543527 1.181174,3.4059796e-7 Z"
+       id="path4045" />
+    <path
        style="fill:#ffffff;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="M 13.229164,0 -1.6689302e-6,6.6145835 13.229162,13.229167 13.229164,9.9218749 6.6145811,6.6145835 13.229164,3.3072916 Z"
-       id="path1150" />
+       d="M 1.3229151,0 13.229162,6.614583 1.3229123,13.229167 -3.9168768e-6,11.90625 9.2604113,6.6145835 -1.1920937e-6,1.3229166 1.3229151,0"
+       id="path1930" />
   </g>
 </svg>
