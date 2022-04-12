@@ -2064,6 +2064,7 @@ footer p, footer a {
 }
 .caracteristiqueCabineImage{
     width: 50%;
+    margin-right: 10px;
 }
 .caracteristiqueCabineImage img{
     width: 100%;
@@ -2076,6 +2077,8 @@ footer p, footer a {
 .caracteristiqueCabineText h3{
     color: rgb(69,123,148);
     border-style: none none solid none;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .caracteristiqueCabineText p{
     font-size: 15px;
