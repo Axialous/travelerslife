@@ -320,27 +320,25 @@ header nav {
     cursor: n-resize;
 }
 
-.menu_deroulant input:checked:hover + p {
-    text-decoration: underline transparent;
-}
-
 .menu_deroulant div {
     display: flex;
     flex-direction: column;
 
     overflow: hidden;
 
-    height: 0px;
+    max-height: 0px;
 
-    transition: 250ms;
+    transition: 500ms;
 }
 
 .menu_deroulant div * {
     opacity: 0;
+
+    transition: 500ms;
 }
 
 .menu_deroulant input:checked ~ div {
-    height: 159px;
+    max-height: 180px;
 }
 
 .menu_deroulant input:checked ~ div * {
@@ -611,6 +609,33 @@ span img{
     .sous li:nth-child(3):hover a{
         color: rgb(117, 80, 37) !important;
     }
+}
+
+#accueil-indisponible {
+    position: relative;
+
+    height: clamp(600px, 48vw, 3000px);
+    background: url(../img/indisponible.jpg) center;
+    background-size: cover;
+}
+
+#accueil-indisponible article {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translateX(-50%);
+
+    text-align: center;
+}
+
+#accueil-indisponible h3 {
+    white-space: nowrap;
+}
+
+#accueil-indisponible p {
+    color: rgb(255, 255, 255);
+
+    margin-top: 55px;
 }
 
 /* Accueil des pages de categories */
@@ -1451,6 +1476,13 @@ footer p, footer a {
         height: 60px;
     }
 }
+
+@media screen and (max-width: 400px) {
+
+    #accueil-indisponible h3 {
+        font-size: 21px;
+    }
+}
 /****************************************************Section3**********************************************************************/
 #presentation{
     position: relative;
@@ -1808,6 +1840,7 @@ footer p, footer a {
     border-radius: 10px 10px 0 0;
 }
 .blocCaracteristique{
+    position: relative;
     width: 80%;
     height: 100%;
     margin: auto;
@@ -1898,14 +1931,26 @@ footer p, footer a {
     margin-bottom: 100px;
     display: none;
 }
+.blocCaracteristique img{
+    transition: 1500ms;
+}
+#imageDuVoyage1{
+    opacity: 1;
+}
 #imagesDuVoyage2{
-    display: none;
+    position: absolute;
+    left: 0;
+    opacity: 0;
 }
 #imagesDuVoyage3{
-    display: none;
+    position: absolute;
+    left: 0;
+    opacity: 0;
 }
 #imagesDuVoyage4{
-    display: none;
+    position: absolute;
+    left: 0;
+    opacity: 0;
 }
 .menuText2{
     display: none;
