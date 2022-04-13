@@ -1645,7 +1645,7 @@ footer p, footer a {
     #section3Text4{
         display: none;
     }
-
+}
 @media screen and (max-width:679px){
     .textPresentation p{
         line-height: 1.3;
