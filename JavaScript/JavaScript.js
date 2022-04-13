@@ -222,6 +222,18 @@ function transitionSection3Gauche(){
     document.getElementById('section3Text').style.display = "block";
     document.getElementById('section3Text2').style.display = "none";
 }
+function transitionSection3Droite2(){
+    document.getElementById('imageEquipe3').style.display = "none";
+    document.getElementById('imageEquipe4').style.display = "block";
+    document.getElementById('section3Text3').style.display = "none";
+    document.getElementById('section3Text4').style.display = "block";
+}
+function transitionSection3Gauche2(){
+    document.getElementById('imageEquipe4').style.display = "none";
+    document.getElementById('imageEquipe3').style.display = "block";
+    document.getElementById('section3Text3').style.display = "block";
+    document.getElementById('section3Text4').style.display = "none";
+}
 function transitionAProposHotelDroite(){
     document.getElementById('imageEquipe').style.display = "none";
     document.getElementById('imageEquipe2').style.display = "block";
