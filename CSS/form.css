@@ -1655,6 +1655,14 @@ footer p, footer a {
     .textPresentation .section3Text4 p{
         line-height: 1;
     }
+    .textPresentation .section3Text4 p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:423px){
+    .textPresentation .section3Text4 p{
+        line-height: 1;
+    }
 }
 @media screen and (max-width:335px){
     .textPresentation p{
