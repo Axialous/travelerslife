@@ -241,10 +241,10 @@ function transitionPresentation(){
     document.getElementById('menuHebergement').style.background = "whitesmoke";
     document.getElementById('menuItineraire').style.background = "whitesmoke";
     document.getElementById('menuBudget').style.background = "whitesmoke";
-    document.getElementById('imagesDuVoyage1').style.display = "block";
-    document.getElementById('imagesDuVoyage2').style.display = "none";
-    document.getElementById('imagesDuVoyage3').style.display = "none";
-    document.getElementById('imagesDuVoyage4').style.display = "none";
+    document.getElementById('imagesDuVoyage1').style.opacity = "1";
+    document.getElementById('imagesDuVoyage2').style.opacity = "0";
+    document.getElementById('imagesDuVoyage3').style.opacity = "0";
+    document.getElementById('imagesDuVoyage4').style.opacity = "0";
 }
 function transitionItineraire(){
     document.getElementById('menuTextItineraire').style.display = "block";
@@ -255,10 +255,10 @@ function transitionItineraire(){
     document.getElementById('menuHebergement').style.background = "whitesmoke";
     document.getElementById('menuItineraire').style.background = "white";
     document.getElementById('menuBudget').style.background = "whitesmoke";
-    document.getElementById('imagesDuVoyage1').style.display = "none";
-    document.getElementById('imagesDuVoyage2').style.display = "block";
-    document.getElementById('imagesDuVoyage3').style.display = "none";
-    document.getElementById('imagesDuVoyage4').style.display = "none";
+    document.getElementById('imagesDuVoyage1').style.opacity = "0";
+    document.getElementById('imagesDuVoyage2').style.opacity = "1";
+    document.getElementById('imagesDuVoyage3').style.opacity = "0";
+    document.getElementById('imagesDuVoyage4').style.opacity = "0";
 }
 function transitionHebergement(){
     document.getElementById('menuTextHebergement').style.display = "block";
@@ -269,10 +269,10 @@ function transitionHebergement(){
     document.getElementById('menuHebergement').style.background = "white";
     document.getElementById('menuItineraire').style.background = "whitesmoke";
     document.getElementById('menuBudget').style.background = "whitesmoke";
-    document.getElementById('imagesDuVoyage1').style.display = "none";
-    document.getElementById('imagesDuVoyage2').style.display = "none";
-    document.getElementById('imagesDuVoyage3').style.display = "block";
-    document.getElementById('imagesDuVoyage4').style.display = "none";
+    document.getElementById('imagesDuVoyage1').style.opacity = "0";
+    document.getElementById('imagesDuVoyage2').style.opacity = "0";
+    document.getElementById('imagesDuVoyage3').style.opacity = "1";
+    document.getElementById('imagesDuVoyage4').style.opacity = "0";
 }
 function transitionBudget(){
     document.getElementById('menuTextBudget').style.display = "block";
@@ -283,10 +283,10 @@ function transitionBudget(){
     document.getElementById('menuHebergement').style.background = "whitesmoke";
     document.getElementById('menuItineraire').style.background = "whitesmoke";
     document.getElementById('menuBudget').style.background = "white";
-    document.getElementById('imagesDuVoyage1').style.display = "none";
-    document.getElementById('imagesDuVoyage2').style.display = "none";
-    document.getElementById('imagesDuVoyage3').style.display = "none";
-    document.getElementById('imagesDuVoyage4').style.display = "block";
+    document.getElementById('imagesDuVoyage1').style.opacity = "0";
+    document.getElementById('imagesDuVoyage2').style.opacity = "0";
+    document.getElementById('imagesDuVoyage3').style.opacity = "0";
+    document.getElementById('imagesDuVoyage4').style.opacity = "1";
 }
 function transitionPresentation2(){
     if(document.getElementById('menuTextPresentation2').style.display == "none"){
@@ -301,44 +301,44 @@ function transitionItineraire2(){
     if(document.getElementById('menuTextItineraire2').style.display == "block"){
         document.getElementById('menuTextItineraire2').style.display = "none";
         document.getElementById('menuItineraire2').style.background = "whitesmoke";
-        document.getElementById('imagesDuVoyage2').style.display = "none";
-        document.getElementById('imagesDuVoyage1').style.display = "block";
+        document.getElementById('imagesDuVoyage2').style.opacity = "0";
+        document.getElementById('imagesDuVoyage1').style.opacity = "1";
     }    else{
         document.getElementById('menuTextItineraire2').style.display = "block";
         document.getElementById('menuItineraire2').style.background = "white";
-        document.getElementById('imagesDuVoyage2').style.display = "block";
-        document.getElementById('imagesDuVoyage1').style.display = "none";
-        document.getElementById('imagesDuVoyage3').style.display = "none";
-        document.getElementById('imagesDuVoyage4').style.display = "none";
+        document.getElementById('imagesDuVoyage2').style.opacity = "1";
+        document.getElementById('imagesDuVoyage1').style.opacity = "0";
+        document.getElementById('imagesDuVoyage3').style.opacity = "0";
+        document.getElementById('imagesDuVoyage4').style.opacity = "0";
     }
 }
 function transitionHebergement2(){   
     if(document.getElementById('menuTextHebergement2').style.display == "block"){
         document.getElementById('menuTextHebergement2').style.display = "none";
         document.getElementById('menuHebergement2').style.background = "whitesmoke";
-        document.getElementById('imagesDuVoyage3').style.display = "none";
-        document.getElementById('imagesDuVoyage1').style.display = "block"; 
+        document.getElementById('imagesDuVoyage3').style.opacity = "0";
+        document.getElementById('imagesDuVoyage1').style.opacity = "1"; 
     }   else{
         document.getElementById('menuTextHebergement2').style.display = "block";
         document.getElementById('menuHebergement2').style.background = "white";
-        document.getElementById('imagesDuVoyage3').style.display = "block";
-        document.getElementById('imagesDuVoyage1').style.display = "none";    
-        document.getElementById('imagesDuVoyage2').style.display = "none";
-        document.getElementById('imagesDuVoyage4').style.display = "none";
+        document.getElementById('imagesDuVoyage3').style.opacity = "1";
+        document.getElementById('imagesDuVoyage1').style.opacity = "0";    
+        document.getElementById('imagesDuVoyage2').style.opacity = "0";
+        document.getElementById('imagesDuVoyage4').style.opacity = "0";
     }
 }
 function transitionBudget2(){
     if(document.getElementById('menuTextBudget2').style.display == "block"){
         document.getElementById('menuTextBudget2').style.display = "none";
         document.getElementById('menuBudget2').style.background = "whitesmoke";
-        document.getElementById('imagesDuVoyage4').style.display = "none";
-        document.getElementById('imagesDuVoyage1').style.display = "block";   
+        document.getElementById('imagesDuVoyage4').style.opacity = "0";
+        document.getElementById('imagesDuVoyage1').style.opacity = "1";   
     }    else{
         document.getElementById('menuTextBudget2').style.display = "block";
         document.getElementById('menuBudget2').style.background = "white";
-        document.getElementById('imagesDuVoyage4').style.display = "block"; 
-        document.getElementById('imagesDuVoyage1').style.display = "none";  
-        document.getElementById('imagesDuVoyage2').style.display = "none";
-        document.getElementById('imagesDuVoyage3').style.display = "none"; 
+        document.getElementById('imagesDuVoyage4').style.opacity = "1"; 
+        document.getElementById('imagesDuVoyage1').style.opacity = "0";
+        document.getElementById('imagesDuVoyage2').style.opacity = "0";
+        document.getElementById('imagesDuVoyage3').style.opacity = "0"; 
     }
 }
