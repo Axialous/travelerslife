@@ -1678,6 +1678,26 @@ footer p, footer a {
         display: none;
     }
 }
+@media screen and (max-width:376px){
+    #textAPropos{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:358px){
+    #textAPropos1{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:241px){
+    #textAPropos3{
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width:342px){
+    #textAPropos3{
+        font-size: 16px;
+    }
+}
 @media screen and (max-width:679px){
     .textPresentation p{
         line-height: 1.3;
