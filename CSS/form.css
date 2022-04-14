@@ -126,7 +126,15 @@ nav input:checked + p {
     text-decoration: underline rgb(255, 255, 255);
 }
 
+th, td {
+    font-family: 'Asap-Regular';
+    color: rgb(77, 61, 53);
+}
 
+::selection {
+    color: rgb(255, 255, 255);
+    background-color: rgba(69, 123, 148, 90%);
+}
 
 img {
     color: rgb(255, 255, 255);
@@ -1863,11 +1871,6 @@ footer p, footer a {
     height: 100%;
     margin: auto;
 }
-.menuCaracteristique p{
-    margin-top: 30px;
-    text-align: center;
-    font-size: clamp(19px, 20px, 21px);
-}
 .menuCaracteristique{
     margin-top: -4px;
     width: 100%;
@@ -1876,6 +1879,20 @@ footer p, footer a {
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 0 0 10px 10px;
+}
+.menuCaracteristique>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuCaracteristique p{
+    text-align: center;
+    font-size: clamp(19px, 20px, 21px);
+    transition: 125ms;
+}
+.menuCaracteristique>*:hover p{
+    transform: scale(1.05);
+    color: rgb(78, 63, 54);
 }
 .menuCaracteristique:hover{
     cursor: pointer;
@@ -1887,18 +1904,18 @@ footer p, footer a {
     border-radius: 0 0 0 10px;
     background-color: white;
 }
-.menuPresentation p:hover{
+/*.menuPresentation:hover p{
     transform: scale(1.03);
 }
-.menuItineraire p:hover{
+.menuItineraire:hover p{
     transform: scale(1.03);
 }
-.menuHebergement p:hover{
+.menuHebergement:hover p{
     transform: scale(1.03);
 }
-.menuBudget p:hover{
+.menuBudget:hover p{
     transform: scale(1.03);
-}
+}*/
 .menuItineraire{
     height: 100px;
     width: 25%;
