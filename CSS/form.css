@@ -396,14 +396,14 @@ span img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
-    transform: translateX(200%);
+    transform: translateX(100%);
 }
 #imageSafari{
     background: url(../img/acceuilSafari.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
-    transform: translateX(100%);
+    transform: translateX(200%);
 }
 .fleche{
     display: flex;
