@@ -1904,18 +1904,6 @@ footer p, footer a {
     border-radius: 0 0 0 10px;
     background-color: white;
 }
-/*.menuPresentation:hover p{
-    transform: scale(1.03);
-}
-.menuItineraire:hover p{
-    transform: scale(1.03);
-}
-.menuHebergement:hover p{
-    transform: scale(1.03);
-}
-.menuBudget:hover p{
-    transform: scale(1.03);
-}*/
 .menuItineraire{
     height: 100px;
     width: 25%;
@@ -1965,6 +1953,10 @@ footer p, footer a {
     margin-top: 50px;
     margin-bottom: 100px;
     display: none;
+}
+.blocCaracteristique>div:nth-child(1){
+    position: relative;
+    overflow: hidden;
 }
 .blocCaracteristique img{
     transition: 1500ms;
