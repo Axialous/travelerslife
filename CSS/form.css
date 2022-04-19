@@ -1275,7 +1275,7 @@ footer p, footer a {
     #recherche {
         position: absolute;
         left: -200px;
-        top: 110px;
+        top: 100px;
         
         width: min-content;
 
@@ -1289,7 +1289,7 @@ footer p, footer a {
 
         position: absolute;
         left: -200px;
-        top: 160px;
+        top: 150px;
         
         width: min-content;
 
@@ -1297,7 +1297,7 @@ footer p, footer a {
     }
 
     #offres {
-        margin: 15px 5px !important;
+        margin: 15px 10px !important;
 
         white-space: nowrap;
         width: min-content;
