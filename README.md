@@ -1,1 +1,1 @@
-Projet en duo avec @alexismetton de création d'un site Web fictif d'agence de voyage.
+Projet en duo avec @AlexisMetton de création d'un site Web fictif d'agence de voyage.
